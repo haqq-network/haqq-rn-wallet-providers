@@ -4,12 +4,12 @@ import EncryptedStorage from 'react-native-encrypted-storage';
 import {ITEM_KEYS, WalletType} from '../../constants';
 import {compressPublicKey} from '../../utils';
 import {getPrivateKey} from '../../utils/hot/get-private-key';
-import {Provider} from '../base-provider';
+import {ProviderBase} from '../base-provider';
 import {ProviderBaseOptions, ProviderInterface} from '../types';
 import {ProviderHotBaseOptions} from './types';
 
 export class ProviderHotBase
-  extends Provider<ProviderHotBaseOptions>
+  extends ProviderBase<ProviderHotBaseOptions>
   implements ProviderInterface
 {
   static async initialize(

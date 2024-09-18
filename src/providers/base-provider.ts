@@ -7,7 +7,7 @@ import {
   TypedData,
 } from './types';
 
-export class Provider<T extends object>
+export class ProviderBase<T extends object>
   extends EventEmitter
   implements ProviderInterface
 {

@@ -19,7 +19,7 @@
 
 #### Defined in
 
-src/constants.ts:24
+[src/constants.ts:24](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L24)
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-src/constants.ts:23
+[src/constants.ts:23](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L23)

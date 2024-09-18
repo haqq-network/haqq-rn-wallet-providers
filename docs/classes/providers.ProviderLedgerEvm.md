@@ -1,14 +1,14 @@
-[@haqq/rn-wallet-providers - v0.0.1](../README.md) / [Exports](../modules.md) / [providers](../modules/providers.md) / ProviderSSSReactNative
+[@haqq/rn-wallet-providers - v0.0.1](../README.md) / [Exports](../modules.md) / [providers](../modules/providers.md) / ProviderLedgerEvm
 
-# Class: ProviderSSSReactNative
+# Class: ProviderLedgerEvm
 
-[providers](../modules/providers.md).ProviderSSSReactNative
+[providers](../modules/providers.md).ProviderLedgerEvm
 
 ## Hierarchy
 
-- [`Provider`](providers.Provider.md)\<[`ProviderSSSOptions`](../modules/providers.md#providersssoptions)\>
+- `ProviderLedgerBase`
 
-  ↳ **`ProviderSSSReactNative`**
+  ↳ **`ProviderLedgerEvm`**
 
 ## Implements
 
@@ -18,98 +18,94 @@
 
 ### Constructors
 
-- [constructor](providers.ProviderSSSReactNative.md#constructor)
+- [constructor](providers.ProviderLedgerEvm.md#constructor)
 
 ### Properties
 
-- [\_options](providers.ProviderSSSReactNative.md#_options)
-- [captureRejectionSymbol](providers.ProviderSSSReactNative.md#capturerejectionsymbol)
-- [captureRejections](providers.ProviderSSSReactNative.md#capturerejections)
-- [defaultMaxListeners](providers.ProviderSSSReactNative.md#defaultmaxlisteners)
-- [errorMonitor](providers.ProviderSSSReactNative.md#errormonitor)
+- [\_options](providers.ProviderLedgerEvm.md#_options)
+- [captureRejectionSymbol](providers.ProviderLedgerEvm.md#capturerejectionsymbol)
+- [captureRejections](providers.ProviderLedgerEvm.md#capturerejections)
+- [defaultMaxListeners](providers.ProviderLedgerEvm.md#defaultmaxlisteners)
+- [errorMonitor](providers.ProviderLedgerEvm.md#errormonitor)
 
 ### Methods
 
-- [[captureRejectionSymbol]](providers.ProviderSSSReactNative.md#[capturerejectionsymbol])
-- [abort](providers.ProviderSSSReactNative.md#abort)
-- [addListener](providers.ProviderSSSReactNative.md#addlistener)
-- [catchError](providers.ProviderSSSReactNative.md#catcherror)
-- [clean](providers.ProviderSSSReactNative.md#clean)
-- [emit](providers.ProviderSSSReactNative.md#emit)
-- [eventNames](providers.ProviderSSSReactNative.md#eventnames)
-- [getAccountInfo](providers.ProviderSSSReactNative.md#getaccountinfo)
-- [getIdentifier](providers.ProviderSSSReactNative.md#getidentifier)
-- [getMaxListeners](providers.ProviderSSSReactNative.md#getmaxlisteners)
-- [getMnemonicPhrase](providers.ProviderSSSReactNative.md#getmnemonicphrase)
-- [getPrivateKey](providers.ProviderSSSReactNative.md#getprivatekey)
-- [isShareSaved](providers.ProviderSSSReactNative.md#issharesaved)
-- [listenerCount](providers.ProviderSSSReactNative.md#listenercount)
-- [listeners](providers.ProviderSSSReactNative.md#listeners)
-- [off](providers.ProviderSSSReactNative.md#off)
-- [on](providers.ProviderSSSReactNative.md#on)
-- [once](providers.ProviderSSSReactNative.md#once)
-- [prependListener](providers.ProviderSSSReactNative.md#prependlistener)
-- [prependOnceListener](providers.ProviderSSSReactNative.md#prependoncelistener)
-- [rawListeners](providers.ProviderSSSReactNative.md#rawlisteners)
-- [removeAllListeners](providers.ProviderSSSReactNative.md#removealllisteners)
-- [removeListener](providers.ProviderSSSReactNative.md#removelistener)
-- [setMaxListeners](providers.ProviderSSSReactNative.md#setmaxlisteners)
-- [signPersonalMessage](providers.ProviderSSSReactNative.md#signpersonalmessage)
-- [signTransaction](providers.ProviderSSSReactNative.md#signtransaction)
-- [signTypedData](providers.ProviderSSSReactNative.md#signtypeddata)
-- [tryToSaveShareToStore](providers.ProviderSSSReactNative.md#trytosavesharetostore)
-- [updatePin](providers.ProviderSSSReactNative.md#updatepin)
-- [addAbortListener](providers.ProviderSSSReactNative.md#addabortlistener)
-- [getAccounts](providers.ProviderSSSReactNative.md#getaccounts)
-- [getEventListeners](providers.ProviderSSSReactNative.md#geteventlisteners)
-- [getMaxListeners](providers.ProviderSSSReactNative.md#getmaxlisteners-1)
-- [getStoragesForAccount](providers.ProviderSSSReactNative.md#getstoragesforaccount)
-- [initialize](providers.ProviderSSSReactNative.md#initialize)
-- [listenerCount](providers.ProviderSSSReactNative.md#listenercount-1)
-- [on](providers.ProviderSSSReactNative.md#on-1)
-- [once](providers.ProviderSSSReactNative.md#once-1)
-- [setMaxListeners](providers.ProviderSSSReactNative.md#setmaxlisteners-1)
-- [setStorageForAccount](providers.ProviderSSSReactNative.md#setstorageforaccount)
+- [[captureRejectionSymbol]](providers.ProviderLedgerEvm.md#[capturerejectionsymbol])
+- [abort](providers.ProviderLedgerEvm.md#abort)
+- [addListener](providers.ProviderLedgerEvm.md#addlistener)
+- [catchError](providers.ProviderLedgerEvm.md#catcherror)
+- [clean](providers.ProviderLedgerEvm.md#clean)
+- [confirmAddress](providers.ProviderLedgerEvm.md#confirmaddress)
+- [emit](providers.ProviderLedgerEvm.md#emit)
+- [eventNames](providers.ProviderLedgerEvm.md#eventnames)
+- [getAccountInfo](providers.ProviderLedgerEvm.md#getaccountinfo)
+- [getIdentifier](providers.ProviderLedgerEvm.md#getidentifier)
+- [getMaxListeners](providers.ProviderLedgerEvm.md#getmaxlisteners)
+- [getPrivateKey](providers.ProviderLedgerEvm.md#getprivatekey)
+- [listenerCount](providers.ProviderLedgerEvm.md#listenercount)
+- [listeners](providers.ProviderLedgerEvm.md#listeners)
+- [off](providers.ProviderLedgerEvm.md#off)
+- [on](providers.ProviderLedgerEvm.md#on)
+- [once](providers.ProviderLedgerEvm.md#once)
+- [prependListener](providers.ProviderLedgerEvm.md#prependlistener)
+- [prependOnceListener](providers.ProviderLedgerEvm.md#prependoncelistener)
+- [rawListeners](providers.ProviderLedgerEvm.md#rawlisteners)
+- [removeAllListeners](providers.ProviderLedgerEvm.md#removealllisteners)
+- [removeListener](providers.ProviderLedgerEvm.md#removelistener)
+- [setMaxListeners](providers.ProviderLedgerEvm.md#setmaxlisteners)
+- [signPersonalMessage](providers.ProviderLedgerEvm.md#signpersonalmessage)
+- [signTransaction](providers.ProviderLedgerEvm.md#signtransaction)
+- [signTypedData](providers.ProviderLedgerEvm.md#signtypeddata)
+- [suggestApp](providers.ProviderLedgerEvm.md#suggestapp)
+- [updatePin](providers.ProviderLedgerEvm.md#updatepin)
+- [withDevice](providers.ProviderLedgerEvm.md#withdevice)
+- [addAbortListener](providers.ProviderLedgerEvm.md#addabortlistener)
+- [getEventListeners](providers.ProviderLedgerEvm.md#geteventlisteners)
+- [getMaxListeners](providers.ProviderLedgerEvm.md#getmaxlisteners-1)
+- [listenerCount](providers.ProviderLedgerEvm.md#listenercount-1)
+- [on](providers.ProviderLedgerEvm.md#on-1)
+- [once](providers.ProviderLedgerEvm.md#once-1)
+- [setMaxListeners](providers.ProviderLedgerEvm.md#setmaxlisteners-1)
 
 ## Constructors
 
 ### constructor
 
-• **new ProviderSSSReactNative**(`options`)
+• **new ProviderLedgerEvm**(`options`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `options` | [`ProviderSSSOptions`](../modules/providers.md#providersssoptions) & `ProviderBaseOptions` |
+| `options` | [`ProviderLedgerBaseOptions`](../modules/providers.md#providerledgerbaseoptions) & `ProviderBaseOptions` |
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[constructor](providers.Provider.md#constructor)
+ProviderLedgerBase.constructor
 
 #### Defined in
 
-src/providers/base-provider.ts:16
+[src/providers/base-provider.ts:16](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L16)
 
 ## Properties
 
 ### \_options
 
-• `Protected` **\_options**: [`ProviderSSSOptions`](../modules/providers.md#providersssoptions) & `ProviderBaseOptions`
+• `Protected` **\_options**: [`ProviderLedgerBaseOptions`](../modules/providers.md#providerledgerbaseoptions) & `ProviderBaseOptions`
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[_options](providers.Provider.md#_options)
+ProviderLedgerBase.\_options
 
 #### Defined in
 
-src/providers/base-provider.ts:14
+[src/providers/base-provider.ts:14](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L14)
 
 ___
 
 ### captureRejectionSymbol
 
-▪ `Static` `Readonly` **captureRejectionSymbol**: typeof [`captureRejectionSymbol`](providers.ProviderHotReactNative.md#capturerejectionsymbol)
+▪ `Static` `Readonly` **captureRejectionSymbol**: typeof [`captureRejectionSymbol`](providers.ProviderHotEvm.md#capturerejectionsymbol)
 
 Value: `Symbol.for('nodejs.rejection')`
 
@@ -121,7 +117,7 @@ v13.4.0, v12.16.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[captureRejectionSymbol](providers.Provider.md#capturerejectionsymbol)
+ProviderLedgerBase.captureRejectionSymbol
 
 #### Defined in
 
@@ -143,7 +139,7 @@ v13.4.0, v12.16.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[captureRejections](providers.Provider.md#capturerejections)
+ProviderLedgerBase.captureRejections
 
 #### Defined in
 
@@ -197,7 +193,7 @@ v0.11.2
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[defaultMaxListeners](providers.Provider.md#defaultmaxlisteners)
+ProviderLedgerBase.defaultMaxListeners
 
 #### Defined in
 
@@ -207,7 +203,7 @@ ___
 
 ### errorMonitor
 
-▪ `Static` `Readonly` **errorMonitor**: typeof [`errorMonitor`](providers.ProviderHotReactNative.md#errormonitor)
+▪ `Static` `Readonly` **errorMonitor**: typeof [`errorMonitor`](providers.ProviderHotEvm.md#errormonitor)
 
 This symbol shall be used to install a listener for only monitoring `'error'` events. Listeners installed using this symbol are called before the regular `'error'` listeners are called.
 
@@ -220,7 +216,7 @@ v13.6.0, v12.17.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[errorMonitor](providers.Provider.md#errormonitor)
+ProviderLedgerBase.errorMonitor
 
 #### Defined in
 
@@ -256,7 +252,7 @@ ProviderInterface.[captureRejectionSymbol]
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[[captureRejectionSymbol]](providers.Provider.md#[capturerejectionsymbol])
+ProviderLedgerBase.[captureRejectionSymbol]
 
 #### Defined in
 
@@ -266,11 +262,11 @@ ___
 
 ### abort
 
-▸ **abort**(): `void`
+▸ **abort**(): `Promise`\<`void`\>
 
 #### Returns
 
-`void`
+`Promise`\<`void`\>
 
 #### Implementation of
 
@@ -278,17 +274,17 @@ ProviderInterface.abort
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[abort](providers.Provider.md#abort)
+ProviderLedgerBase.abort
 
 #### Defined in
 
-src/providers/base-provider.ts:59
+[src/providers/ledger/provider.ts:64](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/provider.ts#L64)
 
 ___
 
 ### addListener
 
-▸ **addListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSReactNative`](providers.ProviderSSSReactNative.md)
+▸ **addListener**\<`K`\>(`eventName`, `listener`): [`ProviderLedgerEvm`](providers.ProviderLedgerEvm.md)
 
 Alias for `emitter.on(eventName, listener)`.
 
@@ -307,7 +303,7 @@ Alias for `emitter.on(eventName, listener)`.
 
 #### Returns
 
-[`ProviderSSSReactNative`](providers.ProviderSSSReactNative.md)
+[`ProviderLedgerEvm`](providers.ProviderLedgerEvm.md)
 
 **`Since`**
 
@@ -319,7 +315,7 @@ ProviderInterface.addListener
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[addListener](providers.Provider.md#addlistener)
+ProviderLedgerBase.addListener
 
 #### Defined in
 
@@ -329,15 +325,14 @@ ___
 
 ### catchError
 
-▸ **catchError**(`e`, `source`, `handled?`): `void`
+▸ **catchError**(`e`, `source`): `void`
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `e` | `Error` | `undefined` |
-| `source` | `string` | `undefined` |
-| `handled` | `boolean` | `false` |
+| Name | Type |
+| :------ | :------ |
+| `e` | `Error` |
+| `source` | `string` |
 
 #### Returns
 
@@ -345,11 +340,11 @@ ___
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[catchError](providers.Provider.md#catcherror)
+ProviderLedgerBase.catchError
 
 #### Defined in
 
-src/providers/base-provider.ts:48
+[src/providers/ledger/provider.ts:88](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/provider.ts#L88)
 
 ___
 
@@ -367,11 +362,35 @@ ProviderInterface.clean
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[clean](providers.Provider.md#clean)
+ProviderLedgerBase.clean
 
 #### Defined in
 
-src/providers/base-provider.ts:63
+[src/providers/base-provider.ts:63](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L63)
+
+___
+
+### confirmAddress
+
+▸ **confirmAddress**(`hdPath`): `Promise`\<`string`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `hdPath` | `string` |
+
+#### Returns
+
+`Promise`\<`string`\>
+
+#### Overrides
+
+ProviderLedgerBase.confirmAddress
+
+#### Defined in
+
+[src/providers/ledger/evm-provider.ts:19](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/evm-provider.ts#L19)
 
 ___
 
@@ -444,7 +463,7 @@ ProviderInterface.emit
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[emit](providers.Provider.md#emit)
+ProviderLedgerBase.emit
 
 #### Defined in
 
@@ -487,7 +506,7 @@ ProviderInterface.eventNames
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[eventNames](providers.Provider.md#eventnames)
+ProviderLedgerBase.eventNames
 
 #### Defined in
 
@@ -497,17 +516,18 @@ ___
 
 ### getAccountInfo
 
-▸ **getAccountInfo**(`hdPath`): `Promise`\<\{ `address`: `string` = ''; `publicKey`: `string` = '' }\>
+▸ **getAccountInfo**(`hdPath`, `showDisplay?`): `Promise`\<\{ `address`: `string` ; `publicKey`: `string`  }\>
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `hdPath` | `string` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `hdPath` | `string` | `undefined` |
+| `showDisplay` | `boolean` | `false` |
 
 #### Returns
 
-`Promise`\<\{ `address`: `string` = ''; `publicKey`: `string` = '' }\>
+`Promise`\<\{ `address`: `string` ; `publicKey`: `string`  }\>
 
 #### Implementation of
 
@@ -515,11 +535,11 @@ ProviderInterface.getAccountInfo
 
 #### Overrides
 
-[Provider](providers.Provider.md).[getAccountInfo](providers.Provider.md#getaccountinfo)
+ProviderLedgerBase.getAccountInfo
 
 #### Defined in
 
-src/providers/sss/provider.ts:246
+[src/providers/ledger/evm-provider.ts:23](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/evm-provider.ts#L23)
 
 ___
 
@@ -535,13 +555,13 @@ ___
 
 ProviderInterface.getIdentifier
 
-#### Overrides
+#### Inherited from
 
-[Provider](providers.Provider.md).[getIdentifier](providers.Provider.md#getidentifier)
+ProviderLedgerBase.getIdentifier
 
 #### Defined in
 
-src/providers/sss/provider.ts:242
+[src/providers/ledger/provider.ts:12](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/provider.ts#L12)
 
 ___
 
@@ -550,7 +570,7 @@ ___
 ▸ **getMaxListeners**(): `number`
 
 Returns the current max listener value for the `EventEmitter` which is either
-set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](providers.ProviderSSSReactNative.md#defaultmaxlisteners).
+set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](providers.ProviderLedgerEvm.md#defaultmaxlisteners).
 
 #### Returns
 
@@ -566,29 +586,11 @@ ProviderInterface.getMaxListeners
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[getMaxListeners](providers.Provider.md#getmaxlisteners)
+ProviderLedgerBase.getMaxListeners
 
 #### Defined in
 
 node_modules/@types/node/events.d.ts:774
-
-___
-
-### getMnemonicPhrase
-
-▸ **getMnemonicPhrase**(): `Promise`\<`string`\>
-
-Get mnemonic phrase
-
-#### Returns
-
-`Promise`\<`string`\>
-
-mnemonic
-
-#### Defined in
-
-src/providers/sss/provider.ts:493
 
 ___
 
@@ -612,31 +614,11 @@ ProviderInterface.getPrivateKey
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[getPrivateKey](providers.Provider.md#getprivatekey)
+ProviderLedgerBase.getPrivateKey
 
 #### Defined in
 
-src/providers/base-provider.ts:44
-
-___
-
-### isShareSaved
-
-▸ **isShareSaved**(`storage?`): `Promise`\<`boolean`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `storage?` | [`StorageInterface`](../interfaces/providers.StorageInterface.md) |
-
-#### Returns
-
-`Promise`\<`boolean`\>
-
-#### Defined in
-
-src/providers/sss/provider.ts:425
+[src/providers/base-provider.ts:44](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L44)
 
 ___
 
@@ -675,7 +657,7 @@ ProviderInterface.listenerCount
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[listenerCount](providers.Provider.md#listenercount)
+ProviderLedgerBase.listenerCount
 
 #### Defined in
 
@@ -723,7 +705,7 @@ ProviderInterface.listeners
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[listeners](providers.Provider.md#listeners)
+ProviderLedgerBase.listeners
 
 #### Defined in
 
@@ -733,7 +715,7 @@ ___
 
 ### off
 
-▸ **off**\<`K`\>(`eventName`, `listener`): [`ProviderSSSReactNative`](providers.ProviderSSSReactNative.md)
+▸ **off**\<`K`\>(`eventName`, `listener`): [`ProviderLedgerEvm`](providers.ProviderLedgerEvm.md)
 
 Alias for `emitter.removeListener()`.
 
@@ -752,7 +734,7 @@ Alias for `emitter.removeListener()`.
 
 #### Returns
 
-[`ProviderSSSReactNative`](providers.ProviderSSSReactNative.md)
+[`ProviderLedgerEvm`](providers.ProviderLedgerEvm.md)
 
 **`Since`**
 
@@ -764,7 +746,7 @@ ProviderInterface.off
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[off](providers.Provider.md#off)
+ProviderLedgerBase.off
 
 #### Defined in
 
@@ -774,7 +756,7 @@ ___
 
 ### on
 
-▸ **on**\<`K`\>(`eventName`, `listener`): [`ProviderSSSReactNative`](providers.ProviderSSSReactNative.md)
+▸ **on**\<`K`\>(`eventName`, `listener`): [`ProviderLedgerEvm`](providers.ProviderLedgerEvm.md)
 
 Adds the `listener` function to the end of the listeners array for the event
 named `eventName`. No checks are made to see if the `listener` has already
@@ -818,7 +800,7 @@ myEE.emit('foo');
 
 #### Returns
 
-[`ProviderSSSReactNative`](providers.ProviderSSSReactNative.md)
+[`ProviderLedgerEvm`](providers.ProviderLedgerEvm.md)
 
 **`Since`**
 
@@ -830,7 +812,7 @@ ProviderInterface.on
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[on](providers.Provider.md#on)
+ProviderLedgerBase.on
 
 #### Defined in
 
@@ -840,7 +822,7 @@ ___
 
 ### once
 
-▸ **once**\<`K`\>(`eventName`, `listener`): [`ProviderSSSReactNative`](providers.ProviderSSSReactNative.md)
+▸ **once**\<`K`\>(`eventName`, `listener`): [`ProviderLedgerEvm`](providers.ProviderLedgerEvm.md)
 
 Adds a **one-time** `listener` function for the event named `eventName`. The
 next time `eventName` is triggered, this listener is removed and then invoked.
@@ -882,7 +864,7 @@ myEE.emit('foo');
 
 #### Returns
 
-[`ProviderSSSReactNative`](providers.ProviderSSSReactNative.md)
+[`ProviderLedgerEvm`](providers.ProviderLedgerEvm.md)
 
 **`Since`**
 
@@ -894,7 +876,7 @@ ProviderInterface.once
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[once](providers.Provider.md#once)
+ProviderLedgerBase.once
 
 #### Defined in
 
@@ -904,7 +886,7 @@ ___
 
 ### prependListener
 
-▸ **prependListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSReactNative`](providers.ProviderSSSReactNative.md)
+▸ **prependListener**\<`K`\>(`eventName`, `listener`): [`ProviderLedgerEvm`](providers.ProviderLedgerEvm.md)
 
 Adds the `listener` function to the _beginning_ of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
@@ -934,7 +916,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderSSSReactNative`](providers.ProviderSSSReactNative.md)
+[`ProviderLedgerEvm`](providers.ProviderLedgerEvm.md)
 
 **`Since`**
 
@@ -946,7 +928,7 @@ ProviderInterface.prependListener
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[prependListener](providers.Provider.md#prependlistener)
+ProviderLedgerBase.prependListener
 
 #### Defined in
 
@@ -956,7 +938,7 @@ ___
 
 ### prependOnceListener
 
-▸ **prependOnceListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSReactNative`](providers.ProviderSSSReactNative.md)
+▸ **prependOnceListener**\<`K`\>(`eventName`, `listener`): [`ProviderLedgerEvm`](providers.ProviderLedgerEvm.md)
 
 Adds a **one-time**`listener` function for the event named `eventName` to the _beginning_ of the listeners array. The next time `eventName` is triggered, this
 listener is removed, and then invoked.
@@ -984,7 +966,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderSSSReactNative`](providers.ProviderSSSReactNative.md)
+[`ProviderLedgerEvm`](providers.ProviderLedgerEvm.md)
 
 **`Since`**
 
@@ -996,7 +978,7 @@ ProviderInterface.prependOnceListener
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[prependOnceListener](providers.Provider.md#prependoncelistener)
+ProviderLedgerBase.prependOnceListener
 
 #### Defined in
 
@@ -1062,7 +1044,7 @@ ProviderInterface.rawListeners
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[rawListeners](providers.Provider.md#rawlisteners)
+ProviderLedgerBase.rawListeners
 
 #### Defined in
 
@@ -1072,7 +1054,7 @@ ___
 
 ### removeAllListeners
 
-▸ **removeAllListeners**(`eventName?`): [`ProviderSSSReactNative`](providers.ProviderSSSReactNative.md)
+▸ **removeAllListeners**(`eventName?`): [`ProviderLedgerEvm`](providers.ProviderLedgerEvm.md)
 
 Removes all listeners, or those of the specified `eventName`.
 
@@ -1090,7 +1072,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderSSSReactNative`](providers.ProviderSSSReactNative.md)
+[`ProviderLedgerEvm`](providers.ProviderLedgerEvm.md)
 
 **`Since`**
 
@@ -1102,7 +1084,7 @@ ProviderInterface.removeAllListeners
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[removeAllListeners](providers.Provider.md#removealllisteners)
+ProviderLedgerBase.removeAllListeners
 
 #### Defined in
 
@@ -1112,7 +1094,7 @@ ___
 
 ### removeListener
 
-▸ **removeListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSReactNative`](providers.ProviderSSSReactNative.md)
+▸ **removeListener**\<`K`\>(`eventName`, `listener`): [`ProviderLedgerEvm`](providers.ProviderLedgerEvm.md)
 
 Removes the specified `listener` from the listener array for the event named `eventName`.
 
@@ -1209,7 +1191,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderSSSReactNative`](providers.ProviderSSSReactNative.md)
+[`ProviderLedgerEvm`](providers.ProviderLedgerEvm.md)
 
 **`Since`**
 
@@ -1221,7 +1203,7 @@ ProviderInterface.removeListener
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[removeListener](providers.Provider.md#removelistener)
+ProviderLedgerBase.removeListener
 
 #### Defined in
 
@@ -1231,7 +1213,7 @@ ___
 
 ### setMaxListeners
 
-▸ **setMaxListeners**(`n`): [`ProviderSSSReactNative`](providers.ProviderSSSReactNative.md)
+▸ **setMaxListeners**(`n`): [`ProviderLedgerEvm`](providers.ProviderLedgerEvm.md)
 
 By default `EventEmitter`s will print a warning if more than `10` listeners are
 added for a particular event. This is a useful default that helps finding
@@ -1248,7 +1230,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderSSSReactNative`](providers.ProviderSSSReactNative.md)
+[`ProviderLedgerEvm`](providers.ProviderLedgerEvm.md)
 
 **`Since`**
 
@@ -1260,7 +1242,7 @@ ProviderInterface.setMaxListeners
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[setMaxListeners](providers.Provider.md#setmaxlisteners)
+ProviderLedgerBase.setMaxListeners
 
 #### Defined in
 
@@ -1289,11 +1271,11 @@ ProviderInterface.signPersonalMessage
 
 #### Overrides
 
-[Provider](providers.Provider.md).[signPersonalMessage](providers.Provider.md#signpersonalmessage)
+ProviderLedgerBase.signPersonalMessage
 
 #### Defined in
 
-src/providers/sss/provider.ts:321
+[src/providers/ledger/evm-provider.ts:112](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/evm-provider.ts#L112)
 
 ___
 
@@ -1318,11 +1300,11 @@ ProviderInterface.signTransaction
 
 #### Overrides
 
-[Provider](providers.Provider.md).[signTransaction](providers.Provider.md#signtransaction)
+ProviderLedgerBase.signTransaction
 
 #### Defined in
 
-src/providers/sss/provider.ts:280
+[src/providers/ledger/evm-provider.ts:59](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/evm-provider.ts#L59)
 
 ___
 
@@ -1347,43 +1329,41 @@ ProviderInterface.signTypedData
 
 #### Overrides
 
-[Provider](providers.Provider.md).[signTypedData](providers.Provider.md#signtypeddata)
+ProviderLedgerBase.signTypedData
 
 #### Defined in
 
-src/providers/sss/provider.ts:364
+[src/providers/ledger/evm-provider.ts:157](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/evm-provider.ts#L157)
 
 ___
 
-### tryToSaveShareToStore
+### suggestApp
 
-▸ **tryToSaveShareToStore**(`storage`): `Promise`\<`void`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `storage` | [`StorageInterface`](../interfaces/providers.StorageInterface.md) |
+▸ **suggestApp**(): `Promise`\<`boolean`\>
 
 #### Returns
 
-`Promise`\<`void`\>
+`Promise`\<`boolean`\>
+
+#### Inherited from
+
+ProviderLedgerBase.suggestApp
 
 #### Defined in
 
-src/providers/sss/provider.ts:457
+[src/providers/ledger/provider.ts:33](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/provider.ts#L33)
 
 ___
 
 ### updatePin
 
-▸ **updatePin**(`pin`): `Promise`\<`void`\>
+▸ **updatePin**(`_pin`): `Promise`\<`void`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `pin` | `string` |
+| `_pin` | `string` |
 
 #### Returns
 
@@ -1393,13 +1373,49 @@ ___
 
 ProviderInterface.updatePin
 
-#### Overrides
+#### Inherited from
 
-[Provider](providers.Provider.md).[updatePin](providers.Provider.md#updatepin)
+ProviderLedgerBase.updatePin
 
 #### Defined in
 
-src/providers/sss/provider.ts:401
+[src/providers/base-provider.ts:67](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L67)
+
+___
+
+### withDevice
+
+▸ **withDevice**(): \<T\>(`job`: (`arg0`: `default`) => `Observable`\<`T`\>) => `Observable`\<`T`\>
+
+#### Returns
+
+`fn`
+
+▸ \<`T`\>(`job`): `Observable`\<`T`\>
+
+##### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `job` | (`arg0`: `default`) => `Observable`\<`T`\> |
+
+##### Returns
+
+`Observable`\<`T`\>
+
+#### Inherited from
+
+ProviderLedgerBase.withDevice
+
+#### Defined in
+
+[src/providers/ledger/provider.ts:16](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/provider.ts#L16)
 
 ___
 
@@ -1456,25 +1472,11 @@ v20.5.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[addAbortListener](providers.Provider.md#addabortlistener)
+ProviderLedgerBase.addAbortListener
 
 #### Defined in
 
 node_modules/@types/node/events.d.ts:437
-
-___
-
-### getAccounts
-
-▸ `Static` **getAccounts**(): `Promise`\<`string`[]\>
-
-#### Returns
-
-`Promise`\<`string`[]\>
-
-#### Defined in
-
-src/providers/sss/provider.ts:208
 
 ___
 
@@ -1524,7 +1526,7 @@ v15.2.0, v14.17.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[getEventListeners](providers.Provider.md#geteventlisteners)
+ProviderLedgerBase.getEventListeners
 
 #### Defined in
 
@@ -1578,61 +1580,11 @@ v19.9.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[getMaxListeners](providers.Provider.md#getmaxlisteners-1)
+ProviderLedgerBase.getMaxListeners
 
 #### Defined in
 
 node_modules/@types/node/events.d.ts:387
-
-___
-
-### getStoragesForAccount
-
-▸ `Static` **getStoragesForAccount**(`accountId?`): `Promise`\<`string`[]\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `accountId?` | `string` |
-
-#### Returns
-
-`Promise`\<`string`[]\>
-
-#### Defined in
-
-src/providers/sss/provider.ts:214
-
-___
-
-### initialize
-
-▸ `Static` **initialize**(`socialPrivateKey`, `cloudShare`, `localShare`, `privateKey`, `verifier`, `token`, `getPassword`, `storage`, `options`): `Promise`\<[`ProviderSSSReactNative`](providers.ProviderSSSReactNative.md)\>
-
-Initialize SSS provider
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `socialPrivateKey` | `string` | private key which we get from social service |
-| `cloudShare` | `string` | encrypted share from cloud storage |
-| `localShare` | `string` | encrypted share from local storage |
-| `privateKey` | `string` | private key which rewrite current shares |
-| `verifier` | `string` | verifier name |
-| `token` | `string` | token for verifier name |
-| `getPassword` | () => `Promise`\<`string`\> | function which return password for decrypt share |
-| `storage` | [`StorageInterface`](../interfaces/providers.StorageInterface.md) | storage for save share |
-| `options` | `Omit`\<`ProviderBaseOptions`, ``"getPassword"``\> & \{ `generateSharesUrl`: `string` ; `metadataUrl`: `string`  } | options for provider and metadata |
-
-#### Returns
-
-`Promise`\<[`ProviderSSSReactNative`](providers.ProviderSSSReactNative.md)\>
-
-#### Defined in
-
-src/providers/sss/provider.ts:42
 
 ___
 
@@ -1673,7 +1625,7 @@ Since v3.2.0 - Use `listenerCount` instead.
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[listenerCount](providers.Provider.md#listenercount-1)
+ProviderLedgerBase.listenerCount
 
 #### Defined in
 
@@ -1782,7 +1734,7 @@ v13.6.0, v12.16.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[on](providers.Provider.md#on-1)
+ProviderLedgerBase.on
 
 #### Defined in
 
@@ -1804,7 +1756,7 @@ node_modules/@types/node/events.d.ts:303
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[on](providers.Provider.md#on-1)
+ProviderLedgerBase.on
 
 #### Defined in
 
@@ -1911,7 +1863,7 @@ v11.13.0, v10.16.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[once](providers.Provider.md#once-1)
+ProviderLedgerBase.once
 
 #### Defined in
 
@@ -1933,7 +1885,7 @@ node_modules/@types/node/events.d.ts:217
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[once](providers.Provider.md#once-1)
+ProviderLedgerBase.once
 
 #### Defined in
 
@@ -1971,29 +1923,8 @@ v15.4.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[setMaxListeners](providers.Provider.md#setmaxlisteners-1)
+ProviderLedgerBase.setMaxListeners
 
 #### Defined in
 
 node_modules/@types/node/events.d.ts:402
-
-___
-
-### setStorageForAccount
-
-▸ `Static` **setStorageForAccount**(`accountId`, `storage`): `Promise`\<`string`[]\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `accountId` | `string` |
-| `storage` | [`StorageInterface`](../interfaces/providers.StorageInterface.md) |
-
-#### Returns
-
-`Promise`\<`string`[]\>
-
-#### Defined in
-
-src/providers/sss/provider.ts:224

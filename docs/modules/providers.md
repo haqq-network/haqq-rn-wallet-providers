@@ -7,11 +7,11 @@
 ### Classes
 
 - [Provider](../classes/providers.Provider.md)
-- [ProviderHotReactNative](../classes/providers.ProviderHotReactNative.md)
-- [ProviderKeystoneReactNative](../classes/providers.ProviderKeystoneReactNative.md)
-- [ProviderLedgerReactNative](../classes/providers.ProviderLedgerReactNative.md)
-- [ProviderMnemonicReactNative](../classes/providers.ProviderMnemonicReactNative.md)
-- [ProviderSSSReactNative](../classes/providers.ProviderSSSReactNative.md)
+- [ProviderHotEvm](../classes/providers.ProviderHotEvm.md)
+- [ProviderKeystoneEvm](../classes/providers.ProviderKeystoneEvm.md)
+- [ProviderLedgerEvm](../classes/providers.ProviderLedgerEvm.md)
+- [ProviderMnemonicEvm](../classes/providers.ProviderMnemonicEvm.md)
+- [ProviderSSSEvm](../classes/providers.ProviderSSSEvm.md)
 
 ### Interfaces
 
@@ -24,11 +24,11 @@
 - [Device](providers.md#device)
 - [KeystoneAwaitForSignParams](providers.md#keystoneawaitforsignparams)
 - [KeystoneAwaitForSignReturnType](providers.md#keystoneawaitforsignreturntype)
-- [ProviderHotOptions](providers.md#providerhotoptions)
-- [ProviderKeystoneReactNativeOptions](providers.md#providerkeystonereactnativeoptions)
-- [ProviderLedgerReactNativeOptions](providers.md#providerledgerreactnativeoptions)
-- [ProviderMnemonicOptions](providers.md#providermnemonicoptions)
-- [ProviderSSSOptions](providers.md#providersssoptions)
+- [ProviderHotBaseOptions](providers.md#providerhotbaseoptions)
+- [ProviderKeystoneBaseOptions](providers.md#providerkeystonebaseoptions)
+- [ProviderLedgerBaseOptions](providers.md#providerledgerbaseoptions)
+- [ProviderMnemonicBaseOptions](providers.md#providermnemonicbaseoptions)
+- [ProviderSSSBaseOptions](providers.md#providersssbaseoptions)
 - [Share](providers.md#share)
 - [ShareEncrypted](providers.md#shareencrypted)
 
@@ -40,7 +40,7 @@
 
 #### Defined in
 
-src/providers/keystone/types.ts:28
+[src/providers/keystone/types.ts:28](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/keystone/types.ts#L28)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-src/providers/keystone/types.ts:20
+[src/providers/keystone/types.ts:20](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/keystone/types.ts#L20)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-src/providers/ledger/types.ts:1
+[src/providers/ledger/types.ts:1](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/types.ts#L1)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-src/providers/keystone/types.ts:3
+[src/providers/keystone/types.ts:3](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/keystone/types.ts#L3)
 
 ___
 
@@ -107,13 +107,13 @@ ___
 
 #### Defined in
 
-src/providers/keystone/types.ts:9
+[src/providers/keystone/types.ts:9](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/keystone/types.ts#L9)
 
 ___
 
-### ProviderHotOptions
+### ProviderHotBaseOptions
 
-Ƭ **ProviderHotOptions**: `Object`
+Ƭ **ProviderHotBaseOptions**: `Object`
 
 #### Type declaration
 
@@ -124,13 +124,13 @@ ___
 
 #### Defined in
 
-src/providers/hot/types.ts:1
+[src/providers/hot/types.ts:1](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/hot/types.ts#L1)
 
 ___
 
-### ProviderKeystoneReactNativeOptions
+### ProviderKeystoneBaseOptions
 
-Ƭ **ProviderKeystoneReactNativeOptions**: `Object`
+Ƭ **ProviderKeystoneBaseOptions**: `Object`
 
 #### Type declaration
 
@@ -141,13 +141,13 @@ ___
 
 #### Defined in
 
-src/providers/keystone/types.ts:13
+[src/providers/keystone/types.ts:13](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/keystone/types.ts#L13)
 
 ___
 
-### ProviderLedgerReactNativeOptions
+### ProviderLedgerBaseOptions
 
-Ƭ **ProviderLedgerReactNativeOptions**: `Object`
+Ƭ **ProviderLedgerBaseOptions**: `Object`
 
 #### Type declaration
 
@@ -158,13 +158,13 @@ ___
 
 #### Defined in
 
-src/providers/ledger/types.ts:10
+[src/providers/ledger/types.ts:10](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/types.ts#L10)
 
 ___
 
-### ProviderMnemonicOptions
+### ProviderMnemonicBaseOptions
 
-Ƭ **ProviderMnemonicOptions**: `Object`
+Ƭ **ProviderMnemonicBaseOptions**: `Object`
 
 #### Type declaration
 
@@ -175,13 +175,13 @@ ___
 
 #### Defined in
 
-src/providers/mnemonic/types.ts:1
+[src/providers/mnemonic/types.ts:1](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/mnemonic/types.ts#L1)
 
 ___
 
-### ProviderSSSOptions
+### ProviderSSSBaseOptions
 
-Ƭ **ProviderSSSOptions**: `Object`
+Ƭ **ProviderSSSBaseOptions**: `Object`
 
 #### Type declaration
 
@@ -193,7 +193,7 @@ ___
 
 #### Defined in
 
-src/providers/sss/types.ts:13
+[src/providers/sss/types.ts:13](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/sss/types.ts#L13)
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-src/providers/sss/types.ts:19
+[src/providers/sss/types.ts:19](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/sss/types.ts#L19)
 
 ___
 
@@ -230,4 +230,4 @@ ___
 
 #### Defined in
 
-src/providers/sss/types.ts:25
+[src/providers/sss/types.ts:25](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/sss/types.ts#L25)

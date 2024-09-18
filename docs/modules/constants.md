@@ -37,7 +37,7 @@
 
 #### Defined in
 
-src/constants.ts:14
+[src/constants.ts:14](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L14)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-src/constants.ts:42
+[src/constants.ts:42](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L42)
 
 ___
 
@@ -65,4 +65,4 @@ ___
 
 #### Defined in
 
-src/constants.ts:40
+[src/constants.ts:40](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L40)

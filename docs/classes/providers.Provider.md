@@ -16,16 +16,6 @@
 
   ↳ **`Provider`**
 
-  ↳↳ [`ProviderHotReactNative`](providers.ProviderHotReactNative.md)
-
-  ↳↳ [`ProviderKeystoneReactNative`](providers.ProviderKeystoneReactNative.md)
-
-  ↳↳ [`ProviderLedgerReactNative`](providers.ProviderLedgerReactNative.md)
-
-  ↳↳ [`ProviderSSSReactNative`](providers.ProviderSSSReactNative.md)
-
-  ↳↳ [`ProviderMnemonicReactNative`](providers.ProviderMnemonicReactNative.md)
-
 ## Implements
 
 - `ProviderInterface`
@@ -104,7 +94,7 @@ EventEmitter.constructor
 
 #### Defined in
 
-src/providers/base-provider.ts:16
+[src/providers/base-provider.ts:16](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L16)
 
 ## Properties
 
@@ -114,13 +104,13 @@ src/providers/base-provider.ts:16
 
 #### Defined in
 
-src/providers/base-provider.ts:14
+[src/providers/base-provider.ts:14](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L14)
 
 ___
 
 ### captureRejectionSymbol
 
-▪ `Static` `Readonly` **captureRejectionSymbol**: typeof [`captureRejectionSymbol`](providers.ProviderHotReactNative.md#capturerejectionsymbol)
+▪ `Static` `Readonly` **captureRejectionSymbol**: typeof [`captureRejectionSymbol`](providers.ProviderHotEvm.md#capturerejectionsymbol)
 
 Value: `Symbol.for('nodejs.rejection')`
 
@@ -218,7 +208,7 @@ ___
 
 ### errorMonitor
 
-▪ `Static` `Readonly` **errorMonitor**: typeof [`errorMonitor`](providers.ProviderHotReactNative.md#errormonitor)
+▪ `Static` `Readonly` **errorMonitor**: typeof [`errorMonitor`](providers.ProviderHotEvm.md#errormonitor)
 
 This symbol shall be used to install a listener for only monitoring `'error'` events. Listeners installed using this symbol are called before the regular `'error'` listeners are called.
 
@@ -289,7 +279,7 @@ ProviderInterface.abort
 
 #### Defined in
 
-src/providers/base-provider.ts:59
+[src/providers/base-provider.ts:59](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L59)
 
 ___
 
@@ -352,7 +342,7 @@ ___
 
 #### Defined in
 
-src/providers/base-provider.ts:48
+[src/providers/base-provider.ts:48](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L48)
 
 ___
 
@@ -370,7 +360,7 @@ ProviderInterface.clean
 
 #### Defined in
 
-src/providers/base-provider.ts:63
+[src/providers/base-provider.ts:63](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L63)
 
 ___
 
@@ -514,7 +504,7 @@ ProviderInterface.getAccountInfo
 
 #### Defined in
 
-src/providers/base-provider.ts:40
+[src/providers/base-provider.ts:40](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L40)
 
 ___
 
@@ -532,7 +522,7 @@ ProviderInterface.getIdentifier
 
 #### Defined in
 
-src/providers/base-provider.ts:36
+[src/providers/base-provider.ts:36](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L36)
 
 ___
 
@@ -585,7 +575,7 @@ ProviderInterface.getPrivateKey
 
 #### Defined in
 
-src/providers/base-provider.ts:44
+[src/providers/base-provider.ts:44](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L44)
 
 ___
 
@@ -1238,7 +1228,7 @@ ProviderInterface.signPersonalMessage
 
 #### Defined in
 
-src/providers/base-provider.ts:28
+[src/providers/base-provider.ts:28](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L28)
 
 ___
 
@@ -1263,7 +1253,7 @@ ProviderInterface.signTransaction
 
 #### Defined in
 
-src/providers/base-provider.ts:21
+[src/providers/base-provider.ts:21](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L21)
 
 ___
 
@@ -1288,7 +1278,7 @@ ProviderInterface.signTypedData
 
 #### Defined in
 
-src/providers/base-provider.ts:32
+[src/providers/base-provider.ts:32](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L32)
 
 ___
 
@@ -1312,7 +1302,7 @@ ProviderInterface.updatePin
 
 #### Defined in
 
-src/providers/base-provider.ts:67
+[src/providers/base-provider.ts:67](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L67)
 
 ___
 

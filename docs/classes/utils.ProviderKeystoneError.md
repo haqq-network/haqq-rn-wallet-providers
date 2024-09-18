@@ -33,7 +33,7 @@
 
 #### Defined in
 
-src/utils/keystone/error.ts:9
+[src/utils/keystone/error.ts:9](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/keystone/error.ts#L9)
 
 ## Properties
 
@@ -43,7 +43,7 @@ src/utils/keystone/error.ts:9
 
 #### Defined in
 
-src/utils/keystone/error.ts:5
+[src/utils/keystone/error.ts:5](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/keystone/error.ts#L5)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-src/utils/keystone/error.ts:6
+[src/utils/keystone/error.ts:6](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/keystone/error.ts#L6)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-src/utils/keystone/error.ts:4
+[src/utils/keystone/error.ts:4](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/keystone/error.ts#L4)
 
 ___
 
@@ -73,4 +73,4 @@ ___
 
 #### Defined in
 
-src/utils/keystone/error.ts:7
+[src/utils/keystone/error.ts:7](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/keystone/error.ts#L7)

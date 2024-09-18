@@ -19,7 +19,7 @@ import {
   isCryptoHDKey,
   ProviderKeystoneError,
 } from '../../utils/keystone';
-import {Provider} from '../base-provider';
+import {ProviderBase} from '../base-provider';
 import {ProviderInterface} from '../types';
 import {AccountInfo, ProviderKeystoneBaseOptions} from './types';
 
@@ -31,7 +31,7 @@ const SUPPORTED_REGISTRY_TYPES: string[] = [
 ];
 
 export class ProviderKeystoneBase
-  extends Provider<ProviderKeystoneBaseOptions>
+  extends ProviderBase<ProviderKeystoneBaseOptions>
   implements ProviderInterface
 {
   protected _xfp: string = '';

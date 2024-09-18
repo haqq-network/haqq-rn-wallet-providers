@@ -1,14 +1,14 @@
-[@haqq/rn-wallet-providers - v0.0.1](../README.md) / [Exports](../modules.md) / [providers](../modules/providers.md) / ProviderKeystoneReactNative
+[@haqq/rn-wallet-providers - v0.0.1](../README.md) / [Exports](../modules.md) / [providers](../modules/providers.md) / ProviderHotEvm
 
-# Class: ProviderKeystoneReactNative
+# Class: ProviderHotEvm
 
-[providers](../modules/providers.md).ProviderKeystoneReactNative
+[providers](../modules/providers.md).ProviderHotEvm
 
 ## Hierarchy
 
-- [`Provider`](providers.Provider.md)\<[`ProviderKeystoneReactNativeOptions`](../modules/providers.md#providerkeystonereactnativeoptions)\>
+- `ProviderHotBase`
 
-  ↳ **`ProviderKeystoneReactNative`**
+  ↳ **`ProviderHotEvm`**
 
 ## Implements
 
@@ -18,134 +18,92 @@
 
 ### Constructors
 
-- [constructor](providers.ProviderKeystoneReactNative.md#constructor)
+- [constructor](providers.ProviderHotEvm.md#constructor)
 
 ### Properties
 
-- [\_cryptoAccontDataMap](providers.ProviderKeystoneReactNative.md#_cryptoaccontdatamap)
-- [\_options](providers.ProviderKeystoneReactNative.md#_options)
-- [\_registryItem](providers.ProviderKeystoneReactNative.md#_registryitem)
-- [\_xfp](providers.ProviderKeystoneReactNative.md#_xfp)
-- [captureRejectionSymbol](providers.ProviderKeystoneReactNative.md#capturerejectionsymbol)
-- [captureRejections](providers.ProviderKeystoneReactNative.md#capturerejections)
-- [defaultMaxListeners](providers.ProviderKeystoneReactNative.md#defaultmaxlisteners)
-- [errorMonitor](providers.ProviderKeystoneReactNative.md#errormonitor)
+- [\_options](providers.ProviderHotEvm.md#_options)
+- [captureRejectionSymbol](providers.ProviderHotEvm.md#capturerejectionsymbol)
+- [captureRejections](providers.ProviderHotEvm.md#capturerejections)
+- [defaultMaxListeners](providers.ProviderHotEvm.md#defaultmaxlisteners)
+- [errorMonitor](providers.ProviderHotEvm.md#errormonitor)
 
 ### Methods
 
-- [[captureRejectionSymbol]](providers.ProviderKeystoneReactNative.md#[capturerejectionsymbol])
-- [\_getAccountInfoForCryptoAccount](providers.ProviderKeystoneReactNative.md#_getaccountinfoforcryptoaccount)
-- [\_getAccountInfoForCryptoHdKey](providers.ProviderKeystoneReactNative.md#_getaccountinfoforcryptohdkey)
-- [\_initWithCryptoAccount](providers.ProviderKeystoneReactNative.md#_initwithcryptoaccount)
-- [\_initWithCryptoHDKey](providers.ProviderKeystoneReactNative.md#_initwithcryptohdkey)
-- [\_parseSignature](providers.ProviderKeystoneReactNative.md#_parsesignature)
-- [\_parseSignatureToHex](providers.ProviderKeystoneReactNative.md#_parsesignaturetohex)
-- [\_throwError](providers.ProviderKeystoneReactNative.md#_throwerror)
-- [abort](providers.ProviderKeystoneReactNative.md#abort)
-- [addListener](providers.ProviderKeystoneReactNative.md#addlistener)
-- [buildPath](providers.ProviderKeystoneReactNative.md#buildpath)
-- [catchError](providers.ProviderKeystoneReactNative.md#catcherror)
-- [clean](providers.ProviderKeystoneReactNative.md#clean)
-- [emit](providers.ProviderKeystoneReactNative.md#emit)
-- [eventNames](providers.ProviderKeystoneReactNative.md#eventnames)
-- [getAccountInfo](providers.ProviderKeystoneReactNative.md#getaccountinfo)
-- [getIdentifier](providers.ProviderKeystoneReactNative.md#getidentifier)
-- [getKeyringAccount](providers.ProviderKeystoneReactNative.md#getkeyringaccount)
-- [getMaxListeners](providers.ProviderKeystoneReactNative.md#getmaxlisteners)
-- [getPathPattern](providers.ProviderKeystoneReactNative.md#getpathpattern)
-- [getPrivateKey](providers.ProviderKeystoneReactNative.md#getprivatekey)
-- [listenerCount](providers.ProviderKeystoneReactNative.md#listenercount)
-- [listeners](providers.ProviderKeystoneReactNative.md#listeners)
-- [off](providers.ProviderKeystoneReactNative.md#off)
-- [on](providers.ProviderKeystoneReactNative.md#on)
-- [once](providers.ProviderKeystoneReactNative.md#once)
-- [prependListener](providers.ProviderKeystoneReactNative.md#prependlistener)
-- [prependOnceListener](providers.ProviderKeystoneReactNative.md#prependoncelistener)
-- [rawListeners](providers.ProviderKeystoneReactNative.md#rawlisteners)
-- [removeAllListeners](providers.ProviderKeystoneReactNative.md#removealllisteners)
-- [removeListener](providers.ProviderKeystoneReactNative.md#removelistener)
-- [setMaxListeners](providers.ProviderKeystoneReactNative.md#setmaxlisteners)
-- [signPersonalMessage](providers.ProviderKeystoneReactNative.md#signpersonalmessage)
-- [signTransaction](providers.ProviderKeystoneReactNative.md#signtransaction)
-- [signTypedData](providers.ProviderKeystoneReactNative.md#signtypeddata)
-- [updatePin](providers.ProviderKeystoneReactNative.md#updatepin)
-- [addAbortListener](providers.ProviderKeystoneReactNative.md#addabortlistener)
-- [getEventListeners](providers.ProviderKeystoneReactNative.md#geteventlisteners)
-- [getMaxListeners](providers.ProviderKeystoneReactNative.md#getmaxlisteners-1)
-- [listenerCount](providers.ProviderKeystoneReactNative.md#listenercount-1)
-- [on](providers.ProviderKeystoneReactNative.md#on-1)
-- [once](providers.ProviderKeystoneReactNative.md#once-1)
-- [setMaxListeners](providers.ProviderKeystoneReactNative.md#setmaxlisteners-1)
+- [[captureRejectionSymbol]](providers.ProviderHotEvm.md#[capturerejectionsymbol])
+- [abort](providers.ProviderHotEvm.md#abort)
+- [addListener](providers.ProviderHotEvm.md#addlistener)
+- [catchError](providers.ProviderHotEvm.md#catcherror)
+- [clean](providers.ProviderHotEvm.md#clean)
+- [emit](providers.ProviderHotEvm.md#emit)
+- [eventNames](providers.ProviderHotEvm.md#eventnames)
+- [getAccountInfo](providers.ProviderHotEvm.md#getaccountinfo)
+- [getIdentifier](providers.ProviderHotEvm.md#getidentifier)
+- [getMaxListeners](providers.ProviderHotEvm.md#getmaxlisteners)
+- [getPrivateKey](providers.ProviderHotEvm.md#getprivatekey)
+- [listenerCount](providers.ProviderHotEvm.md#listenercount)
+- [listeners](providers.ProviderHotEvm.md#listeners)
+- [off](providers.ProviderHotEvm.md#off)
+- [on](providers.ProviderHotEvm.md#on)
+- [once](providers.ProviderHotEvm.md#once)
+- [prependListener](providers.ProviderHotEvm.md#prependlistener)
+- [prependOnceListener](providers.ProviderHotEvm.md#prependoncelistener)
+- [rawListeners](providers.ProviderHotEvm.md#rawlisteners)
+- [removeAllListeners](providers.ProviderHotEvm.md#removealllisteners)
+- [removeListener](providers.ProviderHotEvm.md#removelistener)
+- [setMaxListeners](providers.ProviderHotEvm.md#setmaxlisteners)
+- [signPersonalMessage](providers.ProviderHotEvm.md#signpersonalmessage)
+- [signTransaction](providers.ProviderHotEvm.md#signtransaction)
+- [signTypedData](providers.ProviderHotEvm.md#signtypeddata)
+- [updatePin](providers.ProviderHotEvm.md#updatepin)
+- [addAbortListener](providers.ProviderHotEvm.md#addabortlistener)
+- [getEventListeners](providers.ProviderHotEvm.md#geteventlisteners)
+- [getMaxListeners](providers.ProviderHotEvm.md#getmaxlisteners-1)
+- [initialize](providers.ProviderHotEvm.md#initialize)
+- [listenerCount](providers.ProviderHotEvm.md#listenercount-1)
+- [on](providers.ProviderHotEvm.md#on-1)
+- [once](providers.ProviderHotEvm.md#once-1)
+- [setMaxListeners](providers.ProviderHotEvm.md#setmaxlisteners-1)
 
 ## Constructors
 
 ### constructor
 
-• **new ProviderKeystoneReactNative**(`options`)
+• **new ProviderHotEvm**(`options`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `options` | [`ProviderKeystoneReactNativeOptions`](../modules/providers.md#providerkeystonereactnativeoptions) |
-
-#### Overrides
-
-[Provider](providers.Provider.md).[constructor](providers.Provider.md#constructor)
-
-#### Defined in
-
-src/providers/keystone/provider.ts:54
-
-## Properties
-
-### \_cryptoAccontDataMap
-
-• `Private` **\_cryptoAccontDataMap**: `Record`\<`string`, \{ `address`: `string` ; `publicKey`: `string`  }\> = `{}`
-
-#### Defined in
-
-src/providers/keystone/provider.ts:52
-
-___
-
-### \_options
-
-• `Protected` **\_options**: [`ProviderKeystoneReactNativeOptions`](../modules/providers.md#providerkeystonereactnativeoptions) & `ProviderBaseOptions`
+| `options` | [`ProviderHotBaseOptions`](../modules/providers.md#providerhotbaseoptions) & `ProviderBaseOptions` |
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[_options](providers.Provider.md#_options)
+ProviderHotBase.constructor
 
 #### Defined in
 
-src/providers/base-provider.ts:14
+[src/providers/base-provider.ts:16](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L16)
 
-___
+## Properties
 
-### \_registryItem
+### \_options
 
-• `Private` **\_registryItem**: `RegistryItem`
+• `Protected` **\_options**: [`ProviderHotBaseOptions`](../modules/providers.md#providerhotbaseoptions) & `ProviderBaseOptions`
 
-#### Defined in
+#### Inherited from
 
-src/providers/keystone/provider.ts:51
-
-___
-
-### \_xfp
-
-• `Private` **\_xfp**: `string` = `''`
+ProviderHotBase.\_options
 
 #### Defined in
 
-src/providers/keystone/provider.ts:50
+[src/providers/base-provider.ts:14](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L14)
 
 ___
 
 ### captureRejectionSymbol
 
-▪ `Static` `Readonly` **captureRejectionSymbol**: typeof [`captureRejectionSymbol`](providers.ProviderHotReactNative.md#capturerejectionsymbol)
+▪ `Static` `Readonly` **captureRejectionSymbol**: typeof [`captureRejectionSymbol`](providers.ProviderHotEvm.md#capturerejectionsymbol)
 
 Value: `Symbol.for('nodejs.rejection')`
 
@@ -157,7 +115,7 @@ v13.4.0, v12.16.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[captureRejectionSymbol](providers.Provider.md#capturerejectionsymbol)
+ProviderHotBase.captureRejectionSymbol
 
 #### Defined in
 
@@ -179,7 +137,7 @@ v13.4.0, v12.16.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[captureRejections](providers.Provider.md#capturerejections)
+ProviderHotBase.captureRejections
 
 #### Defined in
 
@@ -233,7 +191,7 @@ v0.11.2
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[defaultMaxListeners](providers.Provider.md#defaultmaxlisteners)
+ProviderHotBase.defaultMaxListeners
 
 #### Defined in
 
@@ -243,7 +201,7 @@ ___
 
 ### errorMonitor
 
-▪ `Static` `Readonly` **errorMonitor**: typeof [`errorMonitor`](providers.ProviderHotReactNative.md#errormonitor)
+▪ `Static` `Readonly` **errorMonitor**: typeof [`errorMonitor`](providers.ProviderHotEvm.md#errormonitor)
 
 This symbol shall be used to install a listener for only monitoring `'error'` events. Listeners installed using this symbol are called before the regular `'error'` listeners are called.
 
@@ -256,7 +214,7 @@ v13.6.0, v12.17.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[errorMonitor](providers.Provider.md#errormonitor)
+ProviderHotBase.errorMonitor
 
 #### Defined in
 
@@ -292,161 +250,11 @@ ProviderInterface.[captureRejectionSymbol]
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[[captureRejectionSymbol]](providers.Provider.md#[capturerejectionsymbol])
+ProviderHotBase.[captureRejectionSymbol]
 
 #### Defined in
 
 node_modules/@types/node/events.d.ts:136
-
-___
-
-### \_getAccountInfoForCryptoAccount
-
-▸ `Private` **_getAccountInfoForCryptoAccount**(`hdPath`): `Promise`\<\{ `address`: `string` ; `publicKey`: `string`  }\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `hdPath` | `string` |
-
-#### Returns
-
-`Promise`\<\{ `address`: `string` ; `publicKey`: `string`  }\>
-
-#### Defined in
-
-src/providers/keystone/provider.ts:314
-
-___
-
-### \_getAccountInfoForCryptoHdKey
-
-▸ `Private` **_getAccountInfoForCryptoHdKey**(`hdPath`, `hdKey`): `Promise`\<\{ `address`: `string` ; `publicKey`: `string` = hdNode.publicKey }\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `hdPath` | `string` |
-| `hdKey` | `CryptoHDKey` |
-
-#### Returns
-
-`Promise`\<\{ `address`: `string` ; `publicKey`: `string` = hdNode.publicKey }\>
-
-#### Defined in
-
-src/providers/keystone/provider.ts:297
-
-___
-
-### \_initWithCryptoAccount
-
-▸ `Private` **_initWithCryptoAccount**(`account`): `void`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `account` | `CryptoAccount` |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-src/providers/keystone/provider.ts:276
-
-___
-
-### \_initWithCryptoHDKey
-
-▸ `Private` **_initWithCryptoHDKey**(`hdKey`): `void`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `hdKey` | `CryptoHDKey` |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-src/providers/keystone/provider.ts:271
-
-___
-
-### \_parseSignature
-
-▸ `Private` **_parseSignature**(`signatureHex`, `requestID`): `Object`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `signatureHex` | `string` |
-| `requestID` | `string` |
-
-#### Returns
-
-`Object`
-
-| Name | Type |
-| :------ | :------ |
-| `r` | `string` |
-| `s` | `string` |
-| `v` | `number` |
-
-#### Defined in
-
-src/providers/keystone/provider.ts:330
-
-___
-
-### \_parseSignatureToHex
-
-▸ `Private` **_parseSignatureToHex**(`signatureHex`, `requestID`): `string`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `signatureHex` | `string` |
-| `requestID` | `string` |
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-src/providers/keystone/provider.ts:359
-
-___
-
-### \_throwError
-
-▸ `Private` **_throwError**(`errCode`, `source`): `void`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `errCode` | [`ProviderKeystonErrorEnum`](../enums/constants.ProviderKeystonErrorEnum.md) |
-| `source` | `string` |
-
-#### Returns
-
-`void`
-
-#### Defined in
-
-src/providers/keystone/provider.ts:324
 
 ___
 
@@ -462,19 +270,19 @@ ___
 
 ProviderInterface.abort
 
-#### Overrides
+#### Inherited from
 
-[Provider](providers.Provider.md).[abort](providers.Provider.md#abort)
+ProviderHotBase.abort
 
 #### Defined in
 
-src/providers/keystone/provider.ts:267
+[src/providers/base-provider.ts:59](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L59)
 
 ___
 
 ### addListener
 
-▸ **addListener**\<`K`\>(`eventName`, `listener`): [`ProviderKeystoneReactNative`](providers.ProviderKeystoneReactNative.md)
+▸ **addListener**\<`K`\>(`eventName`, `listener`): [`ProviderHotEvm`](providers.ProviderHotEvm.md)
 
 Alias for `emitter.on(eventName, listener)`.
 
@@ -493,7 +301,7 @@ Alias for `emitter.on(eventName, listener)`.
 
 #### Returns
 
-[`ProviderKeystoneReactNative`](providers.ProviderKeystoneReactNative.md)
+[`ProviderHotEvm`](providers.ProviderHotEvm.md)
 
 **`Since`**
 
@@ -505,31 +313,11 @@ ProviderInterface.addListener
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[addListener](providers.Provider.md#addlistener)
+ProviderHotBase.addListener
 
 #### Defined in
 
 node_modules/@types/node/events.d.ts:597
-
-___
-
-### buildPath
-
-▸ **buildPath**(`index`): `string`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `index` | `number` |
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-src/providers/keystone/provider.ts:129
 
 ___
 
@@ -551,11 +339,11 @@ ___
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[catchError](providers.Provider.md#catcherror)
+ProviderHotBase.catchError
 
 #### Defined in
 
-src/providers/base-provider.ts:48
+[src/providers/base-provider.ts:48](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L48)
 
 ___
 
@@ -573,11 +361,11 @@ ProviderInterface.clean
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[clean](providers.Provider.md#clean)
+ProviderHotBase.clean
 
 #### Defined in
 
-src/providers/base-provider.ts:63
+[src/providers/hot/provider.ts:72](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/hot/provider.ts#L72)
 
 ___
 
@@ -650,7 +438,7 @@ ProviderInterface.emit
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[emit](providers.Provider.md#emit)
+ProviderHotBase.emit
 
 #### Defined in
 
@@ -693,7 +481,7 @@ ProviderInterface.eventNames
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[eventNames](providers.Provider.md#eventnames)
+ProviderHotBase.eventNames
 
 #### Defined in
 
@@ -703,13 +491,13 @@ ___
 
 ### getAccountInfo
 
-▸ **getAccountInfo**(`hdPath`): `Promise`\<\{ `address`: `string` = ''; `publicKey`: `string` = '' }\>
+▸ **getAccountInfo**(`_hdPath`): `Promise`\<\{ `address`: `string` = ''; `publicKey`: `string` = '' }\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `hdPath` | `string` |
+| `_hdPath` | `string` |
 
 #### Returns
 
@@ -719,13 +507,13 @@ ___
 
 ProviderInterface.getAccountInfo
 
-#### Overrides
+#### Inherited from
 
-[Provider](providers.Provider.md).[getAccountInfo](providers.Provider.md#getaccountinfo)
+ProviderHotBase.getAccountInfo
 
 #### Defined in
 
-src/providers/keystone/provider.ts:106
+[src/providers/hot/provider.ts:88](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/hot/provider.ts#L88)
 
 ___
 
@@ -741,27 +529,13 @@ ___
 
 ProviderInterface.getIdentifier
 
-#### Overrides
+#### Inherited from
 
-[Provider](providers.Provider.md).[getIdentifier](providers.Provider.md#getidentifier)
-
-#### Defined in
-
-src/providers/keystone/provider.ts:83
-
-___
-
-### getKeyringAccount
-
-▸ **getKeyringAccount**(): [`KeyringAccountEnum`](../enums/constants.KeyringAccountEnum.md)
-
-#### Returns
-
-[`KeyringAccountEnum`](../enums/constants.KeyringAccountEnum.md)
+ProviderHotBase.getIdentifier
 
 #### Defined in
 
-src/providers/keystone/provider.ts:87
+[src/providers/hot/provider.ts:84](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/hot/provider.ts#L84)
 
 ___
 
@@ -770,7 +544,7 @@ ___
 ▸ **getMaxListeners**(): `number`
 
 Returns the current max listener value for the `EventEmitter` which is either
-set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](providers.ProviderKeystoneReactNative.md#defaultmaxlisteners).
+set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](providers.ProviderHotEvm.md#defaultmaxlisteners).
 
 #### Returns
 
@@ -786,25 +560,11 @@ ProviderInterface.getMaxListeners
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[getMaxListeners](providers.Provider.md#getmaxlisteners)
+ProviderHotBase.getMaxListeners
 
 #### Defined in
 
 node_modules/@types/node/events.d.ts:774
-
-___
-
-### getPathPattern
-
-▸ **getPathPattern**(): `string`
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-src/providers/keystone/provider.ts:102
 
 ___
 
@@ -828,11 +588,11 @@ ProviderInterface.getPrivateKey
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[getPrivateKey](providers.Provider.md#getprivatekey)
+ProviderHotBase.getPrivateKey
 
 #### Defined in
 
-src/providers/base-provider.ts:44
+[src/providers/base-provider.ts:44](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L44)
 
 ___
 
@@ -871,7 +631,7 @@ ProviderInterface.listenerCount
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[listenerCount](providers.Provider.md#listenercount)
+ProviderHotBase.listenerCount
 
 #### Defined in
 
@@ -919,7 +679,7 @@ ProviderInterface.listeners
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[listeners](providers.Provider.md#listeners)
+ProviderHotBase.listeners
 
 #### Defined in
 
@@ -929,7 +689,7 @@ ___
 
 ### off
 
-▸ **off**\<`K`\>(`eventName`, `listener`): [`ProviderKeystoneReactNative`](providers.ProviderKeystoneReactNative.md)
+▸ **off**\<`K`\>(`eventName`, `listener`): [`ProviderHotEvm`](providers.ProviderHotEvm.md)
 
 Alias for `emitter.removeListener()`.
 
@@ -948,7 +708,7 @@ Alias for `emitter.removeListener()`.
 
 #### Returns
 
-[`ProviderKeystoneReactNative`](providers.ProviderKeystoneReactNative.md)
+[`ProviderHotEvm`](providers.ProviderHotEvm.md)
 
 **`Since`**
 
@@ -960,7 +720,7 @@ ProviderInterface.off
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[off](providers.Provider.md#off)
+ProviderHotBase.off
 
 #### Defined in
 
@@ -970,7 +730,7 @@ ___
 
 ### on
 
-▸ **on**\<`K`\>(`eventName`, `listener`): [`ProviderKeystoneReactNative`](providers.ProviderKeystoneReactNative.md)
+▸ **on**\<`K`\>(`eventName`, `listener`): [`ProviderHotEvm`](providers.ProviderHotEvm.md)
 
 Adds the `listener` function to the end of the listeners array for the event
 named `eventName`. No checks are made to see if the `listener` has already
@@ -1014,7 +774,7 @@ myEE.emit('foo');
 
 #### Returns
 
-[`ProviderKeystoneReactNative`](providers.ProviderKeystoneReactNative.md)
+[`ProviderHotEvm`](providers.ProviderHotEvm.md)
 
 **`Since`**
 
@@ -1026,7 +786,7 @@ ProviderInterface.on
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[on](providers.Provider.md#on)
+ProviderHotBase.on
 
 #### Defined in
 
@@ -1036,7 +796,7 @@ ___
 
 ### once
 
-▸ **once**\<`K`\>(`eventName`, `listener`): [`ProviderKeystoneReactNative`](providers.ProviderKeystoneReactNative.md)
+▸ **once**\<`K`\>(`eventName`, `listener`): [`ProviderHotEvm`](providers.ProviderHotEvm.md)
 
 Adds a **one-time** `listener` function for the event named `eventName`. The
 next time `eventName` is triggered, this listener is removed and then invoked.
@@ -1078,7 +838,7 @@ myEE.emit('foo');
 
 #### Returns
 
-[`ProviderKeystoneReactNative`](providers.ProviderKeystoneReactNative.md)
+[`ProviderHotEvm`](providers.ProviderHotEvm.md)
 
 **`Since`**
 
@@ -1090,7 +850,7 @@ ProviderInterface.once
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[once](providers.Provider.md#once)
+ProviderHotBase.once
 
 #### Defined in
 
@@ -1100,7 +860,7 @@ ___
 
 ### prependListener
 
-▸ **prependListener**\<`K`\>(`eventName`, `listener`): [`ProviderKeystoneReactNative`](providers.ProviderKeystoneReactNative.md)
+▸ **prependListener**\<`K`\>(`eventName`, `listener`): [`ProviderHotEvm`](providers.ProviderHotEvm.md)
 
 Adds the `listener` function to the _beginning_ of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
@@ -1130,7 +890,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderKeystoneReactNative`](providers.ProviderKeystoneReactNative.md)
+[`ProviderHotEvm`](providers.ProviderHotEvm.md)
 
 **`Since`**
 
@@ -1142,7 +902,7 @@ ProviderInterface.prependListener
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[prependListener](providers.Provider.md#prependlistener)
+ProviderHotBase.prependListener
 
 #### Defined in
 
@@ -1152,7 +912,7 @@ ___
 
 ### prependOnceListener
 
-▸ **prependOnceListener**\<`K`\>(`eventName`, `listener`): [`ProviderKeystoneReactNative`](providers.ProviderKeystoneReactNative.md)
+▸ **prependOnceListener**\<`K`\>(`eventName`, `listener`): [`ProviderHotEvm`](providers.ProviderHotEvm.md)
 
 Adds a **one-time**`listener` function for the event named `eventName` to the _beginning_ of the listeners array. The next time `eventName` is triggered, this
 listener is removed, and then invoked.
@@ -1180,7 +940,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderKeystoneReactNative`](providers.ProviderKeystoneReactNative.md)
+[`ProviderHotEvm`](providers.ProviderHotEvm.md)
 
 **`Since`**
 
@@ -1192,7 +952,7 @@ ProviderInterface.prependOnceListener
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[prependOnceListener](providers.Provider.md#prependoncelistener)
+ProviderHotBase.prependOnceListener
 
 #### Defined in
 
@@ -1258,7 +1018,7 @@ ProviderInterface.rawListeners
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[rawListeners](providers.Provider.md#rawlisteners)
+ProviderHotBase.rawListeners
 
 #### Defined in
 
@@ -1268,7 +1028,7 @@ ___
 
 ### removeAllListeners
 
-▸ **removeAllListeners**(`eventName?`): [`ProviderKeystoneReactNative`](providers.ProviderKeystoneReactNative.md)
+▸ **removeAllListeners**(`eventName?`): [`ProviderHotEvm`](providers.ProviderHotEvm.md)
 
 Removes all listeners, or those of the specified `eventName`.
 
@@ -1286,7 +1046,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderKeystoneReactNative`](providers.ProviderKeystoneReactNative.md)
+[`ProviderHotEvm`](providers.ProviderHotEvm.md)
 
 **`Since`**
 
@@ -1298,7 +1058,7 @@ ProviderInterface.removeAllListeners
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[removeAllListeners](providers.Provider.md#removealllisteners)
+ProviderHotBase.removeAllListeners
 
 #### Defined in
 
@@ -1308,7 +1068,7 @@ ___
 
 ### removeListener
 
-▸ **removeListener**\<`K`\>(`eventName`, `listener`): [`ProviderKeystoneReactNative`](providers.ProviderKeystoneReactNative.md)
+▸ **removeListener**\<`K`\>(`eventName`, `listener`): [`ProviderHotEvm`](providers.ProviderHotEvm.md)
 
 Removes the specified `listener` from the listener array for the event named `eventName`.
 
@@ -1405,7 +1165,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderKeystoneReactNative`](providers.ProviderKeystoneReactNative.md)
+[`ProviderHotEvm`](providers.ProviderHotEvm.md)
 
 **`Since`**
 
@@ -1417,7 +1177,7 @@ ProviderInterface.removeListener
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[removeListener](providers.Provider.md#removelistener)
+ProviderHotBase.removeListener
 
 #### Defined in
 
@@ -1427,7 +1187,7 @@ ___
 
 ### setMaxListeners
 
-▸ **setMaxListeners**(`n`): [`ProviderKeystoneReactNative`](providers.ProviderKeystoneReactNative.md)
+▸ **setMaxListeners**(`n`): [`ProviderHotEvm`](providers.ProviderHotEvm.md)
 
 By default `EventEmitter`s will print a warning if more than `10` listeners are
 added for a particular event. This is a useful default that helps finding
@@ -1444,7 +1204,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderKeystoneReactNative`](providers.ProviderKeystoneReactNative.md)
+[`ProviderHotEvm`](providers.ProviderHotEvm.md)
 
 **`Since`**
 
@@ -1456,7 +1216,7 @@ ProviderInterface.setMaxListeners
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[setMaxListeners](providers.Provider.md#setmaxlisteners)
+ProviderHotBase.setMaxListeners
 
 #### Defined in
 
@@ -1485,23 +1245,23 @@ ProviderInterface.signPersonalMessage
 
 #### Overrides
 
-[Provider](providers.Provider.md).[signPersonalMessage](providers.Provider.md#signpersonalmessage)
+ProviderHotBase.signPersonalMessage
 
 #### Defined in
 
-src/providers/keystone/provider.ts:181
+[src/providers/hot/evm-provider.ts:58](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/hot/evm-provider.ts#L58)
 
 ___
 
 ### signTransaction
 
-▸ **signTransaction**(`hdPath`, `transaction`): `Promise`\<`string`\>
+▸ **signTransaction**(`_hdPath`, `transaction`): `Promise`\<`string`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `hdPath` | `string` |
+| `_hdPath` | `string` |
 | `transaction` | `TransactionRequest` |
 
 #### Returns
@@ -1514,23 +1274,23 @@ ProviderInterface.signTransaction
 
 #### Overrides
 
-[Provider](providers.Provider.md).[signTransaction](providers.Provider.md#signtransaction)
+ProviderHotBase.signTransaction
 
 #### Defined in
 
-src/providers/keystone/provider.ts:133
+[src/providers/hot/evm-provider.ts:24](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/hot/evm-provider.ts#L24)
 
 ___
 
 ### signTypedData
 
-▸ **signTypedData**(`hdPath`, `typedData`): `Promise`\<`string`\>
+▸ **signTypedData**(`_hdPath`, `typedData`): `Promise`\<`string`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `hdPath` | `string` |
+| `_hdPath` | `string` |
 | `typedData` | `TypedData` |
 
 #### Returns
@@ -1543,23 +1303,23 @@ ProviderInterface.signTypedData
 
 #### Overrides
 
-[Provider](providers.Provider.md).[signTypedData](providers.Provider.md#signtypeddata)
+ProviderHotBase.signTypedData
 
 #### Defined in
 
-src/providers/keystone/provider.ts:222
+[src/providers/hot/evm-provider.ts:95](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/hot/evm-provider.ts#L95)
 
 ___
 
 ### updatePin
 
-▸ **updatePin**(`_pin`): `Promise`\<`void`\>
+▸ **updatePin**(`pin`): `Promise`\<`void`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `_pin` | `string` |
+| `pin` | `string` |
 
 #### Returns
 
@@ -1571,11 +1331,11 @@ ProviderInterface.updatePin
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[updatePin](providers.Provider.md#updatepin)
+ProviderHotBase.updatePin
 
 #### Defined in
 
-src/providers/base-provider.ts:67
+[src/providers/hot/provider.ts:45](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/hot/provider.ts#L45)
 
 ___
 
@@ -1632,7 +1392,7 @@ v20.5.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[addAbortListener](providers.Provider.md#addabortlistener)
+ProviderHotBase.addAbortListener
 
 #### Defined in
 
@@ -1686,7 +1446,7 @@ v15.2.0, v14.17.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[getEventListeners](providers.Provider.md#geteventlisteners)
+ProviderHotBase.getEventListeners
 
 #### Defined in
 
@@ -1740,11 +1500,37 @@ v19.9.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[getMaxListeners](providers.Provider.md#getmaxlisteners-1)
+ProviderHotBase.getMaxListeners
 
 #### Defined in
 
 node_modules/@types/node/events.d.ts:387
+
+___
+
+### initialize
+
+▸ `Static` **initialize**(`privateKey`, `getPassword`, `options`): `Promise`\<`ProviderHotBase`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `privateKey` | `string` |
+| `getPassword` | () => `Promise`\<`string`\> |
+| `options` | `Omit`\<`ProviderBaseOptions`, ``"getPassword"``\> |
+
+#### Returns
+
+`Promise`\<`ProviderHotBase`\>
+
+#### Inherited from
+
+ProviderHotBase.initialize
+
+#### Defined in
+
+[src/providers/hot/provider.ts:15](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/hot/provider.ts#L15)
 
 ___
 
@@ -1785,7 +1571,7 @@ Since v3.2.0 - Use `listenerCount` instead.
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[listenerCount](providers.Provider.md#listenercount-1)
+ProviderHotBase.listenerCount
 
 #### Defined in
 
@@ -1894,7 +1680,7 @@ v13.6.0, v12.16.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[on](providers.Provider.md#on-1)
+ProviderHotBase.on
 
 #### Defined in
 
@@ -1916,7 +1702,7 @@ node_modules/@types/node/events.d.ts:303
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[on](providers.Provider.md#on-1)
+ProviderHotBase.on
 
 #### Defined in
 
@@ -2023,7 +1809,7 @@ v11.13.0, v10.16.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[once](providers.Provider.md#once-1)
+ProviderHotBase.once
 
 #### Defined in
 
@@ -2045,7 +1831,7 @@ node_modules/@types/node/events.d.ts:217
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[once](providers.Provider.md#once-1)
+ProviderHotBase.once
 
 #### Defined in
 
@@ -2083,7 +1869,7 @@ v15.4.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[setMaxListeners](providers.Provider.md#setmaxlisteners-1)
+ProviderHotBase.setMaxListeners
 
 #### Defined in
 

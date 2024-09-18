@@ -17,12 +17,12 @@ import {
   lagrangeInterpolation,
   Polynomial,
 } from '../../utils';
-import {Provider} from '../base-provider';
+import {ProviderBase} from '../base-provider';
 import {ProviderBaseOptions, ProviderInterface} from '../types';
 import {ProviderSSSBaseOptions, StorageInterface} from './types';
 
 export class ProviderSSSBase
-  extends Provider<ProviderSSSBaseOptions>
+  extends ProviderBase<ProviderSSSBaseOptions>
   implements ProviderInterface
 {
   /**

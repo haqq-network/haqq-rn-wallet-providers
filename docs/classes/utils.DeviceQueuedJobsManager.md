@@ -41,7 +41,7 @@ So a queue is indeed created for each device, by creating a chain of promises, b
 
 #### Defined in
 
-src/utils/ledger/device-access.ts:130
+[src/utils/ledger/device-access.ts:130](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/device-access.ts#L130)
 
 ## Properties
 
@@ -55,7 +55,7 @@ src/utils/ledger/device-access.ts:130
 
 #### Defined in
 
-src/utils/ledger/device-access.ts:123
+[src/utils/ledger/device-access.ts:123](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/device-access.ts#L123)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-src/utils/ledger/device-access.ts:125
+[src/utils/ledger/device-access.ts:125](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/device-access.ts#L125)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-src/utils/ledger/device-access.ts:128
+[src/utils/ledger/device-access.ts:128](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/device-access.ts#L128)
 
 ## Methods
 
@@ -99,7 +99,7 @@ the latest QueuedJob. If none, return a queued job that can be resolved directly
 
 #### Defined in
 
-src/utils/ledger/device-access.ts:151
+[src/utils/ledger/device-access.ts:151](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/device-access.ts#L151)
 
 ___
 
@@ -128,7 +128,7 @@ the id of the queued job
 
 #### Defined in
 
-src/utils/ledger/device-access.ts:168
+[src/utils/ledger/device-access.ts:168](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/device-access.ts#L168)
 
 ___
 
@@ -144,4 +144,4 @@ Get the singleton instance
 
 #### Defined in
 
-src/utils/ledger/device-access.ts:137
+[src/utils/ledger/device-access.ts:137](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/device-access.ts#L137)

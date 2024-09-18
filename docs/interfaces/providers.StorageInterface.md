@@ -32,7 +32,7 @@
 
 #### Defined in
 
-src/providers/sss/types.ts:4
+[src/providers/sss/types.ts:4](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/sss/types.ts#L4)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-src/providers/sss/types.ts:2
+[src/providers/sss/types.ts:2](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/sss/types.ts#L2)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-src/providers/sss/types.ts:6
+[src/providers/sss/types.ts:6](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/sss/types.ts#L6)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-src/providers/sss/types.ts:10
+[src/providers/sss/types.ts:10](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/sss/types.ts#L10)
 
 ___
 
@@ -107,4 +107,4 @@ ___
 
 #### Defined in
 
-src/providers/sss/types.ts:8
+[src/providers/sss/types.ts:8](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/sss/types.ts#L8)

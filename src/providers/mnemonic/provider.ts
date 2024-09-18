@@ -6,12 +6,12 @@ import EncryptedStorage from 'react-native-encrypted-storage';
 import {ITEM_KEYS, WalletType} from '../../constants';
 import {compressPublicKey} from '../../utils';
 import {getMnemonic} from '../../utils/mnemonic/get-mnemonic';
-import {Provider} from '../base-provider';
+import {ProviderBase} from '../base-provider';
 import {ProviderBaseOptions, ProviderInterface} from '../types';
 import {ProviderMnemonicBaseOptions} from './types';
 
 export class ProviderMnemonicBase
-  extends Provider<ProviderMnemonicBaseOptions>
+  extends ProviderBase<ProviderMnemonicBaseOptions>
   implements ProviderInterface
 {
   static async initialize(

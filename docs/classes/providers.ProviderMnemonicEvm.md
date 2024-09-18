@@ -1,14 +1,14 @@
-[@haqq/rn-wallet-providers - v0.0.1](../README.md) / [Exports](../modules.md) / [providers](../modules/providers.md) / ProviderHotReactNative
+[@haqq/rn-wallet-providers - v0.0.1](../README.md) / [Exports](../modules.md) / [providers](../modules/providers.md) / ProviderMnemonicEvm
 
-# Class: ProviderHotReactNative
+# Class: ProviderMnemonicEvm
 
-[providers](../modules/providers.md).ProviderHotReactNative
+[providers](../modules/providers.md).ProviderMnemonicEvm
 
 ## Hierarchy
 
-- [`Provider`](providers.Provider.md)\<[`ProviderHotOptions`](../modules/providers.md#providerhotoptions)\>
+- `ProviderMnemonicBase`
 
-  ↳ **`ProviderHotReactNative`**
+  ↳ **`ProviderMnemonicEvm`**
 
 ## Implements
 
@@ -18,92 +18,97 @@
 
 ### Constructors
 
-- [constructor](providers.ProviderHotReactNative.md#constructor)
+- [constructor](providers.ProviderMnemonicEvm.md#constructor)
 
 ### Properties
 
-- [\_options](providers.ProviderHotReactNative.md#_options)
-- [captureRejectionSymbol](providers.ProviderHotReactNative.md#capturerejectionsymbol)
-- [captureRejections](providers.ProviderHotReactNative.md#capturerejections)
-- [defaultMaxListeners](providers.ProviderHotReactNative.md#defaultmaxlisteners)
-- [errorMonitor](providers.ProviderHotReactNative.md#errormonitor)
+- [\_options](providers.ProviderMnemonicEvm.md#_options)
+- [captureRejectionSymbol](providers.ProviderMnemonicEvm.md#capturerejectionsymbol)
+- [captureRejections](providers.ProviderMnemonicEvm.md#capturerejections)
+- [defaultMaxListeners](providers.ProviderMnemonicEvm.md#defaultmaxlisteners)
+- [errorMonitor](providers.ProviderMnemonicEvm.md#errormonitor)
 
 ### Methods
 
-- [[captureRejectionSymbol]](providers.ProviderHotReactNative.md#[capturerejectionsymbol])
-- [abort](providers.ProviderHotReactNative.md#abort)
-- [addListener](providers.ProviderHotReactNative.md#addlistener)
-- [catchError](providers.ProviderHotReactNative.md#catcherror)
-- [clean](providers.ProviderHotReactNative.md#clean)
-- [emit](providers.ProviderHotReactNative.md#emit)
-- [eventNames](providers.ProviderHotReactNative.md#eventnames)
-- [getAccountInfo](providers.ProviderHotReactNative.md#getaccountinfo)
-- [getIdentifier](providers.ProviderHotReactNative.md#getidentifier)
-- [getMaxListeners](providers.ProviderHotReactNative.md#getmaxlisteners)
-- [getPrivateKey](providers.ProviderHotReactNative.md#getprivatekey)
-- [listenerCount](providers.ProviderHotReactNative.md#listenercount)
-- [listeners](providers.ProviderHotReactNative.md#listeners)
-- [off](providers.ProviderHotReactNative.md#off)
-- [on](providers.ProviderHotReactNative.md#on)
-- [once](providers.ProviderHotReactNative.md#once)
-- [prependListener](providers.ProviderHotReactNative.md#prependlistener)
-- [prependOnceListener](providers.ProviderHotReactNative.md#prependoncelistener)
-- [rawListeners](providers.ProviderHotReactNative.md#rawlisteners)
-- [removeAllListeners](providers.ProviderHotReactNative.md#removealllisteners)
-- [removeListener](providers.ProviderHotReactNative.md#removelistener)
-- [setMaxListeners](providers.ProviderHotReactNative.md#setmaxlisteners)
-- [signPersonalMessage](providers.ProviderHotReactNative.md#signpersonalmessage)
-- [signTransaction](providers.ProviderHotReactNative.md#signtransaction)
-- [signTypedData](providers.ProviderHotReactNative.md#signtypeddata)
-- [updatePin](providers.ProviderHotReactNative.md#updatepin)
-- [addAbortListener](providers.ProviderHotReactNative.md#addabortlistener)
-- [getEventListeners](providers.ProviderHotReactNative.md#geteventlisteners)
-- [getMaxListeners](providers.ProviderHotReactNative.md#getmaxlisteners-1)
-- [initialize](providers.ProviderHotReactNative.md#initialize)
-- [listenerCount](providers.ProviderHotReactNative.md#listenercount-1)
-- [on](providers.ProviderHotReactNative.md#on-1)
-- [once](providers.ProviderHotReactNative.md#once-1)
-- [setMaxListeners](providers.ProviderHotReactNative.md#setmaxlisteners-1)
+- [[captureRejectionSymbol]](providers.ProviderMnemonicEvm.md#[capturerejectionsymbol])
+- [abort](providers.ProviderMnemonicEvm.md#abort)
+- [addListener](providers.ProviderMnemonicEvm.md#addlistener)
+- [catchError](providers.ProviderMnemonicEvm.md#catcherror)
+- [clean](providers.ProviderMnemonicEvm.md#clean)
+- [emit](providers.ProviderMnemonicEvm.md#emit)
+- [eventNames](providers.ProviderMnemonicEvm.md#eventnames)
+- [getAccountInfo](providers.ProviderMnemonicEvm.md#getaccountinfo)
+- [getIdentifier](providers.ProviderMnemonicEvm.md#getidentifier)
+- [getMaxListeners](providers.ProviderMnemonicEvm.md#getmaxlisteners)
+- [getMnemonicPhrase](providers.ProviderMnemonicEvm.md#getmnemonicphrase)
+- [getPrivateKey](providers.ProviderMnemonicEvm.md#getprivatekey)
+- [isMnemonicSaved](providers.ProviderMnemonicEvm.md#ismnemonicsaved)
+- [listenerCount](providers.ProviderMnemonicEvm.md#listenercount)
+- [listeners](providers.ProviderMnemonicEvm.md#listeners)
+- [off](providers.ProviderMnemonicEvm.md#off)
+- [on](providers.ProviderMnemonicEvm.md#on)
+- [once](providers.ProviderMnemonicEvm.md#once)
+- [prependListener](providers.ProviderMnemonicEvm.md#prependlistener)
+- [prependOnceListener](providers.ProviderMnemonicEvm.md#prependoncelistener)
+- [rawListeners](providers.ProviderMnemonicEvm.md#rawlisteners)
+- [removeAllListeners](providers.ProviderMnemonicEvm.md#removealllisteners)
+- [removeListener](providers.ProviderMnemonicEvm.md#removelistener)
+- [setMaxListeners](providers.ProviderMnemonicEvm.md#setmaxlisteners)
+- [setMnemonicSaved](providers.ProviderMnemonicEvm.md#setmnemonicsaved)
+- [signPersonalMessage](providers.ProviderMnemonicEvm.md#signpersonalmessage)
+- [signTransaction](providers.ProviderMnemonicEvm.md#signtransaction)
+- [signTypedData](providers.ProviderMnemonicEvm.md#signtypeddata)
+- [updatePin](providers.ProviderMnemonicEvm.md#updatepin)
+- [addAbortListener](providers.ProviderMnemonicEvm.md#addabortlistener)
+- [getAccounts](providers.ProviderMnemonicEvm.md#getaccounts)
+- [getEventListeners](providers.ProviderMnemonicEvm.md#geteventlisteners)
+- [getMaxListeners](providers.ProviderMnemonicEvm.md#getmaxlisteners-1)
+- [initialize](providers.ProviderMnemonicEvm.md#initialize)
+- [listenerCount](providers.ProviderMnemonicEvm.md#listenercount-1)
+- [on](providers.ProviderMnemonicEvm.md#on-1)
+- [once](providers.ProviderMnemonicEvm.md#once-1)
+- [setMaxListeners](providers.ProviderMnemonicEvm.md#setmaxlisteners-1)
+- [shareToSeed](providers.ProviderMnemonicEvm.md#sharetoseed)
 
 ## Constructors
 
 ### constructor
 
-• **new ProviderHotReactNative**(`options`)
+• **new ProviderMnemonicEvm**(`options`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `options` | [`ProviderHotOptions`](../modules/providers.md#providerhotoptions) & `ProviderBaseOptions` |
+| `options` | [`ProviderMnemonicBaseOptions`](../modules/providers.md#providermnemonicbaseoptions) & `ProviderBaseOptions` |
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[constructor](providers.Provider.md#constructor)
+ProviderMnemonicBase.constructor
 
 #### Defined in
 
-src/providers/base-provider.ts:16
+[src/providers/base-provider.ts:16](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L16)
 
 ## Properties
 
 ### \_options
 
-• `Protected` **\_options**: [`ProviderHotOptions`](../modules/providers.md#providerhotoptions) & `ProviderBaseOptions`
+• `Protected` **\_options**: [`ProviderMnemonicBaseOptions`](../modules/providers.md#providermnemonicbaseoptions) & `ProviderBaseOptions`
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[_options](providers.Provider.md#_options)
+ProviderMnemonicBase.\_options
 
 #### Defined in
 
-src/providers/base-provider.ts:14
+[src/providers/base-provider.ts:14](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L14)
 
 ___
 
 ### captureRejectionSymbol
 
-▪ `Static` `Readonly` **captureRejectionSymbol**: typeof [`captureRejectionSymbol`](providers.ProviderHotReactNative.md#capturerejectionsymbol)
+▪ `Static` `Readonly` **captureRejectionSymbol**: typeof [`captureRejectionSymbol`](providers.ProviderHotEvm.md#capturerejectionsymbol)
 
 Value: `Symbol.for('nodejs.rejection')`
 
@@ -115,7 +120,7 @@ v13.4.0, v12.16.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[captureRejectionSymbol](providers.Provider.md#capturerejectionsymbol)
+ProviderMnemonicBase.captureRejectionSymbol
 
 #### Defined in
 
@@ -137,7 +142,7 @@ v13.4.0, v12.16.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[captureRejections](providers.Provider.md#capturerejections)
+ProviderMnemonicBase.captureRejections
 
 #### Defined in
 
@@ -191,7 +196,7 @@ v0.11.2
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[defaultMaxListeners](providers.Provider.md#defaultmaxlisteners)
+ProviderMnemonicBase.defaultMaxListeners
 
 #### Defined in
 
@@ -201,7 +206,7 @@ ___
 
 ### errorMonitor
 
-▪ `Static` `Readonly` **errorMonitor**: typeof [`errorMonitor`](providers.ProviderHotReactNative.md#errormonitor)
+▪ `Static` `Readonly` **errorMonitor**: typeof [`errorMonitor`](providers.ProviderHotEvm.md#errormonitor)
 
 This symbol shall be used to install a listener for only monitoring `'error'` events. Listeners installed using this symbol are called before the regular `'error'` listeners are called.
 
@@ -214,7 +219,7 @@ v13.6.0, v12.17.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[errorMonitor](providers.Provider.md#errormonitor)
+ProviderMnemonicBase.errorMonitor
 
 #### Defined in
 
@@ -250,7 +255,7 @@ ProviderInterface.[captureRejectionSymbol]
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[[captureRejectionSymbol]](providers.Provider.md#[capturerejectionsymbol])
+ProviderMnemonicBase.[captureRejectionSymbol]
 
 #### Defined in
 
@@ -272,17 +277,17 @@ ProviderInterface.abort
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[abort](providers.Provider.md#abort)
+ProviderMnemonicBase.abort
 
 #### Defined in
 
-src/providers/base-provider.ts:59
+[src/providers/base-provider.ts:59](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L59)
 
 ___
 
 ### addListener
 
-▸ **addListener**\<`K`\>(`eventName`, `listener`): [`ProviderHotReactNative`](providers.ProviderHotReactNative.md)
+▸ **addListener**\<`K`\>(`eventName`, `listener`): [`ProviderMnemonicEvm`](providers.ProviderMnemonicEvm.md)
 
 Alias for `emitter.on(eventName, listener)`.
 
@@ -301,7 +306,7 @@ Alias for `emitter.on(eventName, listener)`.
 
 #### Returns
 
-[`ProviderHotReactNative`](providers.ProviderHotReactNative.md)
+[`ProviderMnemonicEvm`](providers.ProviderMnemonicEvm.md)
 
 **`Since`**
 
@@ -313,7 +318,7 @@ ProviderInterface.addListener
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[addListener](providers.Provider.md#addlistener)
+ProviderMnemonicBase.addListener
 
 #### Defined in
 
@@ -339,11 +344,11 @@ ___
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[catchError](providers.Provider.md#catcherror)
+ProviderMnemonicBase.catchError
 
 #### Defined in
 
-src/providers/base-provider.ts:48
+[src/providers/base-provider.ts:48](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L48)
 
 ___
 
@@ -359,13 +364,13 @@ ___
 
 ProviderInterface.clean
 
-#### Overrides
+#### Inherited from
 
-[Provider](providers.Provider.md).[clean](providers.Provider.md#clean)
+ProviderMnemonicBase.clean
 
 #### Defined in
 
-src/providers/hot/provider.ts:88
+[src/providers/mnemonic/provider.ts:99](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/mnemonic/provider.ts#L99)
 
 ___
 
@@ -438,7 +443,7 @@ ProviderInterface.emit
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[emit](providers.Provider.md#emit)
+ProviderMnemonicBase.emit
 
 #### Defined in
 
@@ -481,7 +486,7 @@ ProviderInterface.eventNames
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[eventNames](providers.Provider.md#eventnames)
+ProviderMnemonicBase.eventNames
 
 #### Defined in
 
@@ -491,13 +496,13 @@ ___
 
 ### getAccountInfo
 
-▸ **getAccountInfo**(`_hdPath`): `Promise`\<\{ `address`: `string` = ''; `publicKey`: `string` = '' }\>
+▸ **getAccountInfo**(`hdPath`): `Promise`\<\{ `address`: `string` = ''; `publicKey`: `string` = '' }\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `_hdPath` | `string` |
+| `hdPath` | `string` |
 
 #### Returns
 
@@ -507,13 +512,13 @@ ___
 
 ProviderInterface.getAccountInfo
 
-#### Overrides
+#### Inherited from
 
-[Provider](providers.Provider.md).[getAccountInfo](providers.Provider.md#getaccountinfo)
+ProviderMnemonicBase.getAccountInfo
 
 #### Defined in
 
-src/providers/hot/provider.ts:104
+[src/providers/mnemonic/provider.ts:117](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/mnemonic/provider.ts#L117)
 
 ___
 
@@ -529,13 +534,13 @@ ___
 
 ProviderInterface.getIdentifier
 
-#### Overrides
+#### Inherited from
 
-[Provider](providers.Provider.md).[getIdentifier](providers.Provider.md#getidentifier)
+ProviderMnemonicBase.getIdentifier
 
 #### Defined in
 
-src/providers/hot/provider.ts:100
+[src/providers/mnemonic/provider.ts:113](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/mnemonic/provider.ts#L113)
 
 ___
 
@@ -544,7 +549,7 @@ ___
 ▸ **getMaxListeners**(): `number`
 
 Returns the current max listener value for the `EventEmitter` which is either
-set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](providers.ProviderHotReactNative.md#defaultmaxlisteners).
+set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](providers.ProviderMnemonicEvm.md#defaultmaxlisteners).
 
 #### Returns
 
@@ -560,11 +565,33 @@ ProviderInterface.getMaxListeners
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[getMaxListeners](providers.Provider.md#getmaxlisteners)
+ProviderMnemonicBase.getMaxListeners
 
 #### Defined in
 
 node_modules/@types/node/events.d.ts:774
+
+___
+
+### getMnemonicPhrase
+
+▸ **getMnemonicPhrase**(): `Promise`\<`string`\>
+
+Get mnemonic phrase
+
+#### Returns
+
+`Promise`\<`string`\>
+
+mnemonic
+
+#### Inherited from
+
+ProviderMnemonicBase.getMnemonicPhrase
+
+#### Defined in
+
+[src/providers/mnemonic/provider.ts:181](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/mnemonic/provider.ts#L181)
 
 ___
 
@@ -588,11 +615,31 @@ ProviderInterface.getPrivateKey
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[getPrivateKey](providers.Provider.md#getprivatekey)
+ProviderMnemonicBase.getPrivateKey
 
 #### Defined in
 
-src/providers/base-provider.ts:44
+[src/providers/base-provider.ts:44](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L44)
+
+___
+
+### isMnemonicSaved
+
+▸ **isMnemonicSaved**(): `Promise`\<`boolean`\>
+
+Check is mnemonic saved
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+#### Inherited from
+
+ProviderMnemonicBase.isMnemonicSaved
+
+#### Defined in
+
+[src/providers/mnemonic/provider.ts:155](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/mnemonic/provider.ts#L155)
 
 ___
 
@@ -631,7 +678,7 @@ ProviderInterface.listenerCount
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[listenerCount](providers.Provider.md#listenercount)
+ProviderMnemonicBase.listenerCount
 
 #### Defined in
 
@@ -679,7 +726,7 @@ ProviderInterface.listeners
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[listeners](providers.Provider.md#listeners)
+ProviderMnemonicBase.listeners
 
 #### Defined in
 
@@ -689,7 +736,7 @@ ___
 
 ### off
 
-▸ **off**\<`K`\>(`eventName`, `listener`): [`ProviderHotReactNative`](providers.ProviderHotReactNative.md)
+▸ **off**\<`K`\>(`eventName`, `listener`): [`ProviderMnemonicEvm`](providers.ProviderMnemonicEvm.md)
 
 Alias for `emitter.removeListener()`.
 
@@ -708,7 +755,7 @@ Alias for `emitter.removeListener()`.
 
 #### Returns
 
-[`ProviderHotReactNative`](providers.ProviderHotReactNative.md)
+[`ProviderMnemonicEvm`](providers.ProviderMnemonicEvm.md)
 
 **`Since`**
 
@@ -720,7 +767,7 @@ ProviderInterface.off
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[off](providers.Provider.md#off)
+ProviderMnemonicBase.off
 
 #### Defined in
 
@@ -730,7 +777,7 @@ ___
 
 ### on
 
-▸ **on**\<`K`\>(`eventName`, `listener`): [`ProviderHotReactNative`](providers.ProviderHotReactNative.md)
+▸ **on**\<`K`\>(`eventName`, `listener`): [`ProviderMnemonicEvm`](providers.ProviderMnemonicEvm.md)
 
 Adds the `listener` function to the end of the listeners array for the event
 named `eventName`. No checks are made to see if the `listener` has already
@@ -774,7 +821,7 @@ myEE.emit('foo');
 
 #### Returns
 
-[`ProviderHotReactNative`](providers.ProviderHotReactNative.md)
+[`ProviderMnemonicEvm`](providers.ProviderMnemonicEvm.md)
 
 **`Since`**
 
@@ -786,7 +833,7 @@ ProviderInterface.on
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[on](providers.Provider.md#on)
+ProviderMnemonicBase.on
 
 #### Defined in
 
@@ -796,7 +843,7 @@ ___
 
 ### once
 
-▸ **once**\<`K`\>(`eventName`, `listener`): [`ProviderHotReactNative`](providers.ProviderHotReactNative.md)
+▸ **once**\<`K`\>(`eventName`, `listener`): [`ProviderMnemonicEvm`](providers.ProviderMnemonicEvm.md)
 
 Adds a **one-time** `listener` function for the event named `eventName`. The
 next time `eventName` is triggered, this listener is removed and then invoked.
@@ -838,7 +885,7 @@ myEE.emit('foo');
 
 #### Returns
 
-[`ProviderHotReactNative`](providers.ProviderHotReactNative.md)
+[`ProviderMnemonicEvm`](providers.ProviderMnemonicEvm.md)
 
 **`Since`**
 
@@ -850,7 +897,7 @@ ProviderInterface.once
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[once](providers.Provider.md#once)
+ProviderMnemonicBase.once
 
 #### Defined in
 
@@ -860,7 +907,7 @@ ___
 
 ### prependListener
 
-▸ **prependListener**\<`K`\>(`eventName`, `listener`): [`ProviderHotReactNative`](providers.ProviderHotReactNative.md)
+▸ **prependListener**\<`K`\>(`eventName`, `listener`): [`ProviderMnemonicEvm`](providers.ProviderMnemonicEvm.md)
 
 Adds the `listener` function to the _beginning_ of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
@@ -890,7 +937,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderHotReactNative`](providers.ProviderHotReactNative.md)
+[`ProviderMnemonicEvm`](providers.ProviderMnemonicEvm.md)
 
 **`Since`**
 
@@ -902,7 +949,7 @@ ProviderInterface.prependListener
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[prependListener](providers.Provider.md#prependlistener)
+ProviderMnemonicBase.prependListener
 
 #### Defined in
 
@@ -912,7 +959,7 @@ ___
 
 ### prependOnceListener
 
-▸ **prependOnceListener**\<`K`\>(`eventName`, `listener`): [`ProviderHotReactNative`](providers.ProviderHotReactNative.md)
+▸ **prependOnceListener**\<`K`\>(`eventName`, `listener`): [`ProviderMnemonicEvm`](providers.ProviderMnemonicEvm.md)
 
 Adds a **one-time**`listener` function for the event named `eventName` to the _beginning_ of the listeners array. The next time `eventName` is triggered, this
 listener is removed, and then invoked.
@@ -940,7 +987,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderHotReactNative`](providers.ProviderHotReactNative.md)
+[`ProviderMnemonicEvm`](providers.ProviderMnemonicEvm.md)
 
 **`Since`**
 
@@ -952,7 +999,7 @@ ProviderInterface.prependOnceListener
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[prependOnceListener](providers.Provider.md#prependoncelistener)
+ProviderMnemonicBase.prependOnceListener
 
 #### Defined in
 
@@ -1018,7 +1065,7 @@ ProviderInterface.rawListeners
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[rawListeners](providers.Provider.md#rawlisteners)
+ProviderMnemonicBase.rawListeners
 
 #### Defined in
 
@@ -1028,7 +1075,7 @@ ___
 
 ### removeAllListeners
 
-▸ **removeAllListeners**(`eventName?`): [`ProviderHotReactNative`](providers.ProviderHotReactNative.md)
+▸ **removeAllListeners**(`eventName?`): [`ProviderMnemonicEvm`](providers.ProviderMnemonicEvm.md)
 
 Removes all listeners, or those of the specified `eventName`.
 
@@ -1046,7 +1093,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderHotReactNative`](providers.ProviderHotReactNative.md)
+[`ProviderMnemonicEvm`](providers.ProviderMnemonicEvm.md)
 
 **`Since`**
 
@@ -1058,7 +1105,7 @@ ProviderInterface.removeAllListeners
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[removeAllListeners](providers.Provider.md#removealllisteners)
+ProviderMnemonicBase.removeAllListeners
 
 #### Defined in
 
@@ -1068,7 +1115,7 @@ ___
 
 ### removeListener
 
-▸ **removeListener**\<`K`\>(`eventName`, `listener`): [`ProviderHotReactNative`](providers.ProviderHotReactNative.md)
+▸ **removeListener**\<`K`\>(`eventName`, `listener`): [`ProviderMnemonicEvm`](providers.ProviderMnemonicEvm.md)
 
 Removes the specified `listener` from the listener array for the event named `eventName`.
 
@@ -1165,7 +1212,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderHotReactNative`](providers.ProviderHotReactNative.md)
+[`ProviderMnemonicEvm`](providers.ProviderMnemonicEvm.md)
 
 **`Since`**
 
@@ -1177,7 +1224,7 @@ ProviderInterface.removeListener
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[removeListener](providers.Provider.md#removelistener)
+ProviderMnemonicBase.removeListener
 
 #### Defined in
 
@@ -1187,7 +1234,7 @@ ___
 
 ### setMaxListeners
 
-▸ **setMaxListeners**(`n`): [`ProviderHotReactNative`](providers.ProviderHotReactNative.md)
+▸ **setMaxListeners**(`n`): [`ProviderMnemonicEvm`](providers.ProviderMnemonicEvm.md)
 
 By default `EventEmitter`s will print a warning if more than `10` listeners are
 added for a particular event. This is a useful default that helps finding
@@ -1204,7 +1251,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderHotReactNative`](providers.ProviderHotReactNative.md)
+[`ProviderMnemonicEvm`](providers.ProviderMnemonicEvm.md)
 
 **`Since`**
 
@@ -1216,11 +1263,31 @@ ProviderInterface.setMaxListeners
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[setMaxListeners](providers.Provider.md#setmaxlisteners)
+ProviderMnemonicBase.setMaxListeners
 
 #### Defined in
 
 node_modules/@types/node/events.d.ts:768
+
+___
+
+### setMnemonicSaved
+
+▸ **setMnemonicSaved**(): `Promise`\<`void`\>
+
+Set mnemonic saved
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Inherited from
+
+ProviderMnemonicBase.setMnemonicSaved
+
+#### Defined in
+
+[src/providers/mnemonic/provider.ts:166](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/mnemonic/provider.ts#L166)
 
 ___
 
@@ -1245,23 +1312,23 @@ ProviderInterface.signPersonalMessage
 
 #### Overrides
 
-[Provider](providers.Provider.md).[signPersonalMessage](providers.Provider.md#signpersonalmessage)
+ProviderMnemonicBase.signPersonalMessage
 
 #### Defined in
 
-src/providers/hot/provider.ts:160
+[src/providers/mnemonic/evm-provider.ts:66](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/mnemonic/evm-provider.ts#L66)
 
 ___
 
 ### signTransaction
 
-▸ **signTransaction**(`_hdPath`, `transaction`): `Promise`\<`string`\>
+▸ **signTransaction**(`hdPath`, `transaction`): `Promise`\<`string`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `_hdPath` | `string` |
+| `hdPath` | `string` |
 | `transaction` | `TransactionRequest` |
 
 #### Returns
@@ -1274,23 +1341,23 @@ ProviderInterface.signTransaction
 
 #### Overrides
 
-[Provider](providers.Provider.md).[signTransaction](providers.Provider.md#signtransaction)
+ProviderMnemonicBase.signTransaction
 
 #### Defined in
 
-src/providers/hot/provider.ts:126
+[src/providers/mnemonic/evm-provider.ts:24](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/mnemonic/evm-provider.ts#L24)
 
 ___
 
 ### signTypedData
 
-▸ **signTypedData**(`_hdPath`, `typedData`): `Promise`\<`string`\>
+▸ **signTypedData**(`hdPath`, `typedData`): `Promise`\<`string`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `_hdPath` | `string` |
+| `hdPath` | `string` |
 | `typedData` | `TypedData` |
 
 #### Returns
@@ -1303,11 +1370,11 @@ ProviderInterface.signTypedData
 
 #### Overrides
 
-[Provider](providers.Provider.md).[signTypedData](providers.Provider.md#signtypeddata)
+ProviderMnemonicBase.signTypedData
 
 #### Defined in
 
-src/providers/hot/provider.ts:197
+[src/providers/mnemonic/evm-provider.ts:111](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/mnemonic/evm-provider.ts#L111)
 
 ___
 
@@ -1329,13 +1396,13 @@ ___
 
 ProviderInterface.updatePin
 
-#### Overrides
+#### Inherited from
 
-[Provider](providers.Provider.md).[updatePin](providers.Provider.md#updatepin)
+ProviderMnemonicBase.updatePin
 
 #### Defined in
 
-src/providers/hot/provider.ts:61
+[src/providers/mnemonic/provider.ts:78](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/mnemonic/provider.ts#L78)
 
 ___
 
@@ -1392,11 +1459,29 @@ v20.5.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[addAbortListener](providers.Provider.md#addabortlistener)
+ProviderMnemonicBase.addAbortListener
 
 #### Defined in
 
 node_modules/@types/node/events.d.ts:437
+
+___
+
+### getAccounts
+
+▸ `Static` **getAccounts**(): `Promise`\<`string`[]\>
+
+#### Returns
+
+`Promise`\<`string`[]\>
+
+#### Inherited from
+
+ProviderMnemonicBase.getAccounts
+
+#### Defined in
+
+[src/providers/mnemonic/provider.ts:61](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/mnemonic/provider.ts#L61)
 
 ___
 
@@ -1446,7 +1531,7 @@ v15.2.0, v14.17.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[getEventListeners](providers.Provider.md#geteventlisteners)
+ProviderMnemonicBase.getEventListeners
 
 #### Defined in
 
@@ -1500,7 +1585,7 @@ v19.9.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[getMaxListeners](providers.Provider.md#getmaxlisteners-1)
+ProviderMnemonicBase.getMaxListeners
 
 #### Defined in
 
@@ -1510,23 +1595,27 @@ ___
 
 ### initialize
 
-▸ `Static` **initialize**(`privateKey`, `getPassword`, `options`): `Promise`\<[`ProviderHotReactNative`](providers.ProviderHotReactNative.md)\>
+▸ `Static` **initialize**(`mnemonic`, `getPassword`, `options`): `Promise`\<`ProviderMnemonicBase`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `privateKey` | `string` |
+| `mnemonic` | `string` |
 | `getPassword` | () => `Promise`\<`string`\> |
 | `options` | `Omit`\<`ProviderBaseOptions`, ``"getPassword"``\> |
 
 #### Returns
 
-`Promise`\<[`ProviderHotReactNative`](providers.ProviderHotReactNative.md)\>
+`Promise`\<`ProviderMnemonicBase`\>
+
+#### Inherited from
+
+ProviderMnemonicBase.initialize
 
 #### Defined in
 
-src/providers/hot/provider.ts:31
+[src/providers/mnemonic/provider.ts:17](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/mnemonic/provider.ts#L17)
 
 ___
 
@@ -1567,7 +1656,7 @@ Since v3.2.0 - Use `listenerCount` instead.
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[listenerCount](providers.Provider.md#listenercount-1)
+ProviderMnemonicBase.listenerCount
 
 #### Defined in
 
@@ -1676,7 +1765,7 @@ v13.6.0, v12.16.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[on](providers.Provider.md#on-1)
+ProviderMnemonicBase.on
 
 #### Defined in
 
@@ -1698,7 +1787,7 @@ node_modules/@types/node/events.d.ts:303
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[on](providers.Provider.md#on-1)
+ProviderMnemonicBase.on
 
 #### Defined in
 
@@ -1805,7 +1894,7 @@ v11.13.0, v10.16.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[once](providers.Provider.md#once-1)
+ProviderMnemonicBase.once
 
 #### Defined in
 
@@ -1827,7 +1916,7 @@ node_modules/@types/node/events.d.ts:217
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[once](providers.Provider.md#once-1)
+ProviderMnemonicBase.once
 
 #### Defined in
 
@@ -1865,8 +1954,32 @@ v15.4.0
 
 #### Inherited from
 
-[Provider](providers.Provider.md).[setMaxListeners](providers.Provider.md#setmaxlisteners-1)
+ProviderMnemonicBase.setMaxListeners
 
 #### Defined in
 
 node_modules/@types/node/events.d.ts:402
+
+___
+
+### shareToSeed
+
+▸ `Static` **shareToSeed**(`share`): `Promise`\<`string`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `share` | `Share` |
+
+#### Returns
+
+`Promise`\<`string`\>
+
+#### Inherited from
+
+ProviderMnemonicBase.shareToSeed
+
+#### Defined in
+
+[src/providers/mnemonic/provider.ts:69](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/mnemonic/provider.ts#L69)

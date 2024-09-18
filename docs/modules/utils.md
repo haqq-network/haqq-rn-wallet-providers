@@ -70,7 +70,7 @@
 
 #### Defined in
 
-src/utils/ledger/commands/list-apps.ts:3
+[src/utils/ledger/commands/list-apps.ts:3](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/commands/list-apps.ts#L3)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-src/utils/ledger/device-access.ts:107
+[src/utils/ledger/device-access.ts:107](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/device-access.ts#L107)
 
 ## Functions
 
@@ -111,7 +111,7 @@ base64 encoded public key
 
 #### Defined in
 
-src/utils/base/base64-public-key.ts:8
+[src/utils/base/base64-public-key.ts:8](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/base/base64-public-key.ts#L8)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-src/utils/base/calc-typed-data-signature-v.ts:1
+[src/utils/base/calc-typed-data-signature-v.ts:1](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/base/calc-typed-data-signature-v.ts#L1)
 
 ___
 
@@ -151,7 +151,7 @@ ___
 
 #### Defined in
 
-src/utils/ledger/device-access.ts:96
+[src/utils/ledger/device-access.ts:96](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/device-access.ts#L96)
 
 ___
 
@@ -175,7 +175,7 @@ compressed public key
 
 #### Defined in
 
-src/utils/base/compress-public-key.ts:6
+[src/utils/base/compress-public-key.ts:6](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/base/compress-public-key.ts#L6)
 
 ___
 
@@ -198,7 +198,7 @@ get cosmos address
 
 #### Defined in
 
-src/utils/base/cosmos-address.ts:8
+[src/utils/base/cosmos-address.ts:8](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/base/cosmos-address.ts#L8)
 
 ___
 
@@ -218,7 +218,7 @@ ___
 
 #### Defined in
 
-src/utils/ledger/device-access.ts:338
+[src/utils/ledger/device-access.ts:338](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/device-access.ts#L338)
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-src/utils/ledger/commands/get-app-and-version.ts:3
+[src/utils/ledger/commands/get-app-and-version.ts:3](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/commands/get-app-and-version.ts#L3)
 
 ___
 
@@ -252,7 +252,7 @@ ___
 
 #### Defined in
 
-src/utils/ledger/get-ble-manager.ts:5
+[src/utils/ledger/get-ble-manager.ts:5](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/get-ble-manager.ts#L5)
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 #### Defined in
 
-src/utils/ledger/get-device-connection.ts:11
+[src/utils/ledger/get-device-connection.ts:11](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/get-device-connection.ts#L11)
 
 ___
 
@@ -293,7 +293,7 @@ ___
 
 #### Defined in
 
-src/utils/mnemonic/get-mnemonic.ts:7
+[src/utils/mnemonic/get-mnemonic.ts:7](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/mnemonic/get-mnemonic.ts#L7)
 
 ___
 
@@ -314,7 +314,7 @@ ___
 
 #### Defined in
 
-src/utils/hot/get-private-key.ts:6
+[src/utils/hot/get-private-key.ts:6](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/hot/get-private-key.ts#L6)
 
 ___
 
@@ -334,7 +334,7 @@ ___
 
 #### Defined in
 
-src/utils/keystone/get-registry-item.ts:5
+[src/utils/keystone/get-registry-item.ts:5](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/keystone/get-registry-item.ts#L5)
 
 ___
 
@@ -356,7 +356,7 @@ ___
 
 #### Defined in
 
-src/utils/sss/get-seed.ts:12
+[src/utils/sss/get-seed.ts:12](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/sss/get-seed.ts#L12)
 
 ___
 
@@ -376,7 +376,7 @@ ___
 
 #### Defined in
 
-src/utils/ledger/commands/get-version.ts:3
+[src/utils/ledger/commands/get-version.ts:3](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/commands/get-version.ts#L3)
 
 ___
 
@@ -400,7 +400,7 @@ Byte array like
 
 #### Defined in
 
-src/utils/base/hex-string-to-byte-array.ts:6
+[src/utils/base/hex-string-to-byte-array.ts:6](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/base/hex-string-to-byte-array.ts#L6)
 
 ___
 
@@ -420,7 +420,7 @@ item is CryptoAccount
 
 #### Defined in
 
-src/utils/keystone/keystone-crypto-account-type.ts:11
+[src/utils/keystone/keystone-crypto-account-type.ts:11](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/keystone/keystone-crypto-account-type.ts#L11)
 
 ___
 
@@ -440,7 +440,7 @@ item is CryptoHDKey
 
 #### Defined in
 
-src/utils/keystone/keystone-crypto-account-type.ts:7
+[src/utils/keystone/keystone-crypto-account-type.ts:7](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/keystone/keystone-crypto-account-type.ts#L7)
 
 ___
 
@@ -460,7 +460,7 @@ ___
 
 #### Defined in
 
-src/utils/ledger/commands/suggest-app.ts:7
+[src/utils/ledger/commands/suggest-app.ts:7](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/commands/suggest-app.ts#L7)
 
 ___
 
@@ -480,7 +480,7 @@ err is ProviderKeystoneError
 
 #### Defined in
 
-src/utils/keystone/error.ts:16
+[src/utils/keystone/error.ts:16](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/keystone/error.ts#L16)
 
 ___
 
@@ -500,7 +500,7 @@ ___
 
 #### Defined in
 
-src/utils/base/join-signature.ts:1
+[src/utils/base/join-signature.ts:1](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/base/join-signature.ts#L1)
 
 ___
 
@@ -521,7 +521,7 @@ ___
 
 #### Defined in
 
-src/utils/sss/lagrange-interpolation.ts:4
+[src/utils/sss/lagrange-interpolation.ts:4](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/sss/lagrange-interpolation.ts#L4)
 
 ___
 
@@ -541,7 +541,7 @@ ___
 
 #### Defined in
 
-src/utils/ledger/commands/list-apps.ts:11
+[src/utils/ledger/commands/list-apps.ts:11](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/commands/list-apps.ts#L11)
 
 ___
 
@@ -562,7 +562,7 @@ ___
 
 #### Defined in
 
-src/utils/ledger/commands/open-app.ts:3
+[src/utils/ledger/commands/open-app.ts:3](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/commands/open-app.ts#L3)
 
 ___
 
@@ -587,7 +587,7 @@ ___
 
 #### Defined in
 
-src/utils/base/prepare-hashed-eip712-data.ts:4
+[src/utils/base/prepare-hashed-eip712-data.ts:4](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/base/prepare-hashed-eip712-data.ts#L4)
 
 ___
 
@@ -607,7 +607,7 @@ ___
 
 #### Defined in
 
-src/utils/ledger/commands/quit-app.ts:3
+[src/utils/ledger/commands/quit-app.ts:3](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/commands/quit-app.ts#L3)
 
 ___
 
@@ -639,7 +639,7 @@ ___
 
 #### Defined in
 
-src/utils/ledger/device-access.ts:354
+[src/utils/ledger/device-access.ts:354](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/device-access.ts#L354)
 
 ___
 
@@ -660,7 +660,7 @@ ___
 
 #### Defined in
 
-src/utils/ledger/scan-devices.ts:5
+[src/utils/ledger/scan-devices.ts:5](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/scan-devices.ts#L5)
 
 ___
 
@@ -680,7 +680,7 @@ ___
 
 #### Defined in
 
-src/utils/ledger/device-access.ts:48
+[src/utils/ledger/device-access.ts:48](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/device-access.ts#L48)
 
 ___
 
@@ -700,7 +700,7 @@ ___
 
 #### Defined in
 
-src/utils/ledger/sleep.ts:1
+[src/utils/ledger/sleep.ts:1](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/sleep.ts#L1)
 
 ___
 
@@ -724,7 +724,7 @@ Byte array like for input string
 
 #### Defined in
 
-src/utils/base/string-to-utf8-bytes.ts:8
+[src/utils/base/string-to-utf8-bytes.ts:8](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/base/string-to-utf8-bytes.ts#L8)
 
 ___
 
@@ -745,7 +745,7 @@ ___
 
 #### Defined in
 
-src/utils/ledger/commands/suggest-app.ts:9
+[src/utils/ledger/commands/suggest-app.ts:9](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/commands/suggest-app.ts#L9)
 
 ___
 
@@ -759,7 +759,7 @@ ___
 
 #### Defined in
 
-src/utils/ledger/try-to-init-bt.ts:6
+[src/utils/ledger/try-to-init-bt.ts:6](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/try-to-init-bt.ts#L6)
 
 ___
 
@@ -801,7 +801,7 @@ Provides a Transport instance to a given job
 
 #### Defined in
 
-src/utils/ledger/device-access.ts:183
+[src/utils/ledger/device-access.ts:183](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/device-access.ts#L183)
 
 ___
 
@@ -840,4 +840,4 @@ ___
 
 #### Defined in
 
-src/utils/ledger/device-access.ts:369
+[src/utils/ledger/device-access.ts:369](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/ledger/device-access.ts#L369)
