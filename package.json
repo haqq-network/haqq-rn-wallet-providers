@@ -13,7 +13,7 @@
   "scripts": {
     "test": "jest --config jestconfig.json --passWithNoTests",
     "build": "rm -rf ./dist && tsc",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "typescript:check": "tsc",
     "prettier:check": "prettier --check ./src",
@@ -37,7 +37,6 @@
   },
   "peerDependencies": {
     "@haqq/encryption-react-native": "*",
-    "@haqq/provider-base": "*",
     "@haqq/provider-web3-utils": "*",
     "@haqq/shared-react-native": "*",
     "react": "*",
@@ -47,7 +46,6 @@
   },
   "devDependencies": {
     "@haqq/encryption-react-native": "^0.0.3",
-    "@haqq/provider-base": "0.0.23",
     "@haqq/provider-web3-utils": "^0.0.13",
     "@haqq/shared-react-native": "^0.0.8",
     "@ledgerhq/types-devices": "^6.23.0",

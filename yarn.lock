@@ -1104,15 +1104,6 @@
     polyfill-crypto.getrandomvalues "^1.0.0"
     react-native-aes-crypto "2.1.0"
 
-"@haqq/provider-base@0.0.23":
-  version "0.0.23"
-  resolved "https://registry.yarnpkg.com/@haqq/provider-base/-/provider-base-0.0.23.tgz#236fb9582e4c385fa12a6f2391b7a13d9abc010b"
-  integrity sha512-azatdWYFK/vS5OMtFslsHt0MXrQumX3TIk/tjcQulhDFkUngDqderHttNMueC0NU0yPWMg2ot/Za+q6VvG5tWg==
-  dependencies:
-    bech32-converting "^1.0.9"
-    ethers "^5.7.2"
-    events "^3.3.0"
-
 "@haqq/provider-web3-utils@^0.0.13":
   version "0.0.13"
   resolved "https://registry.yarnpkg.com/@haqq/provider-web3-utils/-/provider-web3-utils-0.0.13.tgz#afcf75bce060e0bd9ef07d59b612fdd5941976ef"
