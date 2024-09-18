@@ -7,7 +7,7 @@ export type Device = {
   name: string | null;
 };
 
-export type ProviderLedgerReactNativeOptions = {
+export type ProviderLedgerBaseOptions = {
   deviceId: string;
   appName?: string;
 };

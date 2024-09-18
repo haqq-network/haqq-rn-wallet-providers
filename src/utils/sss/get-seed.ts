@@ -1,4 +1,3 @@
-import {ITEM_KEYS, WalletType} from '../../constants';
 import {
   generateMnemonicFromEntropy,
   seedFromMnemonic,
@@ -6,8 +5,9 @@ import {
 import {decryptShare} from '@haqq/shared-react-native';
 import BN from 'bn.js';
 import EncryptedStorage from 'react-native-encrypted-storage';
-import {lagrangeInterpolation} from './lagrange-interpolation';
+import {ITEM_KEYS, WalletType} from '../../constants';
 import {StorageInterface} from '../../providers/sss/types';
+import {lagrangeInterpolation} from './lagrange-interpolation';
 
 export async function getSeed(
   account: string,

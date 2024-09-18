@@ -1,3 +1,4 @@
+import EventEmitter from 'events';
 import {
   BytesLike,
   ProviderBaseOptions,
@@ -5,7 +6,6 @@ import {
   TransactionRequest,
   TypedData,
 } from './types';
-import EventEmitter from 'events';
 
 export class Provider<T extends object>
   extends EventEmitter

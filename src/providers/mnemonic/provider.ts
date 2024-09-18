@@ -1,44 +1,24 @@
-import {hexConcat} from '@ethersproject/bytes';
-import {serialize, UnsignedTransaction} from '@ethersproject/transactions';
-import {
-  accountInfo,
-  derive,
-  seedFromEntropy,
-  sign,
-} from '@haqq/provider-web3-utils';
+import {accountInfo, derive, seedFromEntropy} from '@haqq/provider-web3-utils';
 import {generateEntropy} from '@haqq/provider-web3-utils/src/native-modules';
 import {encryptShare, Share} from '@haqq/shared-react-native';
 import {entropyToMnemonic, mnemonicToEntropy, mnemonicToSeed} from 'bip39';
 import EncryptedStorage from 'react-native-encrypted-storage';
-import {getMnemonic} from '../../utils/mnemonic/get-mnemonic';
-import {ProviderMnemonicOptions} from './types';
-import {Provider} from '../base-provider';
-import {
-  BytesLike,
-  ProviderBaseOptions,
-  ProviderInterface,
-  TransactionRequest,
-  TypedData,
-} from '../types';
 import {ITEM_KEYS, WalletType} from '../../constants';
-import {
-  calcTypedDataSignatureV,
-  compressPublicKey,
-  hexStringToByteArray,
-  joinSignature,
-  prepareHashedEip712Data,
-  stringToUtf8Bytes,
-} from '../../utils';
+import {compressPublicKey} from '../../utils';
+import {getMnemonic} from '../../utils/mnemonic/get-mnemonic';
+import {Provider} from '../base-provider';
+import {ProviderBaseOptions, ProviderInterface} from '../types';
+import {ProviderMnemonicBaseOptions} from './types';
 
-export class ProviderMnemonicReactNative
-  extends Provider<ProviderMnemonicOptions>
+export class ProviderMnemonicBase
+  extends Provider<ProviderMnemonicBaseOptions>
   implements ProviderInterface
 {
   static async initialize(
     mnemonic: string | null,
     getPassword: () => Promise<string>,
     options: Omit<ProviderBaseOptions, 'getPassword'>,
-  ): Promise<ProviderMnemonicReactNative> {
+  ): Promise<ProviderMnemonicBase> {
     const password = await getPassword();
 
     const entropy =
@@ -64,14 +44,14 @@ export class ProviderMnemonicReactNative
       JSON.stringify(privateData),
     );
 
-    const accounts = await ProviderMnemonicReactNative.getAccounts();
+    const accounts = await ProviderMnemonicBase.getAccounts();
 
     await EncryptedStorage.setItem(
       `${ITEM_KEYS[WalletType.mnemonic]}_accounts`,
       JSON.stringify(accounts.concat(address.toLowerCase())),
     );
 
-    return new ProviderMnemonicReactNative({
+    return new ProviderMnemonicBase({
       ...options,
       getPassword,
       account: address.toLowerCase(),
@@ -146,7 +126,7 @@ export class ProviderMnemonicReactNative
         throw new Error('seed_not_found');
       }
 
-      const seed = await ProviderMnemonicReactNative.shareToSeed(share);
+      const seed = await ProviderMnemonicBase.shareToSeed(share);
 
       const privateKey = await derive(seed, hdPath);
 
@@ -167,131 +147,6 @@ export class ProviderMnemonicReactNative
       }
     }
     return resp;
-  }
-
-  async signTransaction(
-    hdPath: string,
-    transaction: TransactionRequest,
-  ): Promise<string> {
-    let resp = '';
-    try {
-      const share = await getMnemonic(
-        this._options.account,
-        this._options.getPassword,
-      );
-
-      if (!share) {
-        throw new Error('seed_not_found');
-      }
-
-      const seed = await ProviderMnemonicReactNative.shareToSeed(share);
-
-      const privateKey = await derive(seed, hdPath);
-
-      if (!privateKey) {
-        throw new Error('private_key_not_found');
-      }
-
-      const signature = await sign(
-        privateKey,
-        serialize(transaction as UnsignedTransaction),
-      );
-
-      const sig = hexStringToByteArray(signature);
-
-      resp = serialize(transaction as UnsignedTransaction, sig);
-
-      this.emit('signTransaction', true);
-    } catch (e) {
-      if (e instanceof Error) {
-        this.catchError(e, 'signTransaction');
-      }
-    }
-
-    return resp;
-  }
-
-  async signPersonalMessage(
-    hdPath: string,
-    message: BytesLike | string,
-  ): Promise<string> {
-    let resp = '';
-    try {
-      const share = await getMnemonic(
-        this._options.account,
-        this._options.getPassword,
-      );
-
-      if (!share) {
-        throw new Error('seed_not_found');
-      }
-
-      const seed = await ProviderMnemonicReactNative.shareToSeed(share);
-
-      const privateKey = await derive(seed, hdPath);
-
-      if (!privateKey) {
-        throw new Error('private_key_not_found');
-      }
-
-      const m = Array.from(
-        typeof message === 'string' ? stringToUtf8Bytes(message) : message,
-      );
-
-      const hash = Buffer.from(
-        [
-          25, 69, 116, 104, 101, 114, 101, 117, 109, 32, 83, 105, 103, 110, 101,
-          100, 32, 77, 101, 115, 115, 97, 103, 101, 58, 10,
-        ].concat(stringToUtf8Bytes(String(message.length)), m),
-      ).toString('hex');
-      const signature = await sign(privateKey, hash);
-      resp = '0x' + joinSignature(signature);
-      this.emit('signTransaction', true);
-    } catch (e) {
-      if (e instanceof Error) {
-        this.catchError(e, 'signTransaction');
-      }
-    }
-
-    return resp;
-  }
-
-  async signTypedData(hdPath: string, typedData: TypedData): Promise<string> {
-    let response = '';
-    try {
-      const share = await getMnemonic(
-        this._options.account,
-        this._options.getPassword,
-      );
-
-      if (!share) {
-        throw new Error('seed_not_found');
-      }
-
-      const seed = await ProviderMnemonicReactNative.shareToSeed(share);
-
-      const privateKey = await derive(seed, hdPath);
-
-      if (!privateKey) {
-        throw new Error('private_key_not_found');
-      }
-
-      const {domainSeparatorHex, hashStructMessageHex} =
-        prepareHashedEip712Data(typedData);
-      const concatHash = hexConcat([
-        '0x1901',
-        domainSeparatorHex,
-        hashStructMessageHex,
-      ]);
-      response = await sign(privateKey, concatHash);
-      this.emit('signTypedData', true);
-    } catch (e) {
-      if (e instanceof Error) {
-        this.catchError(e, 'signTypedData');
-      }
-    }
-
-    return calcTypedDataSignatureV(response);
   }
 
   /**

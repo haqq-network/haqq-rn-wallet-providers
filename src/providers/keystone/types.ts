@@ -10,7 +10,7 @@ export type KeystoneAwaitForSignReturnType = {
   signatureHex: string;
 };
 
-export type ProviderKeystoneReactNativeOptions = {
+export type ProviderKeystoneBaseOptions = {
   qrCBORHex: string;
   awaitForSign(
     params: KeystoneAwaitForSignParams,

@@ -1,4 +1,4 @@
-export type ProviderMnemonicOptions = {
+export type ProviderMnemonicBaseOptions = {
   account: string;
   getPassword: () => Promise<string>;
 };

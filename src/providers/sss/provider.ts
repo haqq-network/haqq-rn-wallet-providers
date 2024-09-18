@@ -1,11 +1,4 @@
-import {hexConcat} from '@ethersproject/bytes';
-import {serialize, UnsignedTransaction} from '@ethersproject/transactions';
-import {
-  accountInfo,
-  derive,
-  generateEntropy,
-  sign,
-} from '@haqq/provider-web3-utils';
+import {accountInfo, derive, generateEntropy} from '@haqq/provider-web3-utils';
 import {
   decryptShare,
   encryptShare,
@@ -17,14 +10,19 @@ import {
 } from '@haqq/shared-react-native';
 import BN from 'bn.js';
 import EncryptedStorage from 'react-native-encrypted-storage';
-import {ProviderSSSOptions, StorageInterface} from './types';
+import {ITEM_KEYS, WalletType} from '../../constants';
+import {
+  compressPublicKey,
+  getSeed,
+  lagrangeInterpolation,
+  Polynomial,
+} from '../../utils';
 import {Provider} from '../base-provider';
-import {BytesLike, ProviderBaseOptions, ProviderInterface, TransactionRequest, TypedData} from '../types';
-import { calcTypedDataSignatureV, compressPublicKey, getSeed, hexStringToByteArray, joinSignature, lagrangeInterpolation, Polynomial, prepareHashedEip712Data, stringToUtf8Bytes } from '../../utils';
-import { ITEM_KEYS, WalletType } from '../../constants';
+import {ProviderBaseOptions, ProviderInterface} from '../types';
+import {ProviderSSSBaseOptions, StorageInterface} from './types';
 
-export class ProviderSSSReactNative
-  extends Provider<ProviderSSSOptions>
+export class ProviderSSSBase
+  extends Provider<ProviderSSSBaseOptions>
   implements ProviderInterface
 {
   /**
@@ -52,7 +50,7 @@ export class ProviderSSSReactNative
       metadataUrl: string;
       generateSharesUrl: string;
     },
-  ): Promise<ProviderSSSReactNative> {
+  ): Promise<ProviderSSSBase> {
     let keyPK = socialPrivateKey;
     let shares = [];
 
@@ -171,7 +169,7 @@ export class ProviderSSSReactNative
       );
 
       if (stored) {
-        await ProviderSSSReactNative.setStorageForAccount(
+        await ProviderSSSBase.setStorageForAccount(
           address.toLowerCase(),
           storage,
         );
@@ -190,14 +188,14 @@ export class ProviderSSSReactNative
       JSON.stringify(sqStore),
     );
 
-    const accounts = await ProviderSSSReactNative.getAccounts();
+    const accounts = await ProviderSSSBase.getAccounts();
 
     await EncryptedStorage.setItem(
       `${ITEM_KEYS[WalletType.sss]}_accounts`,
       JSON.stringify(accounts.concat(address.toLowerCase())),
     );
 
-    return new ProviderSSSReactNative({
+    return new ProviderSSSBase({
       ...options,
       getPassword,
       storage,
@@ -206,7 +204,9 @@ export class ProviderSSSReactNative
   }
 
   static async getAccounts() {
-    const storedKeys = await EncryptedStorage.getItem(`${ITEM_KEYS[WalletType.sss]}_accounts`);
+    const storedKeys = await EncryptedStorage.getItem(
+      `${ITEM_KEYS[WalletType.sss]}_accounts`,
+    );
 
     return JSON.parse(storedKeys ?? '[]') as string[];
   }
@@ -225,9 +225,7 @@ export class ProviderSSSReactNative
     accountId: string,
     storage: StorageInterface,
   ): Promise<string[]> {
-    const storages = await ProviderSSSReactNative.getStoragesForAccount(
-      accountId,
-    );
+    const storages = await ProviderSSSBase.getStoragesForAccount(accountId);
 
     if (!storages.includes(storage.getName())) {
       await EncryptedStorage.setItem(
@@ -275,127 +273,6 @@ export class ProviderSSSReactNative
       }
     }
     return resp;
-  }
-
-  async signTransaction(
-    hdPath: string,
-    transaction: TransactionRequest,
-  ): Promise<string> {
-    let resp = '';
-    try {
-      const {seed} = await getSeed(
-        this._options.account,
-        this._options.storage,
-        this._options.getPassword,
-      );
-
-      if (!seed) {
-        throw new Error('seed_not_found');
-      }
-
-      const privateKey = await derive(seed, hdPath);
-
-      if (!privateKey) {
-        throw new Error('private_key_not_found');
-      }
-
-      const signature = await sign(
-        privateKey,
-        serialize(transaction as UnsignedTransaction),
-      );
-
-      const sig = hexStringToByteArray(signature);
-
-      resp = serialize(transaction as UnsignedTransaction, sig);
-
-      this.emit('signTransaction', true);
-    } catch (e) {
-      if (e instanceof Error) {
-        this.catchError(e, 'signTransaction');
-      }
-    }
-
-    return resp;
-  }
-
-  async signPersonalMessage(
-    hdPath: string,
-    message: BytesLike | string,
-  ): Promise<string> {
-    let resp = '';
-    try {
-      const {seed} = await getSeed(
-        this._options.account,
-        this._options.storage,
-        this._options.getPassword,
-      );
-      if (!seed) {
-        throw new Error('seed_not_found');
-      }
-
-      const privateKey = await derive(seed, hdPath);
-
-      if (!privateKey) {
-        throw new Error('private_key_not_found');
-      }
-
-      const m = Array.from(
-        typeof message === 'string' ? stringToUtf8Bytes(message) : message,
-      );
-
-      const hash = Buffer.from(
-        [
-          25, 69, 116, 104, 101, 114, 101, 117, 109, 32, 83, 105, 103, 110, 101,
-          100, 32, 77, 101, 115, 115, 97, 103, 101, 58, 10,
-        ].concat(stringToUtf8Bytes(String(message.length)), m),
-      ).toString('hex');
-      const signature = await sign(privateKey, hash);
-      resp = '0x' + joinSignature(signature);
-      this.emit('signTransaction', true);
-    } catch (e) {
-      if (e instanceof Error) {
-        this.catchError(e, 'signTransaction');
-      }
-    }
-
-    return resp;
-  }
-
-  async signTypedData(hdPath: string, typedData: TypedData): Promise<string> {
-    let response = '';
-    try {
-      const {seed} = await getSeed(
-        this._options.account,
-        this._options.storage,
-        this._options.getPassword,
-      );
-
-      if (!seed) {
-        throw new Error('seed_not_found');
-      }
-
-      const privateKey = await derive(seed, hdPath);
-
-      if (!privateKey) {
-        throw new Error('private_key_not_found');
-      }
-
-      const {domainSeparatorHex, hashStructMessageHex} =
-        prepareHashedEip712Data(typedData);
-      const concatHash = hexConcat([
-        '0x1901',
-        domainSeparatorHex,
-        hashStructMessageHex,
-      ]);
-      response = await sign(privateKey, concatHash);
-      this.emit('signTypedData', true);
-    } catch (e) {
-      if (e instanceof Error) {
-        this.catchError(e, 'signTypedData');
-      }
-    }
-
-    return calcTypedDataSignatureV(response);
   }
 
   async updatePin(pin: string) {
@@ -446,7 +323,7 @@ export class ProviderSSSReactNative
       return false;
     }
 
-    await ProviderSSSReactNative.setStorageForAccount(
+    await ProviderSSSBase.setStorageForAccount(
       this._options.account.toLowerCase(),
       store,
     );
@@ -472,7 +349,7 @@ export class ProviderSSSReactNative
       return;
     }
 
-    await ProviderSSSReactNative.setStorageForAccount(
+    await ProviderSSSBase.setStorageForAccount(
       this._options.account.toLowerCase(),
       this._options.storage,
     );

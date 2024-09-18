@@ -3,7 +3,7 @@ import {Buffer} from 'buffer';
 import {generateEntropy, hashMessage} from '@haqq/provider-web3-utils';
 import {curveN} from '@haqq/shared-react-native';
 import BN from 'bn.js';
-import { Share } from '../../providers';
+import {Share} from '../../providers';
 
 type Point = {
   x: BN;

@@ -10,7 +10,7 @@ export interface StorageInterface {
   removeItem(key: string): Promise<boolean>;
 }
 
-export type ProviderSSSOptions = {
+export type ProviderSSSBaseOptions = {
   account: string;
   getPassword: () => Promise<string>;
   storage: StorageInterface;
