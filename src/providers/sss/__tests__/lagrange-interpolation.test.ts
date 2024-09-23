@@ -1,5 +1,5 @@
 import BN from 'bn.js';
-import {lagrangeInterpolation} from '../lagrange-interpolation';
+import {lagrangeInterpolation} from '../../../utils/sss/lagrange-interpolation';
 
 jest.mock('@haqq/shared-react-native', () => {
   return {

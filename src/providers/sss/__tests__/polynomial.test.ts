@@ -1,5 +1,5 @@
 import BN from 'bn.js';
-import {Polynomial} from '../polynomial';
+import {Polynomial} from '../../../utils/sss/polynomial';
 
 jest.mock('@haqq/shared-react-native', () => {
   return {
