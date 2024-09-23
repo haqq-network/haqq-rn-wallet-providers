@@ -13,9 +13,9 @@ import {
   WrongAppForCurrency,
   WrongDeviceForAccount,
 } from '@ledgerhq/errors';
-import {trace, LocalTracer, TraceContext} from '@ledgerhq/logs';
+import {LocalTracer, TraceContext, trace} from '@ledgerhq/logs';
 import TransportBLE from '@ledgerhq/react-native-hw-transport-ble';
-import {throwError, timer, Observable, Subscription} from 'rxjs';
+import {Observable, Subscription, throwError, timer} from 'rxjs';
 import {catchError, mergeMap, retryWhen} from 'rxjs/operators';
 
 const LOG_TYPE = 'haqq-ledger';
@@ -65,7 +65,9 @@ function transportFinally(cleanup: () => Promise<void>) {
       let done = false;
 
       const finalize = () => {
-        if (done) return never;
+        if (done) {
+          return never;
+        }
         done = true;
         return cleanup();
       };
@@ -268,11 +270,21 @@ export const withDevice =
         .catch(e => {
           tracer.trace(`Error while opening Transport: ${e}`, {error: e});
           resolveQueuedJob();
-          if (e instanceof BluetoothRequired) throw e;
-          if (e instanceof TransportWebUSBGestureRequired) throw e;
-          if (e instanceof TransportInterfaceNotAvailable) throw e;
-          if (e instanceof PeerRemovedPairing) throw e;
-          if (e instanceof PairingFailed) throw e;
+          if (e instanceof BluetoothRequired) {
+            throw e;
+          }
+          if (e instanceof TransportWebUSBGestureRequired) {
+            throw e;
+          }
+          if (e instanceof TransportInterfaceNotAvailable) {
+            throw e;
+          }
+          if (e instanceof PeerRemovedPairing) {
+            throw e;
+          }
+          if (e instanceof PairingFailed) {
+            throw e;
+          }
           throw new CantOpenDevice(e.message);
         })
         // Executes the job
@@ -281,7 +293,9 @@ export const withDevice =
             hasTransport: !!transport,
             unsubscribed,
           });
-          if (!transport) return;
+          if (!transport) {
+            return;
+          }
 
           // It was unsubscribed prematurely
           if (unsubscribed) {
@@ -331,23 +345,47 @@ export const withDevice =
           `Unsubscribing withDevice flow. Ongoing job to unsubscribe from ? ${!!sub}`,
         );
         unsubscribed = true;
-        if (sub) sub.unsubscribe();
+        if (sub) {
+          sub.unsubscribe();
+        }
       };
     });
 
 export const genericCanRetryOnError = (err: unknown): boolean => {
-  if (err instanceof WrongAppForCurrency) return false;
-  if (err instanceof WrongDeviceForAccount) return false;
-  if (err instanceof CantOpenDevice) return false;
-  if (err instanceof BluetoothRequired) return false;
-  if (err instanceof UpdateYourApp) return false;
-  if (err instanceof FirmwareOrAppUpdateRequired) return false;
-  if (err instanceof DeviceHalted) return false;
-  if (err instanceof TransportWebUSBGestureRequired) return false;
-  if (err instanceof TransportInterfaceNotAvailable) return false;
-  if (err instanceof EthAppPleaseEnableContractData) return false;
+  if (err instanceof WrongAppForCurrency) {
+    return false;
+  }
+  if (err instanceof WrongDeviceForAccount) {
+    return false;
+  }
+  if (err instanceof CantOpenDevice) {
+    return false;
+  }
+  if (err instanceof BluetoothRequired) {
+    return false;
+  }
+  if (err instanceof UpdateYourApp) {
+    return false;
+  }
+  if (err instanceof FirmwareOrAppUpdateRequired) {
+    return false;
+  }
+  if (err instanceof DeviceHalted) {
+    return false;
+  }
+  if (err instanceof TransportWebUSBGestureRequired) {
+    return false;
+  }
+  if (err instanceof TransportInterfaceNotAvailable) {
+    return false;
+  }
+  if (err instanceof EthAppPleaseEnableContractData) {
+    return false;
+  }
   // tx denied by the user
-  if (err instanceof TransportStatusError) return err.statusCode !== 0x6985;
+  if (err instanceof TransportStatusError) {
+    return err.statusCode !== 0x6985;
+  }
   return true;
 };
 

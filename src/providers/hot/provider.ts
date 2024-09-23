@@ -1,12 +1,14 @@
 import {accountInfo} from '@haqq/provider-web3-utils';
 import {encryptShare} from '@haqq/shared-react-native';
 import EncryptedStorage from 'react-native-encrypted-storage';
+
+import {ProviderHotBaseOptions} from './types';
+
 import {ITEM_KEYS, WalletType} from '../../constants';
 import {compressPublicKey} from '../../utils';
 import {getPrivateKey} from '../../utils/hot/get-private-key';
 import {ProviderBase} from '../base-provider';
 import {ProviderBaseOptions, ProviderInterface} from '../types';
-import {ProviderHotBaseOptions} from './types';
 
 export class ProviderHotBase
   extends ProviderBase<ProviderHotBaseOptions>

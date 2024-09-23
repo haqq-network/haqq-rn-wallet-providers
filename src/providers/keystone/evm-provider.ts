@@ -1,12 +1,13 @@
 import {TransactionRequest} from '@ethersproject/abstract-provider';
-
 import {
   DataType,
-  EthSignRequest,
   ETHSignature,
+  EthSignRequest,
 } from '@keystonehq/bc-ur-registry-eth';
 import {UR} from '@ngraveio/bc-ur';
-import {ethers, utils, UnsignedTransaction} from 'ethers';
+import {UnsignedTransaction, ethers, utils} from 'ethers';
+
+import {ProviderKeystoneBase} from './provider';
 
 import {ProviderKeystonErrorEnum} from '../../constants';
 import {calcTypedDataSignatureV, stringToUtf8Bytes} from '../../utils';
@@ -17,7 +18,6 @@ import {
   uuidv4Stringify,
 } from '../../utils/utils';
 import {BytesLike, ProviderInterface, TypedData} from '../types';
-import {ProviderKeystoneBase} from './provider';
 
 export class ProviderKeystoneEvm
   extends ProviderKeystoneBase

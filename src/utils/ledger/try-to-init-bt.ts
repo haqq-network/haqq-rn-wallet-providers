@@ -1,6 +1,7 @@
 import {PermissionsAndroid, Platform} from 'react-native';
-import {State, Subscription as BleSub} from 'react-native-ble-plx';
+import {Subscription as BleSub, State} from 'react-native-ble-plx';
 import {Observable} from 'rxjs';
+
 import {getBleManager} from './get-ble-manager';
 
 export async function tryToInitBt(): Promise<Observable<State>> {
@@ -13,6 +14,7 @@ export async function tryToInitBt(): Promise<Observable<State>> {
     ]);
   }
   const manager = getBleManager();
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   let sub: BleSub;
   let previousState = State.Unknown;
   return new Observable(observer => {

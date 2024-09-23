@@ -1,6 +1,9 @@
 import {hexConcat} from '@ethersproject/bytes';
-import {serialize, UnsignedTransaction} from '@ethersproject/transactions';
+import {UnsignedTransaction, serialize} from '@ethersproject/transactions';
 import {derive, sign} from '@haqq/provider-web3-utils';
+
+import {ProviderSSSBase} from './provider';
+
 import {
   calcTypedDataSignatureV,
   getSeed,
@@ -15,7 +18,6 @@ import {
   TransactionRequest,
   TypedData,
 } from '../types';
-import {ProviderSSSBase} from './provider';
 
 export class ProviderSSSEvm
   extends ProviderSSSBase

@@ -1,6 +1,9 @@
 import {hexConcat} from '@ethersproject/bytes';
-import {serialize, UnsignedTransaction} from '@ethersproject/transactions';
+import {UnsignedTransaction, serialize} from '@ethersproject/transactions';
 import {derive, sign} from '@haqq/provider-web3-utils';
+
+import {ProviderMnemonicBase} from './provider';
+
 import {
   calcTypedDataSignatureV,
   hexStringToByteArray,
@@ -15,7 +18,6 @@ import {
   TransactionRequest,
   TypedData,
 } from '../types';
-import {ProviderMnemonicBase} from './provider';
 
 export class ProviderMnemonicEvm
   extends ProviderMnemonicBase

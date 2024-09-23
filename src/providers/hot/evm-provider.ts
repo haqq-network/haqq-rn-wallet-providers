@@ -1,6 +1,9 @@
 import {hexConcat} from '@ethersproject/bytes';
-import {serialize, UnsignedTransaction} from '@ethersproject/transactions';
+import {UnsignedTransaction, serialize} from '@ethersproject/transactions';
 import {sign} from '@haqq/provider-web3-utils';
+
+import {ProviderHotBase} from './provider';
+
 import {
   calcTypedDataSignatureV,
   hexStringToByteArray,
@@ -15,7 +18,6 @@ import {
   TransactionRequest,
   TypedData,
 } from '../types';
-import {ProviderHotBase} from './provider';
 
 export class ProviderHotEvm
   extends ProviderHotBase

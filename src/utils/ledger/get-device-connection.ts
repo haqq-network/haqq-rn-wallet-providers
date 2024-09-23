@@ -1,4 +1,5 @@
 import {State} from 'react-native-ble-plx';
+
 import {getBleManager} from './get-ble-manager';
 
 const cache = new Map();

@@ -1,8 +1,10 @@
 import {TransactionRequest} from '@ethersproject/abstract-provider';
-
 import AppEth, {ledgerService} from '@ledgerhq/hw-app-eth';
-import {utils, UnsignedTransaction} from 'ethers';
-import {firstValueFrom, Observable} from 'rxjs';
+import {UnsignedTransaction, utils} from 'ethers';
+import {Observable, firstValueFrom} from 'rxjs';
+
+import {ProviderLedgerBase} from './provider';
+
 import {
   calcTypedDataSignatureV,
   compressPublicKey,
@@ -10,7 +12,6 @@ import {
   stringToUtf8Bytes,
 } from '../../utils';
 import {BytesLike, ProviderInterface, TypedData} from '../types';
-import {ProviderLedgerBase} from './provider';
 
 export class ProviderLedgerEvm
   extends ProviderLedgerBase

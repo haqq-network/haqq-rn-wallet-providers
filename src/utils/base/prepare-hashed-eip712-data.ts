@@ -1,4 +1,5 @@
 import {utils} from 'ethers';
+
 import {TypedData} from '../../providers/types';
 
 export const prepareHashedEip712Data = ({

@@ -1,6 +1,7 @@
 import {decrypt} from '@haqq/encryption-react-native';
-import {decryptShare, encryptShare, Share} from '@haqq/shared-react-native';
+import {Share, decryptShare, encryptShare} from '@haqq/shared-react-native';
 import EncryptedStorage from 'react-native-encrypted-storage';
+
 import {ITEM_KEYS, WalletType} from '../../constants';
 
 export async function getPrivateKey(

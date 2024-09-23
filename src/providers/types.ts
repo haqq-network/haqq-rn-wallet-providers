@@ -1,5 +1,6 @@
-import {TypedDataField} from 'ethers';
 import EventEmitter from 'events';
+
+import {TypedDataField} from 'ethers';
 
 export type ProviderBaseOptions = {
   getPassword: () => Promise<string>;

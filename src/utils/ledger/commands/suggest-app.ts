@@ -1,4 +1,5 @@
 import TransportBLE from '@ledgerhq/react-native-hw-transport-ble';
+
 import {getAppAndVersion} from './get-app-and-version';
 import {openApp} from './open-app';
 import {quitApp} from './quit-app';

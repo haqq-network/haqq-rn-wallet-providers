@@ -1,25 +1,27 @@
 import {accountInfo, derive, generateEntropy} from '@haqq/provider-web3-utils';
 import {
+  ShareCreateResponse,
+  SharesResponse,
   decryptShare,
   encryptShare,
   getMetadataValue,
   jsonrpcRequest,
   setMetadataValue,
-  SharesResponse,
-  ShareCreateResponse,
 } from '@haqq/shared-react-native';
 import BN from 'bn.js';
 import EncryptedStorage from 'react-native-encrypted-storage';
+
+import {ProviderSSSBaseOptions, StorageInterface} from './types';
+
 import {ITEM_KEYS, WalletType} from '../../constants';
 import {
+  Polynomial,
   compressPublicKey,
   getSeed,
   lagrangeInterpolation,
-  Polynomial,
 } from '../../utils';
 import {ProviderBase} from '../base-provider';
 import {ProviderBaseOptions, ProviderInterface} from '../types';
-import {ProviderSSSBaseOptions, StorageInterface} from './types';
 
 export class ProviderSSSBase
   extends ProviderBase<ProviderSSSBaseOptions>

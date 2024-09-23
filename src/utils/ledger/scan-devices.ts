@@ -1,5 +1,6 @@
-import TransportBLE from '@ledgerhq/react-native-hw-transport-ble';
 import EventEmitter from 'events';
+
+import TransportBLE from '@ledgerhq/react-native-hw-transport-ble';
 import {Observable, Subscription} from 'rxjs';
 
 export function scanDevices() {

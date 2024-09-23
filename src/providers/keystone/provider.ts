@@ -6,22 +6,23 @@ import {
 import {ethers} from 'ethers';
 import {HDNode} from 'ethers/lib/utils';
 
+import {AccountInfo, ProviderKeystoneBaseOptions} from './types';
+
 import {
   KeyringAccountEnum,
-  ProviderKeystonErrorEnum,
-  PATH_INDEX_KEY,
   PATHS_PATTERN_MAP,
+  PATH_INDEX_KEY,
+  ProviderKeystonErrorEnum,
   SupportedRegistryTypeEnum,
 } from '../../constants';
 import {
+  ProviderKeystoneError,
   getRegistryItemFromHex,
   isCryptoAccount,
   isCryptoHDKey,
-  ProviderKeystoneError,
 } from '../../utils/keystone';
 import {ProviderBase} from '../base-provider';
 import {ProviderInterface} from '../types';
-import {AccountInfo, ProviderKeystoneBaseOptions} from './types';
 
 type HDPath = string;
 

@@ -1,14 +1,16 @@
 import {accountInfo, derive, seedFromEntropy} from '@haqq/provider-web3-utils';
 import {generateEntropy} from '@haqq/provider-web3-utils/src/native-modules';
-import {encryptShare, Share} from '@haqq/shared-react-native';
+import {Share, encryptShare} from '@haqq/shared-react-native';
 import {entropyToMnemonic, mnemonicToEntropy, mnemonicToSeed} from 'bip39';
 import EncryptedStorage from 'react-native-encrypted-storage';
+
+import {ProviderMnemonicBaseOptions} from './types';
+
 import {ITEM_KEYS, WalletType} from '../../constants';
 import {compressPublicKey} from '../../utils';
 import {getMnemonic} from '../../utils/mnemonic/get-mnemonic';
 import {ProviderBase} from '../base-provider';
 import {ProviderBaseOptions, ProviderInterface} from '../types';
-import {ProviderMnemonicBaseOptions} from './types';
 
 export class ProviderMnemonicBase
   extends ProviderBase<ProviderMnemonicBaseOptions>

@@ -1,9 +1,11 @@
 import TransportBLE from '@ledgerhq/react-native-hw-transport-ble';
-import {firstValueFrom, Observable} from 'rxjs';
+import {Observable, firstValueFrom} from 'rxjs';
+
+import {ProviderLedgerBaseOptions} from './types';
+
 import {suggestApp, withDevicePolling} from '../../utils';
 import {ProviderBase} from '../base-provider';
 import {ProviderInterface} from '../types';
-import {ProviderLedgerBaseOptions} from './types';
 
 export abstract class ProviderLedgerBase
   extends ProviderBase<ProviderLedgerBaseOptions>
