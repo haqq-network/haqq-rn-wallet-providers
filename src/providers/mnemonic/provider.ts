@@ -7,10 +7,11 @@ import EncryptedStorage from 'react-native-encrypted-storage';
 import {ProviderMnemonicBaseOptions} from './types';
 
 import {ITEM_KEYS, WalletType} from '../../constants';
+import {Multichain} from '../../services/multichain';
 import {compressPublicKey} from '../../utils';
 import {getMnemonic} from '../../utils/mnemonic/get-mnemonic';
 import {ProviderBase} from '../base-provider';
-import {ProviderBaseOptions, ProviderInterface} from '../types';
+import {NETWORK_TYPE, ProviderBaseOptions, ProviderInterface} from '../types';
 
 export class ProviderMnemonicBase
   extends ProviderBase<ProviderMnemonicBaseOptions>
@@ -27,6 +28,7 @@ export class ProviderMnemonicBase
       mnemonic === null
         ? (await generateEntropy(16)).toString('hex')
         : mnemonicToEntropy(mnemonic);
+
     const seed = await mnemonicToSeed(entropyToMnemonic(entropy));
 
     const privateData = await encryptShare(
@@ -117,7 +119,7 @@ export class ProviderMnemonicBase
   }
 
   async getAccountInfo(hdPath: string) {
-    let resp = {publicKey: '', address: ''};
+    let resp = {publicKey: '', address: '', tronAddress: ''};
     try {
       const share = await getMnemonic(
         this._options.account,
@@ -130,17 +132,22 @@ export class ProviderMnemonicBase
 
       const seed = await ProviderMnemonicBase.shareToSeed(share);
 
-      const privateKey = await derive(seed, hdPath);
+      const ethPrivateKey = await derive(seed, hdPath);
 
-      if (!privateKey) {
+      if (!ethPrivateKey) {
         throw new Error('private_key_not_found');
       }
 
-      const account = await accountInfo(privateKey);
+      const account = await accountInfo(ethPrivateKey);
 
       resp = {
         publicKey: compressPublicKey(account.publicKey),
         address: account.address,
+        tronAddress: await Multichain.generateAddress(
+          NETWORK_TYPE.TRON,
+          hdPath,
+          await this.getMnemonicPhrase(),
+        ),
       };
       this.emit('getPublicKeyForHDPath', true);
     } catch (e) {

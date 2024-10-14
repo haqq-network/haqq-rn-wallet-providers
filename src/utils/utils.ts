@@ -30,3 +30,28 @@ export function hexBuffer(str: string | Buffer): Buffer {
 export function normalize0x(strWith0x: string): string {
   return strWith0x.replace(/^(0x)*/, '0x');
 }
+
+export function encodeBase58(buffer: Buffer): string {
+  const alphabet = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz';
+  const base = BigInt(58);
+
+  let result = '';
+  let num = BigInt('0x' + buffer.toString('hex'));
+
+  while (num > 0) {
+    const remainder = num % base;
+    num = num / base;
+    result = alphabet[Number(remainder)] + result;
+  }
+
+  // Добавляем ведущие нули
+  for (const byte of buffer) {
+    if (byte === 0x00) {
+      result = alphabet[0] + result;
+    } else {
+      break;
+    }
+  }
+
+  return result;
+}

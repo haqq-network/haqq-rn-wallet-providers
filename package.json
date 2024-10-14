@@ -8,7 +8,6 @@
     "dist/**/*"
   ],
   "license": "MIT",
-  "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/haqq-network/haqq-rn-wallet-providers.git"
@@ -33,6 +32,7 @@
     "@ledgerhq/hw-transport": "6.30.3",
     "@ledgerhq/react-native-hw-transport-ble": "6.30.0",
     "bech32-converting": "^1.0.9",
+    "bip32": "1.0.4",
     "bip39": "^3.1.0",
     "ethers": "^5.7.2",
     "events": "^3.3.0",
@@ -48,11 +48,11 @@
     "react-native-encrypted-storage": "*"
   },
   "devDependencies": {
-    "@react-native-community/eslint-config": "3.2.0",
     "@haqq/encryption-react-native": "^0.0.3",
     "@haqq/provider-web3-utils": "^0.0.13",
     "@haqq/shared-react-native": "^0.0.8",
     "@ledgerhq/types-devices": "^6.23.0",
+    "@react-native-community/eslint-config": "3.2.0",
     "@types/jest": "^29.5.1",
     "@types/node": "^20.1.2",
     "@types/react-native": "^0.71.12",
@@ -90,15 +90,15 @@
     "vm": "vm-browserify"
   },
   "browser": {
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_transform": "readable-stream/transform",
+    "_stream_writable": "readable-stream/writable",
     "crypto": "react-native-crypto",
     "http": "@tradle/react-native-http",
     "https": "https-browserify",
     "os": "react-native-os",
-    "_stream_transform": "readable-stream/transform",
-    "_stream_readable": "readable-stream/readable",
-    "_stream_writable": "readable-stream/writable",
-    "_stream_duplex": "readable-stream/duplex",
-    "_stream_passthrough": "readable-stream/passthrough",
     "stream": "stream-browserify",
     "vm": "vm-browserify"
   }
