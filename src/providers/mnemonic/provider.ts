@@ -8,7 +8,7 @@ import {ProviderMnemonicBaseOptions} from './types';
 
 import {ITEM_KEYS, WalletType} from '../../constants';
 import {Multichain} from '../../services/multichain';
-import {compressPublicKey} from '../../utils';
+import {compressPublicKey, convertHdPath} from '../../utils';
 import {getMnemonic} from '../../utils/mnemonic/get-mnemonic';
 import {ProviderBase} from '../base-provider';
 import {NETWORK_TYPE, ProviderBaseOptions, ProviderInterface} from '../types';
@@ -133,6 +133,11 @@ export class ProviderMnemonicBase
       const seed = await ProviderMnemonicBase.shareToSeed(share);
 
       const ethPrivateKey = await derive(seed, hdPath);
+      const tronAddress = await Multichain.generateAddress(
+        NETWORK_TYPE.TRON,
+        convertHdPath(hdPath, NETWORK_TYPE.TRON),
+        await this.getMnemonicPhrase(),
+      );
 
       if (!ethPrivateKey) {
         throw new Error('private_key_not_found');
@@ -143,11 +148,7 @@ export class ProviderMnemonicBase
       resp = {
         publicKey: compressPublicKey(account.publicKey),
         address: account.address,
-        tronAddress: await Multichain.generateAddress(
-          NETWORK_TYPE.TRON,
-          hdPath,
-          await this.getMnemonicPhrase(),
-        ),
+        tronAddress,
       };
       this.emit('getPublicKeyForHDPath', true);
     } catch (e) {

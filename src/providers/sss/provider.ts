@@ -18,6 +18,7 @@ import {Multichain} from '../../services/multichain';
 import {
   Polynomial,
   compressPublicKey,
+  convertHdPath,
   getSeed,
   lagrangeInterpolation,
 } from '../../utils';
@@ -264,15 +265,16 @@ export class ProviderSSSBase
       }
 
       const account = await accountInfo(privateKey);
+      const tronAddress = await Multichain.generateAddress(
+        NETWORK_TYPE.TRON,
+        convertHdPath(hdPath, NETWORK_TYPE.TRON),
+        await this.getMnemonicPhrase(),
+      );
 
       resp = {
         publicKey: compressPublicKey(account.publicKey),
         address: account.address,
-        tronAddress: await Multichain.generateAddress(
-          NETWORK_TYPE.TRON,
-          hdPath,
-          await this.getMnemonicPhrase(),
-        ),
+        tronAddress,
       };
       this.emit('getPublicKeyForHDPath', true);
     } catch (e) {

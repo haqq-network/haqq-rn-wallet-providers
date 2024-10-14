@@ -1,3 +1,5 @@
+import {NETWORK_TYPE} from '../providers';
+
 export function uuidv4() {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
     const r = (Math.random() * 16) | 0,
@@ -54,4 +56,15 @@ export function encodeBase58(buffer: Buffer): string {
   }
 
   return result;
+}
+
+export function convertHdPath(hdPath: string, networkType: NETWORK_TYPE) {
+  const splitedHdPath = hdPath.split('/');
+  switch (networkType) {
+    case NETWORK_TYPE.TRON:
+      splitedHdPath[1] = "195'";
+      break;
+  }
+
+  return splitedHdPath.join('/');
 }
