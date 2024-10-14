@@ -21,13 +21,19 @@ export class ProviderMnemonicBase
     getPassword: () => Promise<string>,
     options: Omit<ProviderBaseOptions, 'getPassword'>,
   ): Promise<ProviderMnemonicBase> {
+    console.log('mnemonic', mnemonic);
+
     const password = await getPassword();
+    console.log('password', password);
 
     const entropy =
       mnemonic === null
         ? (await generateEntropy(16)).toString('hex')
         : mnemonicToEntropy(mnemonic);
+    console.log('entropy', entropy);
+
     const seed = await mnemonicToSeed(entropyToMnemonic(entropy));
+    console.log('seed', seed);
 
     const privateData = await encryptShare(
       {
@@ -37,18 +43,31 @@ export class ProviderMnemonicBase
       },
       password,
     );
+    console.log('privateData', privateData);
 
     const rootPrivateKey = await derive(seed.toString('hex'), 'm');
+    console.log('rootPrivateKey', rootPrivateKey);
     const {address} = await accountInfo(rootPrivateKey);
+    console.log('address', address);
 
     await EncryptedStorage.setItem(
       `${ITEM_KEYS[WalletType.mnemonic]}_${address.toLowerCase()}`,
       JSON.stringify(privateData),
     );
 
+    console.log(
+      `${ITEM_KEYS[WalletType.mnemonic]}_${address.toLowerCase()}`,
+      JSON.stringify(privateData),
+    );
+
     const accounts = await ProviderMnemonicBase.getAccounts();
+    console.log('accounts', accounts);
 
     await EncryptedStorage.setItem(
+      `${ITEM_KEYS[WalletType.mnemonic]}_accounts`,
+      JSON.stringify(accounts.concat(address.toLowerCase())),
+    );
+    console.log(
       `${ITEM_KEYS[WalletType.mnemonic]}_accounts`,
       JSON.stringify(accounts.concat(address.toLowerCase())),
     );
