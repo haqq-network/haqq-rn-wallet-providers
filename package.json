@@ -101,5 +101,6 @@
     "os": "react-native-os",
     "stream": "stream-browserify",
     "vm": "vm-browserify"
-  }
+  },
+  "packageManager": "yarn@1.22.1"
 }
