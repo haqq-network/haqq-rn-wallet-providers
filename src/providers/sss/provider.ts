@@ -14,6 +14,7 @@ import EncryptedStorage from 'react-native-encrypted-storage';
 import {ProviderSSSBaseOptions, StorageInterface} from './types';
 
 import {ITEM_KEYS, WalletType} from '../../constants';
+import {Multichain} from '../../services/multichain';
 import {
   Polynomial,
   compressPublicKey,
@@ -21,7 +22,7 @@ import {
   lagrangeInterpolation,
 } from '../../utils';
 import {ProviderBase} from '../base-provider';
-import {ProviderBaseOptions, ProviderInterface} from '../types';
+import {NETWORK_TYPE, ProviderBaseOptions, ProviderInterface} from '../types';
 
 export class ProviderSSSBase
   extends ProviderBase<ProviderSSSBaseOptions>
@@ -244,7 +245,7 @@ export class ProviderSSSBase
   }
 
   async getAccountInfo(hdPath: string) {
-    let resp = {publicKey: '', address: ''};
+    let resp = {publicKey: '', address: '', tronAddress: ''};
     try {
       const {seed} = await getSeed(
         this._options.account,
@@ -267,6 +268,11 @@ export class ProviderSSSBase
       resp = {
         publicKey: compressPublicKey(account.publicKey),
         address: account.address,
+        tronAddress: await Multichain.generateAddress(
+          NETWORK_TYPE.TRON,
+          hdPath,
+          await this.getMnemonicPhrase(),
+        ),
       };
       this.emit('getPublicKeyForHDPath', true);
     } catch (e) {

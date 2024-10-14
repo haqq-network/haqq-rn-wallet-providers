@@ -111,3 +111,9 @@ export type ProviderBaseError = {
   error: Error;
   source: string;
 };
+
+export enum NETWORK_TYPE {
+  HAQQ,
+  ETH,
+  TRON,
+}

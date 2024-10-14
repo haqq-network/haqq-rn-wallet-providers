@@ -2,16 +2,16 @@ import {accountInfo, derive, seedFromEntropy} from '@haqq/provider-web3-utils';
 import {generateEntropy} from '@haqq/provider-web3-utils/src/native-modules';
 import {Share, encryptShare} from '@haqq/shared-react-native';
 import {entropyToMnemonic, mnemonicToEntropy, mnemonicToSeed} from 'bip39';
-import {hdkey} from 'ethereumjs-wallet';
 import EncryptedStorage from 'react-native-encrypted-storage';
 
 import {ProviderMnemonicBaseOptions} from './types';
 
 import {ITEM_KEYS, WalletType} from '../../constants';
+import {Multichain} from '../../services/multichain';
 import {compressPublicKey} from '../../utils';
 import {getMnemonic} from '../../utils/mnemonic/get-mnemonic';
 import {ProviderBase} from '../base-provider';
-import {ProviderBaseOptions, ProviderInterface} from '../types';
+import {NETWORK_TYPE, ProviderBaseOptions, ProviderInterface} from '../types';
 
 export class ProviderMnemonicBase
   extends ProviderBase<ProviderMnemonicBaseOptions>
@@ -22,19 +22,14 @@ export class ProviderMnemonicBase
     getPassword: () => Promise<string>,
     options: Omit<ProviderBaseOptions, 'getPassword'>,
   ): Promise<ProviderMnemonicBase> {
-    console.log('mnemonic', mnemonic);
-
     const password = await getPassword();
-    console.log('password', password);
 
     const entropy =
       mnemonic === null
         ? (await generateEntropy(16)).toString('hex')
         : mnemonicToEntropy(mnemonic);
-    console.log('entropy', entropy);
 
     const seed = await mnemonicToSeed(entropyToMnemonic(entropy));
-    console.log('seed', seed);
 
     const privateData = await encryptShare(
       {
@@ -44,31 +39,18 @@ export class ProviderMnemonicBase
       },
       password,
     );
-    console.log('privateData', privateData);
 
     const rootPrivateKey = await derive(seed.toString('hex'), 'm');
-    console.log('rootPrivateKey', rootPrivateKey);
     const {address} = await accountInfo(rootPrivateKey);
-    console.log('address', address);
 
     await EncryptedStorage.setItem(
-      `${ITEM_KEYS[WalletType.mnemonic]}_${address.toLowerCase()}`,
-      JSON.stringify(privateData),
-    );
-
-    console.log(
       `${ITEM_KEYS[WalletType.mnemonic]}_${address.toLowerCase()}`,
       JSON.stringify(privateData),
     );
 
     const accounts = await ProviderMnemonicBase.getAccounts();
-    console.log('accounts', accounts);
 
     await EncryptedStorage.setItem(
-      `${ITEM_KEYS[WalletType.mnemonic]}_accounts`,
-      JSON.stringify(accounts.concat(address.toLowerCase())),
-    );
-    console.log(
       `${ITEM_KEYS[WalletType.mnemonic]}_accounts`,
       JSON.stringify(accounts.concat(address.toLowerCase())),
     );
@@ -137,7 +119,7 @@ export class ProviderMnemonicBase
   }
 
   async getAccountInfo(hdPath: string) {
-    let resp = {publicKey: '', address: ''};
+    let resp = {publicKey: '', address: '', tronAddress: ''};
     try {
       const share = await getMnemonic(
         this._options.account,
@@ -150,28 +132,22 @@ export class ProviderMnemonicBase
 
       const seed = await ProviderMnemonicBase.shareToSeed(share);
 
-      const entropyLength = parseInt(share.shareIndex, 10);
-      const entropy = share.share
-        .slice(-1 * entropyLength)
-        .padStart(entropyLength, '0');
+      const ethPrivateKey = await derive(seed, hdPath);
 
-      const hdwallet = hdkey.fromMasterSeed(Buffer.from(entropy, 'hex'));
-      const derivationPath = "m/44'/195'/0'/0/0";
-      const wallet = hdwallet.derivePath(derivationPath);
-      const tronPrivateKey = wallet.getWallet().getPrivateKeyString();
-      console.log('tronPrivateKey', tronPrivateKey);
-
-      const privateKey = await derive(seed, hdPath);
-
-      if (!privateKey) {
+      if (!ethPrivateKey) {
         throw new Error('private_key_not_found');
       }
 
-      const account = await accountInfo(privateKey);
+      const account = await accountInfo(ethPrivateKey);
 
       resp = {
         publicKey: compressPublicKey(account.publicKey),
         address: account.address,
+        tronAddress: await Multichain.generateAddress(
+          NETWORK_TYPE.TRON,
+          hdPath,
+          await this.getMnemonicPhrase(),
+        ),
       };
       this.emit('getPublicKeyForHDPath', true);
     } catch (e) {
