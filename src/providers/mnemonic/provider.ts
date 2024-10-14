@@ -2,6 +2,7 @@ import {accountInfo, derive, seedFromEntropy} from '@haqq/provider-web3-utils';
 import {generateEntropy} from '@haqq/provider-web3-utils/src/native-modules';
 import {Share, encryptShare} from '@haqq/shared-react-native';
 import {entropyToMnemonic, mnemonicToEntropy, mnemonicToSeed} from 'bip39';
+import {hdkey} from 'ethereumjs-wallet';
 import EncryptedStorage from 'react-native-encrypted-storage';
 
 import {ProviderMnemonicBaseOptions} from './types';
@@ -148,6 +149,17 @@ export class ProviderMnemonicBase
       }
 
       const seed = await ProviderMnemonicBase.shareToSeed(share);
+
+      const entropyLength = parseInt(share.shareIndex, 10);
+      const entropy = share.share
+        .slice(-1 * entropyLength)
+        .padStart(entropyLength, '0');
+
+      const hdwallet = hdkey.fromMasterSeed(Buffer.from(entropy, 'hex'));
+      const derivationPath = "m/44'/195'/0'/0/0";
+      const wallet = hdwallet.derivePath(derivationPath);
+      const tronPrivateKey = wallet.getWallet().getPrivateKeyString();
+      console.log('tronPrivateKey', tronPrivateKey);
 
       const privateKey = await derive(seed, hdPath);
 
