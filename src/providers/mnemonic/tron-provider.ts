@@ -15,6 +15,14 @@ export class ProviderMnemonicTron
   extends ProviderMnemonicBase
   implements ProviderInterface
 {
+  async getAccountInfo(hdPath: string) {
+    const info = await super.getAccountInfo(hdPath.replace("44'", "195'"));
+    return {
+      ...info,
+      address: tron.utils.address.fromHex(info.address),
+    };
+  }
+
   async signTransaction(
     hdPath: string,
     transaction: TransactionRequest,
