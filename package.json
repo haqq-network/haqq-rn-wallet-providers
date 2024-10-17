@@ -4,6 +4,7 @@
   "description": "React Native providers for Haqq wallet",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "devEntryPoint": "src/index.ts",
   "files": [
     "dist/**/*",
     "src"
