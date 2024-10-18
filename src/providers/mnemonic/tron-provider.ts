@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import {derive} from '@haqq/provider-web3-utils';
+import {accountInfo, derive} from '@haqq/provider-web3-utils';
 import tron from 'tronweb';
 
 import {ProviderMnemonicBase} from './provider';
@@ -12,6 +12,7 @@ import {
   TransactionRequest,
   TypedData,
 } from '../types';
+import { compressPublicKey } from '../../utils';
 
 export class ProviderMnemonicTron
   extends ProviderMnemonicBase
@@ -42,10 +43,30 @@ export class ProviderMnemonicTron
   }
 
   async getAccountInfo(hdPath: string) {
-    const info = await super.getAccountInfo(hdPath.replace("44'", "195'"));
+    const share = await getMnemonic(
+      this._options.account,
+      this._options.getPassword,
+    );
+
+    if (!share) {
+      throw new Error('seed_not_found');
+    }
+
+    const seed = await ProviderMnemonicBase.shareToSeed(share);
+    const ethPrivateKey = await derive(seed, hdPath);
+
+    if (!ethPrivateKey) {
+      throw new Error('private_key_not_found');
+    }
+
+    const account = await accountInfo(ethPrivateKey);
+    console.log('ethPrivateKey', ethPrivateKey);
+    console.log('account', account);
+    
+  
     return {
-      ...info,
-      address: tron.utils.address.fromHex(info.address),
+      publicKey: compressPublicKey(account.publicKey),
+      address: tron.utils.address.fromHex(account.address),
     };
   }
 
