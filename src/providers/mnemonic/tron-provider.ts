@@ -1,7 +1,9 @@
+/* eslint-disable no-console */
 import {derive} from '@haqq/provider-web3-utils';
 import tron from 'tronweb';
 
 import {ProviderMnemonicBase} from './provider';
+import {ProviderMnemonicTronOptions} from './types';
 
 import {getMnemonic} from '../../utils/mnemonic/get-mnemonic';
 import {
@@ -15,6 +17,30 @@ export class ProviderMnemonicTron
   extends ProviderMnemonicBase
   implements ProviderInterface
 {
+  private _tronWebHostUrl: string;
+  constructor(options: ProviderMnemonicTronOptions) {
+    super(options);
+    this._tronWebHostUrl = options.tronWebHostUrl;
+  }
+
+  static async initialize(
+    mnemonic: string | null,
+    getPassword: () => Promise<string>,
+    options: Omit<ProviderMnemonicTronOptions, 'getPassword'>,
+  ): Promise<ProviderMnemonicTron> {
+    const base = await ProviderMnemonicBase.initialize(
+      mnemonic,
+      getPassword,
+      options,
+    );
+
+    return new ProviderMnemonicTron({
+      ...options,
+      getPassword,
+      account: base._options.account,
+    });
+  }
+
   async getAccountInfo(hdPath: string) {
     const info = await super.getAccountInfo(hdPath.replace("44'", "195'"));
     return {
@@ -40,36 +66,37 @@ export class ProviderMnemonicTron
 
       const seed = await ProviderMnemonicBase.shareToSeed(share);
 
-      const privateKey = await derive(seed, hdPath);
+      const privateKey = (await derive(seed, hdPath)).replace(/^0x/, '');
 
       if (!privateKey) {
         throw new Error('private_key_not_found');
       }
 
       const tronWeb = new tron.TronWeb({
-        fullHost: 'https://api.trongrid.io',
-        privateKey: privateKey,
+        fullHost: this._tronWebHostUrl,
+        privateKey,
       });
 
       // Convert Ethereum-style transaction to Tron transaction
       const tronTransaction = {
-        to_address: tronWeb.address.toHex(transaction.to),
-        owner_address: tronWeb.address.toHex(transaction.from),
-        amount: tronWeb.toSun(Number(transaction.value)),
+        to_address: tron.utils.address.isAddress(transaction.to)
+          ? transaction.to
+          : tron.utils.address.fromHex(transaction.to),
+        owner_address: tron.utils.crypto.pkToAddress(privateKey),
+        amount: tron.TronWeb.toSun(
+          Number(transaction.value),
+        ) as unknown as number,
       };
 
-      // Create an unsigned transaction
-      const unsignedTxn = await tronWeb.transactionBuilder.sendTrx(
+      // Get the signature
+      const tx = await tronWeb.transactionBuilder.sendTrx(
         tronTransaction.to_address,
-        Number(transaction.value),
+        tronTransaction.amount,
         tronTransaction.owner_address,
       );
 
-      // Sign the transaction
-      const signedTxn = await tronWeb.trx.sign(unsignedTxn, privateKey);
-
-      // Get the signature
-      resp = signedTxn.signature[0];
+      const signedTx = await tronWeb.trx.signTransaction(tx);
+      resp = signedTx.signature[0];
 
       this.emit('signTransaction', true);
     } catch (e) {
@@ -77,7 +104,6 @@ export class ProviderMnemonicTron
         this.catchError(e, 'signTransaction');
       }
     }
-
     return resp;
   }
 

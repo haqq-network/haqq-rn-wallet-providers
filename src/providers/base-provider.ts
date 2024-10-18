@@ -12,7 +12,7 @@ export class ProviderBase<T extends object>
   extends EventEmitter
   implements ProviderInterface
 {
-  protected _options: T & ProviderBaseOptions;
+  _options: T & ProviderBaseOptions;
 
   constructor(options: T & ProviderBaseOptions) {
     super();
