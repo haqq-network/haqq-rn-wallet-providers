@@ -102,7 +102,7 @@ export class ProviderSSSTron
       );
 
       const signedTx = await tronWeb.trx.signTransaction(tx);
-      resp = signedTx.signature[0];
+      resp = JSON.stringify(signedTx);
 
       this.emit('signTransaction', true);
     } catch (e) {

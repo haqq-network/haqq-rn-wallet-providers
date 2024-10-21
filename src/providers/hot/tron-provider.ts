@@ -59,7 +59,7 @@ export class ProviderHotTron
 
       const tronWeb = new tron.TronWeb({
         fullHost: this._tronWebHostUrl,
-        privateKey,
+        privateKey: privateKey.replace(/^0x/, ''),
       });
 
       // Convert Ethereum-style transaction to Tron transaction
@@ -81,7 +81,7 @@ export class ProviderHotTron
       );
 
       const signedTx = await tronWeb.trx.signTransaction(tx);
-      resp = signedTx.signature[0];
+      resp = JSON.stringify(signedTx);
 
       this.emit('signTransaction', true);
     } catch (e) {
