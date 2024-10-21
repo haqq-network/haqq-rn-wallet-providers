@@ -1,11 +1,10 @@
 import {accountInfo, derive} from '@haqq/provider-web3-utils';
 import tron from 'tronweb';
 
-import {ProviderMnemonicBase} from './provider';
-import {ProviderMnemonicTronOptions} from './types';
+import {ProviderSSSBase} from './provider';
+import {ProviderSSSTronOptions} from './types';
 
-import {compressPublicKey} from '../../utils';
-import {getMnemonic} from '../../utils/mnemonic/get-mnemonic';
+import {compressPublicKey, getSeed} from '../../utils';
 import {
   BytesLike,
   ProviderInterface,
@@ -13,38 +12,48 @@ import {
   TypedData,
 } from '../types';
 
-export class ProviderMnemonicTron
-  extends ProviderMnemonicBase
+export class ProviderSSSTron
+  extends ProviderSSSBase
   implements ProviderInterface
 {
   private _tronWebHostUrl: string;
-  constructor(options: ProviderMnemonicTronOptions) {
+  constructor(options: ProviderSSSTronOptions) {
     super(options);
     this._tronWebHostUrl = options.tronWebHostUrl;
   }
 
   async getAccountInfo(hdPath: string) {
-    const share = await getMnemonic(
-      this._options.account,
-      this._options.getPassword,
-    );
+    let resp = {publicKey: '', address: ''};
+    try {
+      const {seed} = await getSeed(
+        this._options.account,
+        this._options.storage,
+        this._options.getPassword,
+      );
 
-    if (!share) {
-      throw new Error('seed_not_found');
+      if (!seed) {
+        throw new Error('seed_not_found');
+      }
+
+      const privateKey = await derive(seed, hdPath);
+
+      if (!privateKey) {
+        throw new Error('private_key_not_found');
+      }
+
+      const account = await accountInfo(privateKey);
+
+      resp = {
+        publicKey: compressPublicKey(account.publicKey),
+        address: tron.utils.address.fromHex(account.address),
+      };
+      this.emit('getPublicKeyForHDPath', true);
+    } catch (e) {
+      if (e instanceof Error) {
+        this.catchError(e, 'getPublicKeyForHDPath');
+      }
     }
-
-    const seed = await ProviderMnemonicBase.shareToSeed(share);
-    const ethPrivateKey = await derive(seed, hdPath);
-
-    if (!ethPrivateKey) {
-      throw new Error('private_key_not_found');
-    }
-
-    const account = await accountInfo(ethPrivateKey);
-    return {
-      publicKey: compressPublicKey(account.publicKey),
-      address: tron.utils.address.fromHex(account.address),
-    };
+    return resp;
   }
 
   async signTransaction(
@@ -53,16 +62,15 @@ export class ProviderMnemonicTron
   ): Promise<string> {
     let resp = '';
     try {
-      const share = await getMnemonic(
+      const {seed} = await getSeed(
         this._options.account,
+        this._options.storage,
         this._options.getPassword,
       );
 
-      if (!share) {
+      if (!seed) {
         throw new Error('seed_not_found');
       }
-
-      const seed = await ProviderMnemonicBase.shareToSeed(share);
 
       const privateKey = (await derive(seed, hdPath)).replace(/^0x/, '');
 

@@ -28,3 +28,7 @@ export type ShareEncrypted = {
   polynomialID: string;
   publicShare: string;
 };
+
+export type ProviderSSSTronOptions = ProviderSSSBaseOptions & {
+  tronWebHostUrl: string;
+};
