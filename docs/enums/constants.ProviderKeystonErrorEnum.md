@@ -1,4 +1,4 @@
-[@haqq/rn-wallet-providers - v0.0.1](../README.md) / [Exports](../modules.md) / [constants](../modules/constants.md) / ProviderKeystonErrorEnum
+[@haqq/rn-wallet-providers - v0.0.11](../README.md) / [Exports](../modules.md) / [constants](../modules/constants.md) / ProviderKeystonErrorEnum
 
 # Enumeration: ProviderKeystonErrorEnum
 
@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[src/constants.ts:29](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L29)
+[src/constants.ts:29](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/constants.ts#L29)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[src/constants.ts:30](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L30)
+[src/constants.ts:30](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/constants.ts#L30)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[src/constants.ts:31](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L31)
+[src/constants.ts:31](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/constants.ts#L31)
 
 ___
 
@@ -51,4 +51,4 @@ ___
 
 #### Defined in
 
-[src/constants.ts:28](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L28)
+[src/constants.ts:28](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/constants.ts#L28)

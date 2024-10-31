@@ -1,17 +1,17 @@
-[@haqq/rn-wallet-providers - v0.0.11](../README.md) / [Exports](../modules.md) / [providers](../modules/providers.md) / ProviderSSSEvm
+[@haqq/rn-wallet-providers - v0.0.11](../README.md) / [Exports](../modules.md) / [providers](../modules/providers.md) / ProviderMnemonicTron
 
-# Class: ProviderSSSEvm
+# Class: ProviderMnemonicTron
 
-[providers](../modules/providers.md).ProviderSSSEvm
+[providers](../modules/providers.md).ProviderMnemonicTron
 
 Base provider for other providers
 extends EventEmitter
 
 ## Hierarchy
 
-- [`ProviderSSSBase`](providers.ProviderSSSBase.md)
+- [`ProviderMnemonicBase`](providers.ProviderMnemonicBase.md)
 
-  ↳ **`ProviderSSSEvm`**
+  ↳ **`ProviderMnemonicTron`**
 
 ## Implements
 
@@ -21,92 +21,102 @@ extends EventEmitter
 
 ### Constructors
 
-- [constructor](providers.ProviderSSSEvm.md#constructor)
+- [constructor](providers.ProviderMnemonicTron.md#constructor)
 
 ### Properties
 
-- [\_options](providers.ProviderSSSEvm.md#_options)
-- [captureRejectionSymbol](providers.ProviderSSSEvm.md#capturerejectionsymbol)
-- [captureRejections](providers.ProviderSSSEvm.md#capturerejections)
-- [defaultMaxListeners](providers.ProviderSSSEvm.md#defaultmaxlisteners)
-- [errorMonitor](providers.ProviderSSSEvm.md#errormonitor)
+- [\_options](providers.ProviderMnemonicTron.md#_options)
+- [\_tronWebHostUrl](providers.ProviderMnemonicTron.md#_tronwebhosturl)
+- [captureRejectionSymbol](providers.ProviderMnemonicTron.md#capturerejectionsymbol)
+- [captureRejections](providers.ProviderMnemonicTron.md#capturerejections)
+- [defaultMaxListeners](providers.ProviderMnemonicTron.md#defaultmaxlisteners)
+- [errorMonitor](providers.ProviderMnemonicTron.md#errormonitor)
 
 ### Methods
 
-- [[captureRejectionSymbol]](providers.ProviderSSSEvm.md#[capturerejectionsymbol])
-- [abort](providers.ProviderSSSEvm.md#abort)
-- [addListener](providers.ProviderSSSEvm.md#addlistener)
-- [catchError](providers.ProviderSSSEvm.md#catcherror)
-- [clean](providers.ProviderSSSEvm.md#clean)
-- [emit](providers.ProviderSSSEvm.md#emit)
-- [eventNames](providers.ProviderSSSEvm.md#eventnames)
-- [getAccountInfo](providers.ProviderSSSEvm.md#getaccountinfo)
-- [getIdentifier](providers.ProviderSSSEvm.md#getidentifier)
-- [getMaxListeners](providers.ProviderSSSEvm.md#getmaxlisteners)
-- [getMnemonicPhrase](providers.ProviderSSSEvm.md#getmnemonicphrase)
-- [getPrivateKey](providers.ProviderSSSEvm.md#getprivatekey)
-- [isShareSaved](providers.ProviderSSSEvm.md#issharesaved)
-- [listenerCount](providers.ProviderSSSEvm.md#listenercount)
-- [listeners](providers.ProviderSSSEvm.md#listeners)
-- [off](providers.ProviderSSSEvm.md#off)
-- [on](providers.ProviderSSSEvm.md#on)
-- [once](providers.ProviderSSSEvm.md#once)
-- [prependListener](providers.ProviderSSSEvm.md#prependlistener)
-- [prependOnceListener](providers.ProviderSSSEvm.md#prependoncelistener)
-- [rawListeners](providers.ProviderSSSEvm.md#rawlisteners)
-- [removeAllListeners](providers.ProviderSSSEvm.md#removealllisteners)
-- [removeListener](providers.ProviderSSSEvm.md#removelistener)
-- [setMaxListeners](providers.ProviderSSSEvm.md#setmaxlisteners)
-- [signPersonalMessage](providers.ProviderSSSEvm.md#signpersonalmessage)
-- [signTransaction](providers.ProviderSSSEvm.md#signtransaction)
-- [signTypedData](providers.ProviderSSSEvm.md#signtypeddata)
-- [tryToSaveShareToStore](providers.ProviderSSSEvm.md#trytosavesharetostore)
-- [updatePin](providers.ProviderSSSEvm.md#updatepin)
-- [addAbortListener](providers.ProviderSSSEvm.md#addabortlistener)
-- [getAccounts](providers.ProviderSSSEvm.md#getaccounts)
-- [getEventListeners](providers.ProviderSSSEvm.md#geteventlisteners)
-- [getMaxListeners](providers.ProviderSSSEvm.md#getmaxlisteners-1)
-- [getStoragesForAccount](providers.ProviderSSSEvm.md#getstoragesforaccount)
-- [initialize](providers.ProviderSSSEvm.md#initialize)
-- [listenerCount](providers.ProviderSSSEvm.md#listenercount-1)
-- [on](providers.ProviderSSSEvm.md#on-1)
-- [once](providers.ProviderSSSEvm.md#once-1)
-- [setMaxListeners](providers.ProviderSSSEvm.md#setmaxlisteners-1)
-- [setStorageForAccount](providers.ProviderSSSEvm.md#setstorageforaccount)
+- [[captureRejectionSymbol]](providers.ProviderMnemonicTron.md#[capturerejectionsymbol])
+- [abort](providers.ProviderMnemonicTron.md#abort)
+- [addListener](providers.ProviderMnemonicTron.md#addlistener)
+- [catchError](providers.ProviderMnemonicTron.md#catcherror)
+- [clean](providers.ProviderMnemonicTron.md#clean)
+- [emit](providers.ProviderMnemonicTron.md#emit)
+- [eventNames](providers.ProviderMnemonicTron.md#eventnames)
+- [getAccountInfo](providers.ProviderMnemonicTron.md#getaccountinfo)
+- [getIdentifier](providers.ProviderMnemonicTron.md#getidentifier)
+- [getMaxListeners](providers.ProviderMnemonicTron.md#getmaxlisteners)
+- [getMnemonicPhrase](providers.ProviderMnemonicTron.md#getmnemonicphrase)
+- [getPrivateKey](providers.ProviderMnemonicTron.md#getprivatekey)
+- [isMnemonicSaved](providers.ProviderMnemonicTron.md#ismnemonicsaved)
+- [listenerCount](providers.ProviderMnemonicTron.md#listenercount)
+- [listeners](providers.ProviderMnemonicTron.md#listeners)
+- [off](providers.ProviderMnemonicTron.md#off)
+- [on](providers.ProviderMnemonicTron.md#on)
+- [once](providers.ProviderMnemonicTron.md#once)
+- [prependListener](providers.ProviderMnemonicTron.md#prependlistener)
+- [prependOnceListener](providers.ProviderMnemonicTron.md#prependoncelistener)
+- [rawListeners](providers.ProviderMnemonicTron.md#rawlisteners)
+- [removeAllListeners](providers.ProviderMnemonicTron.md#removealllisteners)
+- [removeListener](providers.ProviderMnemonicTron.md#removelistener)
+- [setMaxListeners](providers.ProviderMnemonicTron.md#setmaxlisteners)
+- [setMnemonicSaved](providers.ProviderMnemonicTron.md#setmnemonicsaved)
+- [signPersonalMessage](providers.ProviderMnemonicTron.md#signpersonalmessage)
+- [signTransaction](providers.ProviderMnemonicTron.md#signtransaction)
+- [signTypedData](providers.ProviderMnemonicTron.md#signtypeddata)
+- [updatePin](providers.ProviderMnemonicTron.md#updatepin)
+- [addAbortListener](providers.ProviderMnemonicTron.md#addabortlistener)
+- [getAccounts](providers.ProviderMnemonicTron.md#getaccounts)
+- [getEventListeners](providers.ProviderMnemonicTron.md#geteventlisteners)
+- [getMaxListeners](providers.ProviderMnemonicTron.md#getmaxlisteners-1)
+- [initialize](providers.ProviderMnemonicTron.md#initialize)
+- [listenerCount](providers.ProviderMnemonicTron.md#listenercount-1)
+- [on](providers.ProviderMnemonicTron.md#on-1)
+- [once](providers.ProviderMnemonicTron.md#once-1)
+- [setMaxListeners](providers.ProviderMnemonicTron.md#setmaxlisteners-1)
+- [shareToSeed](providers.ProviderMnemonicTron.md#sharetoseed)
 
 ## Constructors
 
 ### constructor
 
-• **new ProviderSSSEvm**(`options`)
+• **new ProviderMnemonicTron**(`options`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `options` | [`ProviderSSSBaseOptions`](../modules/providers.md#providersssbaseoptions) & [`ProviderBaseOptions`](../modules/providers.md#providerbaseoptions) |
+| `options` | [`ProviderMnemonicTronOptions`](../modules/providers.md#providermnemonictronoptions) |
 
-#### Inherited from
+#### Overrides
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[constructor](providers.ProviderSSSBase.md#constructor)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[constructor](providers.ProviderMnemonicBase.md#constructor)
 
 #### Defined in
 
-[src/providers/base-provider.ts:17](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L17)
+[src/providers/mnemonic/tron-provider.ts:22](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/mnemonic/tron-provider.ts#L22)
 
 ## Properties
 
 ### \_options
 
-• **\_options**: [`ProviderSSSBaseOptions`](../modules/providers.md#providersssbaseoptions) & [`ProviderBaseOptions`](../modules/providers.md#providerbaseoptions)
+• **\_options**: [`ProviderMnemonicBaseOptions`](../modules/providers.md#providermnemonicbaseoptions) & [`ProviderBaseOptions`](../modules/providers.md#providerbaseoptions)
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[_options](providers.ProviderSSSBase.md#_options)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[_options](providers.ProviderMnemonicBase.md#_options)
 
 #### Defined in
 
 [src/providers/base-provider.ts:15](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L15)
+
+___
+
+### \_tronWebHostUrl
+
+• `Private` **\_tronWebHostUrl**: `string`
+
+#### Defined in
+
+[src/providers/mnemonic/tron-provider.ts:21](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/mnemonic/tron-provider.ts#L21)
 
 ___
 
@@ -124,7 +134,7 @@ v13.4.0, v12.16.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[captureRejectionSymbol](providers.ProviderSSSBase.md#capturerejectionsymbol)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[captureRejectionSymbol](providers.ProviderMnemonicBase.md#capturerejectionsymbol)
 
 #### Defined in
 
@@ -146,7 +156,7 @@ v13.4.0, v12.16.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[captureRejections](providers.ProviderSSSBase.md#capturerejections)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[captureRejections](providers.ProviderMnemonicBase.md#capturerejections)
 
 #### Defined in
 
@@ -200,7 +210,7 @@ v0.11.2
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[defaultMaxListeners](providers.ProviderSSSBase.md#defaultmaxlisteners)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[defaultMaxListeners](providers.ProviderMnemonicBase.md#defaultmaxlisteners)
 
 #### Defined in
 
@@ -223,7 +233,7 @@ v13.6.0, v12.17.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[errorMonitor](providers.ProviderSSSBase.md#errormonitor)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[errorMonitor](providers.ProviderMnemonicBase.md#errormonitor)
 
 #### Defined in
 
@@ -259,7 +269,7 @@ node_modules/@types/node/events.d.ts:445
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[[captureRejectionSymbol]](providers.ProviderSSSBase.md#[capturerejectionsymbol])
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[[captureRejectionSymbol]](providers.ProviderMnemonicBase.md#[capturerejectionsymbol])
 
 #### Defined in
 
@@ -283,7 +293,7 @@ Stop action
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[abort](providers.ProviderSSSBase.md#abort)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[abort](providers.ProviderMnemonicBase.md#abort)
 
 #### Defined in
 
@@ -293,7 +303,7 @@ ___
 
 ### addListener
 
-▸ **addListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **addListener**\<`K`\>(`eventName`, `listener`): [`ProviderMnemonicTron`](providers.ProviderMnemonicTron.md)
 
 Alias for `emitter.on(eventName, listener)`.
 
@@ -312,7 +322,7 @@ Alias for `emitter.on(eventName, listener)`.
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderMnemonicTron`](providers.ProviderMnemonicTron.md)
 
 **`Since`**
 
@@ -324,7 +334,7 @@ v0.1.26
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[addListener](providers.ProviderSSSBase.md#addlistener)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[addListener](providers.ProviderMnemonicBase.md#addlistener)
 
 #### Defined in
 
@@ -350,7 +360,7 @@ ___
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[catchError](providers.ProviderSSSBase.md#catcherror)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[catchError](providers.ProviderMnemonicBase.md#catcherror)
 
 #### Defined in
 
@@ -374,11 +384,11 @@ Clean provider storage
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[clean](providers.ProviderSSSBase.md#clean)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[clean](providers.ProviderMnemonicBase.md#clean)
 
 #### Defined in
 
-[src/providers/base-provider.ts:64](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L64)
+[src/providers/mnemonic/provider.ts:102](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/mnemonic/provider.ts#L102)
 
 ___
 
@@ -451,7 +461,7 @@ v0.1.26
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[emit](providers.ProviderSSSBase.md#emit)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[emit](providers.ProviderMnemonicBase.md#emit)
 
 #### Defined in
 
@@ -494,7 +504,7 @@ v6.0.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[eventNames](providers.ProviderSSSBase.md#eventnames)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[eventNames](providers.ProviderMnemonicBase.md#eventnames)
 
 #### Defined in
 
@@ -504,7 +514,7 @@ ___
 
 ### getAccountInfo
 
-▸ **getAccountInfo**(`hdPath`): `Promise`\<\{ `address`: `string` = ''; `publicKey`: `string` = '' }\>
+▸ **getAccountInfo**(`hdPath`): `Promise`\<\{ `address`: `string` ; `publicKey`: `string`  }\>
 
 Get public key and address for hd path
 
@@ -516,19 +526,19 @@ Get public key and address for hd path
 
 #### Returns
 
-`Promise`\<\{ `address`: `string` = ''; `publicKey`: `string` = '' }\>
+`Promise`\<\{ `address`: `string` ; `publicKey`: `string`  }\>
 
 #### Implementation of
 
 [ProviderInterface](../interfaces/providers.ProviderInterface.md).[getAccountInfo](../interfaces/providers.ProviderInterface.md#getaccountinfo)
 
-#### Inherited from
+#### Overrides
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[getAccountInfo](providers.ProviderSSSBase.md#getaccountinfo)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[getAccountInfo](providers.ProviderMnemonicBase.md#getaccountinfo)
 
 #### Defined in
 
-[src/providers/sss/provider.ts:246](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/provider.ts#L246)
+[src/providers/mnemonic/tron-provider.ts:27](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/mnemonic/tron-provider.ts#L27)
 
 ___
 
@@ -546,11 +556,11 @@ ___
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[getIdentifier](providers.ProviderSSSBase.md#getidentifier)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[getIdentifier](providers.ProviderMnemonicBase.md#getidentifier)
 
 #### Defined in
 
-[src/providers/sss/provider.ts:242](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/provider.ts#L242)
+[src/providers/mnemonic/provider.ts:116](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/mnemonic/provider.ts#L116)
 
 ___
 
@@ -559,7 +569,7 @@ ___
 ▸ **getMaxListeners**(): `number`
 
 Returns the current max listener value for the `EventEmitter` which is either
-set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](providers.ProviderSSSEvm.md#defaultmaxlisteners).
+set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](providers.ProviderMnemonicTron.md#defaultmaxlisteners).
 
 #### Returns
 
@@ -575,7 +585,7 @@ v1.0.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[getMaxListeners](providers.ProviderSSSBase.md#getmaxlisteners)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[getMaxListeners](providers.ProviderMnemonicBase.md#getmaxlisteners)
 
 #### Defined in
 
@@ -597,11 +607,11 @@ mnemonic
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[getMnemonicPhrase](providers.ProviderSSSBase.md#getmnemonicphrase)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[getMnemonicPhrase](providers.ProviderMnemonicBase.md#getmnemonicphrase)
 
 #### Defined in
 
-[src/providers/sss/provider.ts:372](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/provider.ts#L372)
+[src/providers/mnemonic/provider.ts:183](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/mnemonic/provider.ts#L183)
 
 ___
 
@@ -625,7 +635,7 @@ ___
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[getPrivateKey](providers.ProviderSSSBase.md#getprivatekey)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[getPrivateKey](providers.ProviderMnemonicBase.md#getprivatekey)
 
 #### Defined in
 
@@ -633,15 +643,11 @@ ___
 
 ___
 
-### isShareSaved
+### isMnemonicSaved
 
-▸ **isShareSaved**(`storage?`): `Promise`\<`boolean`\>
+▸ **isMnemonicSaved**(): `Promise`\<`boolean`\>
 
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `storage?` | [`StorageInterface`](../interfaces/providers.StorageInterface.md) |
+Check is mnemonic saved
 
 #### Returns
 
@@ -649,11 +655,11 @@ ___
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[isShareSaved](providers.ProviderSSSBase.md#issharesaved)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[isMnemonicSaved](providers.ProviderMnemonicBase.md#ismnemonicsaved)
 
 #### Defined in
 
-[src/providers/sss/provider.ts:304](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/provider.ts#L304)
+[src/providers/mnemonic/provider.ts:157](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/mnemonic/provider.ts#L157)
 
 ___
 
@@ -692,7 +698,7 @@ v3.2.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[listenerCount](providers.ProviderSSSBase.md#listenercount)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[listenerCount](providers.ProviderMnemonicBase.md#listenercount)
 
 #### Defined in
 
@@ -740,7 +746,7 @@ v0.1.26
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[listeners](providers.ProviderSSSBase.md#listeners)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[listeners](providers.ProviderMnemonicBase.md#listeners)
 
 #### Defined in
 
@@ -750,7 +756,7 @@ ___
 
 ### off
 
-▸ **off**\<`K`\>(`eventName`, `listener`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **off**\<`K`\>(`eventName`, `listener`): [`ProviderMnemonicTron`](providers.ProviderMnemonicTron.md)
 
 Alias for `emitter.removeListener()`.
 
@@ -769,7 +775,7 @@ Alias for `emitter.removeListener()`.
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderMnemonicTron`](providers.ProviderMnemonicTron.md)
 
 **`Since`**
 
@@ -781,7 +787,7 @@ v10.0.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[off](providers.ProviderSSSBase.md#off)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[off](providers.ProviderMnemonicBase.md#off)
 
 #### Defined in
 
@@ -791,7 +797,7 @@ ___
 
 ### on
 
-▸ **on**\<`K`\>(`eventName`, `listener`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **on**\<`K`\>(`eventName`, `listener`): [`ProviderMnemonicTron`](providers.ProviderMnemonicTron.md)
 
 Adds the `listener` function to the end of the listeners array for the event
 named `eventName`. No checks are made to see if the `listener` has already
@@ -835,7 +841,7 @@ myEE.emit('foo');
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderMnemonicTron`](providers.ProviderMnemonicTron.md)
 
 **`Since`**
 
@@ -847,7 +853,7 @@ v0.1.101
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[on](providers.ProviderSSSBase.md#on)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[on](providers.ProviderMnemonicBase.md#on)
 
 #### Defined in
 
@@ -857,7 +863,7 @@ ___
 
 ### once
 
-▸ **once**\<`K`\>(`eventName`, `listener`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **once**\<`K`\>(`eventName`, `listener`): [`ProviderMnemonicTron`](providers.ProviderMnemonicTron.md)
 
 Adds a **one-time** `listener` function for the event named `eventName`. The
 next time `eventName` is triggered, this listener is removed and then invoked.
@@ -899,7 +905,7 @@ myEE.emit('foo');
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderMnemonicTron`](providers.ProviderMnemonicTron.md)
 
 **`Since`**
 
@@ -911,7 +917,7 @@ v0.3.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[once](providers.ProviderSSSBase.md#once)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[once](providers.ProviderMnemonicBase.md#once)
 
 #### Defined in
 
@@ -921,7 +927,7 @@ ___
 
 ### prependListener
 
-▸ **prependListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **prependListener**\<`K`\>(`eventName`, `listener`): [`ProviderMnemonicTron`](providers.ProviderMnemonicTron.md)
 
 Adds the `listener` function to the _beginning_ of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
@@ -951,7 +957,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderMnemonicTron`](providers.ProviderMnemonicTron.md)
 
 **`Since`**
 
@@ -963,7 +969,7 @@ v6.0.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[prependListener](providers.ProviderSSSBase.md#prependlistener)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[prependListener](providers.ProviderMnemonicBase.md#prependlistener)
 
 #### Defined in
 
@@ -973,7 +979,7 @@ ___
 
 ### prependOnceListener
 
-▸ **prependOnceListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **prependOnceListener**\<`K`\>(`eventName`, `listener`): [`ProviderMnemonicTron`](providers.ProviderMnemonicTron.md)
 
 Adds a **one-time**`listener` function for the event named `eventName` to the _beginning_ of the listeners array. The next time `eventName` is triggered, this
 listener is removed, and then invoked.
@@ -1001,7 +1007,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderMnemonicTron`](providers.ProviderMnemonicTron.md)
 
 **`Since`**
 
@@ -1013,7 +1019,7 @@ v6.0.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[prependOnceListener](providers.ProviderSSSBase.md#prependoncelistener)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[prependOnceListener](providers.ProviderMnemonicBase.md#prependoncelistener)
 
 #### Defined in
 
@@ -1079,7 +1085,7 @@ v9.4.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[rawListeners](providers.ProviderSSSBase.md#rawlisteners)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[rawListeners](providers.ProviderMnemonicBase.md#rawlisteners)
 
 #### Defined in
 
@@ -1089,7 +1095,7 @@ ___
 
 ### removeAllListeners
 
-▸ **removeAllListeners**(`eventName?`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **removeAllListeners**(`eventName?`): [`ProviderMnemonicTron`](providers.ProviderMnemonicTron.md)
 
 Removes all listeners, or those of the specified `eventName`.
 
@@ -1107,7 +1113,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderMnemonicTron`](providers.ProviderMnemonicTron.md)
 
 **`Since`**
 
@@ -1119,7 +1125,7 @@ v0.1.26
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[removeAllListeners](providers.ProviderSSSBase.md#removealllisteners)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[removeAllListeners](providers.ProviderMnemonicBase.md#removealllisteners)
 
 #### Defined in
 
@@ -1129,7 +1135,7 @@ ___
 
 ### removeListener
 
-▸ **removeListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **removeListener**\<`K`\>(`eventName`, `listener`): [`ProviderMnemonicTron`](providers.ProviderMnemonicTron.md)
 
 Removes the specified `listener` from the listener array for the event named `eventName`.
 
@@ -1226,7 +1232,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderMnemonicTron`](providers.ProviderMnemonicTron.md)
 
 **`Since`**
 
@@ -1238,7 +1244,7 @@ v0.1.26
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[removeListener](providers.ProviderSSSBase.md#removelistener)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[removeListener](providers.ProviderMnemonicBase.md#removelistener)
 
 #### Defined in
 
@@ -1248,7 +1254,7 @@ ___
 
 ### setMaxListeners
 
-▸ **setMaxListeners**(`n`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **setMaxListeners**(`n`): [`ProviderMnemonicTron`](providers.ProviderMnemonicTron.md)
 
 By default `EventEmitter`s will print a warning if more than `10` listeners are
 added for a particular event. This is a useful default that helps finding
@@ -1265,7 +1271,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderMnemonicTron`](providers.ProviderMnemonicTron.md)
 
 **`Since`**
 
@@ -1277,7 +1283,7 @@ v0.3.5
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[setMaxListeners](providers.ProviderSSSBase.md#setmaxlisteners)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[setMaxListeners](providers.ProviderMnemonicBase.md#setmaxlisteners)
 
 #### Defined in
 
@@ -1285,9 +1291,29 @@ node_modules/@types/node/events.d.ts:768
 
 ___
 
+### setMnemonicSaved
+
+▸ **setMnemonicSaved**(): `Promise`\<`void`\>
+
+Set mnemonic saved
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Inherited from
+
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[setMnemonicSaved](providers.ProviderMnemonicBase.md#setmnemonicsaved)
+
+#### Defined in
+
+[src/providers/mnemonic/provider.ts:168](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/mnemonic/provider.ts#L168)
+
+___
+
 ### signPersonalMessage
 
-▸ **signPersonalMessage**(`hdPath`, `message`): `Promise`\<`string`\>
+▸ **signPersonalMessage**(`_hdPath`, `_message`): `Promise`\<`string`\>
 
 Sign personal message
 
@@ -1295,8 +1321,8 @@ Sign personal message
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `hdPath` | `string` | HD path for subscribe |
-| `message` | [`BytesLike`](../modules/providers.md#byteslike) | message |
+| `_hdPath` | `string` | HD path for subscribe |
+| `_message` | [`BytesLike`](../modules/providers.md#byteslike) | message |
 
 #### Returns
 
@@ -1310,11 +1336,11 @@ signature of personal message
 
 #### Overrides
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[signPersonalMessage](providers.ProviderSSSBase.md#signpersonalmessage)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[signPersonalMessage](providers.ProviderMnemonicBase.md#signpersonalmessage)
 
 #### Defined in
 
-[src/providers/sss/evm-provider.ts:67](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/evm-provider.ts#L67)
+[src/providers/mnemonic/tron-provider.ts:119](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/mnemonic/tron-provider.ts#L119)
 
 ___
 
@@ -1343,17 +1369,17 @@ signature of transaction
 
 #### Overrides
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[signTransaction](providers.ProviderSSSBase.md#signtransaction)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[signTransaction](providers.ProviderMnemonicBase.md#signtransaction)
 
 #### Defined in
 
-[src/providers/sss/evm-provider.ts:26](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/evm-provider.ts#L26)
+[src/providers/mnemonic/tron-provider.ts:51](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/mnemonic/tron-provider.ts#L51)
 
 ___
 
 ### signTypedData
 
-▸ **signTypedData**(`hdPath`, `typedData`): `Promise`\<`string`\>
+▸ **signTypedData**(`_hdPath`, `_typedData`): `Promise`\<`string`\>
 
 Sign typed data
 
@@ -1361,8 +1387,8 @@ Sign typed data
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `hdPath` | `string` | HD path for subscribe |
-| `typedData` | [`TypedData`](../modules/providers.md#typeddata) |  |
+| `_hdPath` | `string` | HD path for subscribe |
+| `_typedData` | [`TypedData`](../modules/providers.md#typeddata) |  |
 
 #### Returns
 
@@ -1376,35 +1402,11 @@ signature of typed data
 
 #### Overrides
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[signTypedData](providers.ProviderSSSBase.md#signtypeddata)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[signTypedData](providers.ProviderMnemonicBase.md#signtypeddata)
 
 #### Defined in
 
-[src/providers/sss/evm-provider.ts:110](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/evm-provider.ts#L110)
-
-___
-
-### tryToSaveShareToStore
-
-▸ **tryToSaveShareToStore**(`storage`): `Promise`\<`void`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `storage` | [`StorageInterface`](../interfaces/providers.StorageInterface.md) |
-
-#### Returns
-
-`Promise`\<`void`\>
-
-#### Inherited from
-
-[ProviderSSSBase](providers.ProviderSSSBase.md).[tryToSaveShareToStore](providers.ProviderSSSBase.md#trytosavesharetostore)
-
-#### Defined in
-
-[src/providers/sss/provider.ts:336](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/provider.ts#L336)
+[src/providers/mnemonic/tron-provider.ts:126](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/mnemonic/tron-provider.ts#L126)
 
 ___
 
@@ -1430,11 +1432,11 @@ Update pin for encrypted providers
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[updatePin](providers.ProviderSSSBase.md#updatepin)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[updatePin](providers.ProviderMnemonicBase.md#updatepin)
 
 #### Defined in
 
-[src/providers/sss/provider.ts:280](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/provider.ts#L280)
+[src/providers/mnemonic/provider.ts:81](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/mnemonic/provider.ts#L81)
 
 ___
 
@@ -1491,7 +1493,7 @@ v20.5.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[addAbortListener](providers.ProviderSSSBase.md#addabortlistener)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[addAbortListener](providers.ProviderMnemonicBase.md#addabortlistener)
 
 #### Defined in
 
@@ -1509,11 +1511,11 @@ ___
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[getAccounts](providers.ProviderSSSBase.md#getaccounts)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[getAccounts](providers.ProviderMnemonicBase.md#getaccounts)
 
 #### Defined in
 
-[src/providers/sss/provider.ts:208](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/provider.ts#L208)
+[src/providers/mnemonic/provider.ts:64](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/mnemonic/provider.ts#L64)
 
 ___
 
@@ -1563,7 +1565,7 @@ v15.2.0, v14.17.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[getEventListeners](providers.ProviderSSSBase.md#geteventlisteners)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[getEventListeners](providers.ProviderMnemonicBase.md#geteventlisteners)
 
 #### Defined in
 
@@ -1617,7 +1619,7 @@ v19.9.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[getMaxListeners](providers.ProviderSSSBase.md#getmaxlisteners-1)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[getMaxListeners](providers.ProviderMnemonicBase.md#getmaxlisteners-1)
 
 #### Defined in
 
@@ -1625,61 +1627,29 @@ node_modules/@types/node/events.d.ts:387
 
 ___
 
-### getStoragesForAccount
+### initialize
 
-▸ `Static` **getStoragesForAccount**(`accountId?`): `Promise`\<`string`[]\>
+▸ `Static` **initialize**(`mnemonic`, `getPassword`, `options`): `Promise`\<[`ProviderMnemonicBase`](providers.ProviderMnemonicBase.md)\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `accountId?` | `string` |
+| `mnemonic` | `string` |
+| `getPassword` | () => `Promise`\<`string`\> |
+| `options` | `Omit`\<[`ProviderBaseOptions`](../modules/providers.md#providerbaseoptions), ``"getPassword"``\> |
 
 #### Returns
 
-`Promise`\<`string`[]\>
+`Promise`\<[`ProviderMnemonicBase`](providers.ProviderMnemonicBase.md)\>
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[getStoragesForAccount](providers.ProviderSSSBase.md#getstoragesforaccount)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[initialize](providers.ProviderMnemonicBase.md#initialize)
 
 #### Defined in
 
-[src/providers/sss/provider.ts:216](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/provider.ts#L216)
-
-___
-
-### initialize
-
-▸ `Static` **initialize**(`socialPrivateKey`, `cloudShare`, `localShare`, `privateKey`, `verifier`, `token`, `getPassword`, `storage`, `options`): `Promise`\<[`ProviderSSSBase`](providers.ProviderSSSBase.md)\>
-
-Initialize SSS provider
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `socialPrivateKey` | `string` | private key which we get from social service |
-| `cloudShare` | `string` | encrypted share from cloud storage |
-| `localShare` | `string` | encrypted share from local storage |
-| `privateKey` | `string` | private key which rewrite current shares |
-| `verifier` | `string` | verifier name |
-| `token` | `string` | token for verifier name |
-| `getPassword` | () => `Promise`\<`string`\> | function which return password for decrypt share |
-| `storage` | [`StorageInterface`](../interfaces/providers.StorageInterface.md) | storage for save share |
-| `options` | `Omit`\<[`ProviderBaseOptions`](../modules/providers.md#providerbaseoptions), ``"getPassword"``\> & \{ `generateSharesUrl`: `string` ; `metadataUrl`: `string`  } | options for provider and metadata |
-
-#### Returns
-
-`Promise`\<[`ProviderSSSBase`](providers.ProviderSSSBase.md)\>
-
-#### Inherited from
-
-[ProviderSSSBase](providers.ProviderSSSBase.md).[initialize](providers.ProviderSSSBase.md#initialize)
-
-#### Defined in
-
-[src/providers/sss/provider.ts:42](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/provider.ts#L42)
+[src/providers/mnemonic/provider.ts:19](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/mnemonic/provider.ts#L19)
 
 ___
 
@@ -1720,7 +1690,7 @@ Since v3.2.0 - Use `listenerCount` instead.
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[listenerCount](providers.ProviderSSSBase.md#listenercount-1)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[listenerCount](providers.ProviderMnemonicBase.md#listenercount-1)
 
 #### Defined in
 
@@ -1829,7 +1799,7 @@ v13.6.0, v12.16.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[on](providers.ProviderSSSBase.md#on-1)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[on](providers.ProviderMnemonicBase.md#on-1)
 
 #### Defined in
 
@@ -1851,7 +1821,7 @@ node_modules/@types/node/events.d.ts:303
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[on](providers.ProviderSSSBase.md#on-1)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[on](providers.ProviderMnemonicBase.md#on-1)
 
 #### Defined in
 
@@ -1958,7 +1928,7 @@ v11.13.0, v10.16.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[once](providers.ProviderSSSBase.md#once-1)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[once](providers.ProviderMnemonicBase.md#once-1)
 
 #### Defined in
 
@@ -1980,7 +1950,7 @@ node_modules/@types/node/events.d.ts:217
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[once](providers.ProviderSSSBase.md#once-1)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[once](providers.ProviderMnemonicBase.md#once-1)
 
 #### Defined in
 
@@ -2018,7 +1988,7 @@ v15.4.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[setMaxListeners](providers.ProviderSSSBase.md#setmaxlisteners-1)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[setMaxListeners](providers.ProviderMnemonicBase.md#setmaxlisteners-1)
 
 #### Defined in
 
@@ -2026,25 +1996,24 @@ node_modules/@types/node/events.d.ts:402
 
 ___
 
-### setStorageForAccount
+### shareToSeed
 
-▸ `Static` **setStorageForAccount**(`accountId`, `storage`): `Promise`\<`string`[]\>
+▸ `Static` **shareToSeed**(`share`): `Promise`\<`string`\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `accountId` | `string` |
-| `storage` | [`StorageInterface`](../interfaces/providers.StorageInterface.md) |
+| `share` | `Share` |
 
 #### Returns
 
-`Promise`\<`string`[]\>
+`Promise`\<`string`\>
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[setStorageForAccount](providers.ProviderSSSBase.md#setstorageforaccount)
+[ProviderMnemonicBase](providers.ProviderMnemonicBase.md).[shareToSeed](providers.ProviderMnemonicBase.md#sharetoseed)
 
 #### Defined in
 
-[src/providers/sss/provider.ts:226](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/provider.ts#L226)
+[src/providers/mnemonic/provider.ts:72](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/mnemonic/provider.ts#L72)

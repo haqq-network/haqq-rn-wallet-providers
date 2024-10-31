@@ -1,18 +1,21 @@
-[@haqq/rn-wallet-providers - v0.0.1](../README.md) / [Exports](../modules.md) / [providers](../modules/providers.md) / ProviderKeystoneEvm
+[@haqq/rn-wallet-providers - v0.0.11](../README.md) / [Exports](../modules.md) / [providers](../modules/providers.md) / ProviderKeystoneEvm
 
 # Class: ProviderKeystoneEvm
 
 [providers](../modules/providers.md).ProviderKeystoneEvm
 
+Base provider for other providers
+extends EventEmitter
+
 ## Hierarchy
 
-- `ProviderKeystoneBase`
+- [`ProviderKeystoneBase`](providers.ProviderKeystoneBase.md)
 
   ↳ **`ProviderKeystoneEvm`**
 
 ## Implements
 
-- `ProviderInterface`
+- [`ProviderInterface`](../interfaces/providers.ProviderInterface.md)
 
 ## Table of contents
 
@@ -87,11 +90,11 @@
 
 #### Inherited from
 
-ProviderKeystoneBase.constructor
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[constructor](providers.ProviderKeystoneBase.md#constructor)
 
 #### Defined in
 
-[src/providers/keystone/provider.ts:41](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/keystone/provider.ts#L41)
+[src/providers/keystone/provider.ts:42](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/keystone/provider.ts#L42)
 
 ## Properties
 
@@ -101,25 +104,25 @@ ProviderKeystoneBase.constructor
 
 #### Inherited from
 
-ProviderKeystoneBase.\_cryptoAccontDataMap
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[_cryptoAccontDataMap](providers.ProviderKeystoneBase.md#_cryptoaccontdatamap)
 
 #### Defined in
 
-[src/providers/keystone/provider.ts:39](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/keystone/provider.ts#L39)
+[src/providers/keystone/provider.ts:40](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/keystone/provider.ts#L40)
 
 ___
 
 ### \_options
 
-• `Protected` **\_options**: [`ProviderKeystoneBaseOptions`](../modules/providers.md#providerkeystonebaseoptions) & `ProviderBaseOptions`
+• **\_options**: [`ProviderKeystoneBaseOptions`](../modules/providers.md#providerkeystonebaseoptions) & [`ProviderBaseOptions`](../modules/providers.md#providerbaseoptions)
 
 #### Inherited from
 
-ProviderKeystoneBase.\_options
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[_options](providers.ProviderKeystoneBase.md#_options)
 
 #### Defined in
 
-[src/providers/base-provider.ts:14](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L14)
+[src/providers/base-provider.ts:15](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L15)
 
 ___
 
@@ -129,11 +132,11 @@ ___
 
 #### Inherited from
 
-ProviderKeystoneBase.\_registryItem
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[_registryItem](providers.ProviderKeystoneBase.md#_registryitem)
 
 #### Defined in
 
-[src/providers/keystone/provider.ts:38](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/keystone/provider.ts#L38)
+[src/providers/keystone/provider.ts:39](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/keystone/provider.ts#L39)
 
 ___
 
@@ -143,11 +146,11 @@ ___
 
 #### Inherited from
 
-ProviderKeystoneBase.\_xfp
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[_xfp](providers.ProviderKeystoneBase.md#_xfp)
 
 #### Defined in
 
-[src/providers/keystone/provider.ts:37](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/keystone/provider.ts#L37)
+[src/providers/keystone/provider.ts:38](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/keystone/provider.ts#L38)
 
 ___
 
@@ -165,7 +168,7 @@ v13.4.0, v12.16.0
 
 #### Inherited from
 
-ProviderKeystoneBase.captureRejectionSymbol
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[captureRejectionSymbol](providers.ProviderKeystoneBase.md#capturerejectionsymbol)
 
 #### Defined in
 
@@ -187,7 +190,7 @@ v13.4.0, v12.16.0
 
 #### Inherited from
 
-ProviderKeystoneBase.captureRejections
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[captureRejections](providers.ProviderKeystoneBase.md#capturerejections)
 
 #### Defined in
 
@@ -241,7 +244,7 @@ v0.11.2
 
 #### Inherited from
 
-ProviderKeystoneBase.defaultMaxListeners
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[defaultMaxListeners](providers.ProviderKeystoneBase.md#defaultmaxlisteners)
 
 #### Defined in
 
@@ -264,7 +267,7 @@ v13.6.0, v12.17.0
 
 #### Inherited from
 
-ProviderKeystoneBase.errorMonitor
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[errorMonitor](providers.ProviderKeystoneBase.md#errormonitor)
 
 #### Defined in
 
@@ -296,11 +299,11 @@ node_modules/@types/node/events.d.ts:445
 
 #### Implementation of
 
-ProviderInterface.[captureRejectionSymbol]
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[[captureRejectionSymbol]](../interfaces/providers.ProviderInterface.md#[capturerejectionsymbol])
 
 #### Inherited from
 
-ProviderKeystoneBase.[captureRejectionSymbol]
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[[captureRejectionSymbol]](providers.ProviderKeystoneBase.md#[capturerejectionsymbol])
 
 #### Defined in
 
@@ -331,7 +334,7 @@ ___
 
 #### Defined in
 
-[src/providers/keystone/evm-provider.ts:160](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/keystone/evm-provider.ts#L160)
+[src/providers/keystone/evm-provider.ts:160](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/keystone/evm-provider.ts#L160)
 
 ___
 
@@ -352,7 +355,7 @@ ___
 
 #### Defined in
 
-[src/providers/keystone/evm-provider.ts:189](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/keystone/evm-provider.ts#L189)
+[src/providers/keystone/evm-provider.ts:189](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/keystone/evm-provider.ts#L189)
 
 ___
 
@@ -373,11 +376,11 @@ ___
 
 #### Inherited from
 
-ProviderKeystoneBase.\_throwError
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[_throwError](providers.ProviderKeystoneBase.md#_throwerror)
 
 #### Defined in
 
-[src/providers/keystone/provider.ts:177](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/keystone/provider.ts#L177)
+[src/providers/keystone/provider.ts:178](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/keystone/provider.ts#L178)
 
 ___
 
@@ -385,21 +388,23 @@ ___
 
 ▸ **abort**(): `void`
 
+Stop action
+
 #### Returns
 
 `void`
 
 #### Implementation of
 
-ProviderInterface.abort
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[abort](../interfaces/providers.ProviderInterface.md#abort)
 
 #### Inherited from
 
-ProviderKeystoneBase.abort
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[abort](providers.ProviderKeystoneBase.md#abort)
 
 #### Defined in
 
-[src/providers/keystone/provider.ts:120](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/keystone/provider.ts#L120)
+[src/providers/keystone/provider.ts:121](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/keystone/provider.ts#L121)
 
 ___
 
@@ -432,11 +437,11 @@ v0.1.26
 
 #### Implementation of
 
-ProviderInterface.addListener
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[addListener](../interfaces/providers.ProviderInterface.md#addlistener)
 
 #### Inherited from
 
-ProviderKeystoneBase.addListener
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[addListener](providers.ProviderKeystoneBase.md#addlistener)
 
 #### Defined in
 
@@ -460,11 +465,11 @@ ___
 
 #### Inherited from
 
-ProviderKeystoneBase.buildPath
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[buildPath](providers.ProviderKeystoneBase.md#buildpath)
 
 #### Defined in
 
-[src/providers/keystone/provider.ts:116](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/keystone/provider.ts#L116)
+[src/providers/keystone/provider.ts:117](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/keystone/provider.ts#L117)
 
 ___
 
@@ -486,11 +491,11 @@ ___
 
 #### Inherited from
 
-ProviderKeystoneBase.catchError
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[catchError](providers.ProviderKeystoneBase.md#catcherror)
 
 #### Defined in
 
-[src/providers/base-provider.ts:48](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L48)
+[src/providers/base-provider.ts:49](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L49)
 
 ___
 
@@ -498,21 +503,23 @@ ___
 
 ▸ **clean**(): `Promise`\<`void`\>
 
+Clean provider storage
+
 #### Returns
 
 `Promise`\<`void`\>
 
 #### Implementation of
 
-ProviderInterface.clean
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[clean](../interfaces/providers.ProviderInterface.md#clean)
 
 #### Inherited from
 
-ProviderKeystoneBase.clean
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[clean](providers.ProviderKeystoneBase.md#clean)
 
 #### Defined in
 
-[src/providers/base-provider.ts:63](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L63)
+[src/providers/base-provider.ts:64](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L64)
 
 ___
 
@@ -581,11 +588,11 @@ v0.1.26
 
 #### Implementation of
 
-ProviderInterface.emit
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[emit](../interfaces/providers.ProviderInterface.md#emit)
 
 #### Inherited from
 
-ProviderKeystoneBase.emit
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[emit](providers.ProviderKeystoneBase.md#emit)
 
 #### Defined in
 
@@ -624,11 +631,11 @@ v6.0.0
 
 #### Implementation of
 
-ProviderInterface.eventNames
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[eventNames](../interfaces/providers.ProviderInterface.md#eventnames)
 
 #### Inherited from
 
-ProviderKeystoneBase.eventNames
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[eventNames](providers.ProviderKeystoneBase.md#eventnames)
 
 #### Defined in
 
@@ -640,11 +647,13 @@ ___
 
 ▸ **getAccountInfo**(`hdPath`): `Promise`\<\{ `address`: `string` = ''; `publicKey`: `string` = '' }\>
 
+Get public key and address for hd path
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `hdPath` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `hdPath` | `string` | HD path |
 
 #### Returns
 
@@ -652,15 +661,15 @@ ___
 
 #### Implementation of
 
-ProviderInterface.getAccountInfo
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[getAccountInfo](../interfaces/providers.ProviderInterface.md#getaccountinfo)
 
 #### Inherited from
 
-ProviderKeystoneBase.getAccountInfo
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[getAccountInfo](providers.ProviderKeystoneBase.md#getaccountinfo)
 
 #### Defined in
 
-[src/providers/keystone/provider.ts:93](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/keystone/provider.ts#L93)
+[src/providers/keystone/provider.ts:94](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/keystone/provider.ts#L94)
 
 ___
 
@@ -674,15 +683,15 @@ ___
 
 #### Implementation of
 
-ProviderInterface.getIdentifier
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[getIdentifier](../interfaces/providers.ProviderInterface.md#getidentifier)
 
 #### Inherited from
 
-ProviderKeystoneBase.getIdentifier
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[getIdentifier](providers.ProviderKeystoneBase.md#getidentifier)
 
 #### Defined in
 
-[src/providers/keystone/provider.ts:70](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/keystone/provider.ts#L70)
+[src/providers/keystone/provider.ts:71](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/keystone/provider.ts#L71)
 
 ___
 
@@ -696,11 +705,11 @@ ___
 
 #### Inherited from
 
-ProviderKeystoneBase.getKeyringAccount
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[getKeyringAccount](providers.ProviderKeystoneBase.md#getkeyringaccount)
 
 #### Defined in
 
-[src/providers/keystone/provider.ts:74](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/keystone/provider.ts#L74)
+[src/providers/keystone/provider.ts:75](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/keystone/provider.ts#L75)
 
 ___
 
@@ -721,11 +730,11 @@ v1.0.0
 
 #### Implementation of
 
-ProviderInterface.getMaxListeners
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[getMaxListeners](../interfaces/providers.ProviderInterface.md#getmaxlisteners)
 
 #### Inherited from
 
-ProviderKeystoneBase.getMaxListeners
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[getMaxListeners](providers.ProviderKeystoneBase.md#getmaxlisteners)
 
 #### Defined in
 
@@ -743,11 +752,11 @@ ___
 
 #### Inherited from
 
-ProviderKeystoneBase.getPathPattern
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[getPathPattern](providers.ProviderKeystoneBase.md#getpathpattern)
 
 #### Defined in
 
-[src/providers/keystone/provider.ts:89](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/keystone/provider.ts#L89)
+[src/providers/keystone/provider.ts:90](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/keystone/provider.ts#L90)
 
 ___
 
@@ -767,15 +776,15 @@ ___
 
 #### Implementation of
 
-ProviderInterface.getPrivateKey
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[getPrivateKey](../interfaces/providers.ProviderInterface.md#getprivatekey)
 
 #### Inherited from
 
-ProviderKeystoneBase.getPrivateKey
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[getPrivateKey](providers.ProviderKeystoneBase.md#getprivatekey)
 
 #### Defined in
 
-[src/providers/base-provider.ts:44](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L44)
+[src/providers/base-provider.ts:45](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L45)
 
 ___
 
@@ -810,11 +819,11 @@ v3.2.0
 
 #### Implementation of
 
-ProviderInterface.listenerCount
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[listenerCount](../interfaces/providers.ProviderInterface.md#listenercount)
 
 #### Inherited from
 
-ProviderKeystoneBase.listenerCount
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[listenerCount](providers.ProviderKeystoneBase.md#listenercount)
 
 #### Defined in
 
@@ -858,11 +867,11 @@ v0.1.26
 
 #### Implementation of
 
-ProviderInterface.listeners
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[listeners](../interfaces/providers.ProviderInterface.md#listeners)
 
 #### Inherited from
 
-ProviderKeystoneBase.listeners
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[listeners](providers.ProviderKeystoneBase.md#listeners)
 
 #### Defined in
 
@@ -899,11 +908,11 @@ v10.0.0
 
 #### Implementation of
 
-ProviderInterface.off
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[off](../interfaces/providers.ProviderInterface.md#off)
 
 #### Inherited from
 
-ProviderKeystoneBase.off
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[off](providers.ProviderKeystoneBase.md#off)
 
 #### Defined in
 
@@ -965,11 +974,11 @@ v0.1.101
 
 #### Implementation of
 
-ProviderInterface.on
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[on](../interfaces/providers.ProviderInterface.md#on)
 
 #### Inherited from
 
-ProviderKeystoneBase.on
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[on](providers.ProviderKeystoneBase.md#on)
 
 #### Defined in
 
@@ -1029,11 +1038,11 @@ v0.3.0
 
 #### Implementation of
 
-ProviderInterface.once
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[once](../interfaces/providers.ProviderInterface.md#once)
 
 #### Inherited from
 
-ProviderKeystoneBase.once
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[once](providers.ProviderKeystoneBase.md#once)
 
 #### Defined in
 
@@ -1081,11 +1090,11 @@ v6.0.0
 
 #### Implementation of
 
-ProviderInterface.prependListener
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[prependListener](../interfaces/providers.ProviderInterface.md#prependlistener)
 
 #### Inherited from
 
-ProviderKeystoneBase.prependListener
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[prependListener](providers.ProviderKeystoneBase.md#prependlistener)
 
 #### Defined in
 
@@ -1131,11 +1140,11 @@ v6.0.0
 
 #### Implementation of
 
-ProviderInterface.prependOnceListener
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[prependOnceListener](../interfaces/providers.ProviderInterface.md#prependoncelistener)
 
 #### Inherited from
 
-ProviderKeystoneBase.prependOnceListener
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[prependOnceListener](providers.ProviderKeystoneBase.md#prependoncelistener)
 
 #### Defined in
 
@@ -1197,11 +1206,11 @@ v9.4.0
 
 #### Implementation of
 
-ProviderInterface.rawListeners
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[rawListeners](../interfaces/providers.ProviderInterface.md#rawlisteners)
 
 #### Inherited from
 
-ProviderKeystoneBase.rawListeners
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[rawListeners](providers.ProviderKeystoneBase.md#rawlisteners)
 
 #### Defined in
 
@@ -1237,11 +1246,11 @@ v0.1.26
 
 #### Implementation of
 
-ProviderInterface.removeAllListeners
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[removeAllListeners](../interfaces/providers.ProviderInterface.md#removealllisteners)
 
 #### Inherited from
 
-ProviderKeystoneBase.removeAllListeners
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[removeAllListeners](providers.ProviderKeystoneBase.md#removealllisteners)
 
 #### Defined in
 
@@ -1356,11 +1365,11 @@ v0.1.26
 
 #### Implementation of
 
-ProviderInterface.removeListener
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[removeListener](../interfaces/providers.ProviderInterface.md#removelistener)
 
 #### Inherited from
 
-ProviderKeystoneBase.removeListener
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[removeListener](providers.ProviderKeystoneBase.md#removelistener)
 
 #### Defined in
 
@@ -1395,11 +1404,11 @@ v0.3.5
 
 #### Implementation of
 
-ProviderInterface.setMaxListeners
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[setMaxListeners](../interfaces/providers.ProviderInterface.md#setmaxlisteners)
 
 #### Inherited from
 
-ProviderKeystoneBase.setMaxListeners
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[setMaxListeners](providers.ProviderKeystoneBase.md#setmaxlisteners)
 
 #### Defined in
 
@@ -1411,28 +1420,32 @@ ___
 
 ▸ **signPersonalMessage**(`hdPath`, `message`): `Promise`\<`string`\>
 
+Sign personal message
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `hdPath` | `string` |
-| `message` | `BytesLike` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `hdPath` | `string` | HD path for subscribe |
+| `message` | [`BytesLike`](../modules/providers.md#byteslike) | message |
 
 #### Returns
 
 `Promise`\<`string`\>
 
+signature of personal message
+
 #### Implementation of
 
-ProviderInterface.signPersonalMessage
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[signPersonalMessage](../interfaces/providers.ProviderInterface.md#signpersonalmessage)
 
 #### Overrides
 
-ProviderKeystoneBase.signPersonalMessage
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[signPersonalMessage](providers.ProviderKeystoneBase.md#signpersonalmessage)
 
 #### Defined in
 
-[src/providers/keystone/evm-provider.ts:74](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/keystone/evm-provider.ts#L74)
+[src/providers/keystone/evm-provider.ts:74](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/keystone/evm-provider.ts#L74)
 
 ___
 
@@ -1440,28 +1453,32 @@ ___
 
 ▸ **signTransaction**(`hdPath`, `transaction`): `Promise`\<`string`\>
 
+Sign transaction
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `hdPath` | `string` |
-| `transaction` | `TransactionRequest` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `hdPath` | `string` | HD path for subscribe |
+| `transaction` | `TransactionRequest` | transaction for sign |
 
 #### Returns
 
 `Promise`\<`string`\>
 
+signature of transaction
+
 #### Implementation of
 
-ProviderInterface.signTransaction
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[signTransaction](../interfaces/providers.ProviderInterface.md#signtransaction)
 
 #### Overrides
 
-ProviderKeystoneBase.signTransaction
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[signTransaction](providers.ProviderKeystoneBase.md#signtransaction)
 
 #### Defined in
 
-[src/providers/keystone/evm-provider.ts:26](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/keystone/evm-provider.ts#L26)
+[src/providers/keystone/evm-provider.ts:26](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/keystone/evm-provider.ts#L26)
 
 ___
 
@@ -1469,34 +1486,40 @@ ___
 
 ▸ **signTypedData**(`hdPath`, `typedData`): `Promise`\<`string`\>
 
+Sign typed data
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `hdPath` | `string` |
-| `typedData` | `TypedData` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `hdPath` | `string` | HD path for subscribe |
+| `typedData` | [`TypedData`](../modules/providers.md#typeddata) |  |
 
 #### Returns
 
 `Promise`\<`string`\>
 
+signature of typed data
+
 #### Implementation of
 
-ProviderInterface.signTypedData
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[signTypedData](../interfaces/providers.ProviderInterface.md#signtypeddata)
 
 #### Overrides
 
-ProviderKeystoneBase.signTypedData
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[signTypedData](providers.ProviderKeystoneBase.md#signtypeddata)
 
 #### Defined in
 
-[src/providers/keystone/evm-provider.ts:115](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/keystone/evm-provider.ts#L115)
+[src/providers/keystone/evm-provider.ts:115](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/keystone/evm-provider.ts#L115)
 
 ___
 
 ### updatePin
 
 ▸ **updatePin**(`_pin`): `Promise`\<`void`\>
+
+Update pin for encrypted providers
 
 #### Parameters
 
@@ -1510,15 +1533,15 @@ ___
 
 #### Implementation of
 
-ProviderInterface.updatePin
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[updatePin](../interfaces/providers.ProviderInterface.md#updatepin)
 
 #### Inherited from
 
-ProviderKeystoneBase.updatePin
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[updatePin](providers.ProviderKeystoneBase.md#updatepin)
 
 #### Defined in
 
-[src/providers/base-provider.ts:67](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L67)
+[src/providers/base-provider.ts:68](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L68)
 
 ___
 
@@ -1575,7 +1598,7 @@ v20.5.0
 
 #### Inherited from
 
-ProviderKeystoneBase.addAbortListener
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[addAbortListener](providers.ProviderKeystoneBase.md#addabortlistener)
 
 #### Defined in
 
@@ -1629,7 +1652,7 @@ v15.2.0, v14.17.0
 
 #### Inherited from
 
-ProviderKeystoneBase.getEventListeners
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[getEventListeners](providers.ProviderKeystoneBase.md#geteventlisteners)
 
 #### Defined in
 
@@ -1683,7 +1706,7 @@ v19.9.0
 
 #### Inherited from
 
-ProviderKeystoneBase.getMaxListeners
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[getMaxListeners](providers.ProviderKeystoneBase.md#getmaxlisteners-1)
 
 #### Defined in
 
@@ -1728,7 +1751,7 @@ Since v3.2.0 - Use `listenerCount` instead.
 
 #### Inherited from
 
-ProviderKeystoneBase.listenerCount
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[listenerCount](providers.ProviderKeystoneBase.md#listenercount-1)
 
 #### Defined in
 
@@ -1837,7 +1860,7 @@ v13.6.0, v12.16.0
 
 #### Inherited from
 
-ProviderKeystoneBase.on
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[on](providers.ProviderKeystoneBase.md#on-1)
 
 #### Defined in
 
@@ -1859,7 +1882,7 @@ node_modules/@types/node/events.d.ts:303
 
 #### Inherited from
 
-ProviderKeystoneBase.on
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[on](providers.ProviderKeystoneBase.md#on-1)
 
 #### Defined in
 
@@ -1966,7 +1989,7 @@ v11.13.0, v10.16.0
 
 #### Inherited from
 
-ProviderKeystoneBase.once
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[once](providers.ProviderKeystoneBase.md#once-1)
 
 #### Defined in
 
@@ -1988,7 +2011,7 @@ node_modules/@types/node/events.d.ts:217
 
 #### Inherited from
 
-ProviderKeystoneBase.once
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[once](providers.ProviderKeystoneBase.md#once-1)
 
 #### Defined in
 
@@ -2014,7 +2037,7 @@ setMaxListeners(5, target, emitter);
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `n?` | `number` | A non-negative number. The maximum number of listeners per `EventTarget` event. |
-| `...eventTargets` | (`EventEmitter`\<`DefaultEventMap`\> \| `EventTarget`)[] | - |
+| `...eventTargets` | (`EventEmitter`\<`DefaultEventMap`\> \| `EventTarget`)[] | Zero or more {EventTarget} or {EventEmitter} instances. If none are specified, `n` is set as the default max for all newly created {EventTarget} and {EventEmitter} objects. |
 
 #### Returns
 
@@ -2026,7 +2049,7 @@ v15.4.0
 
 #### Inherited from
 
-ProviderKeystoneBase.setMaxListeners
+[ProviderKeystoneBase](providers.ProviderKeystoneBase.md).[setMaxListeners](providers.ProviderKeystoneBase.md#setmaxlisteners-1)
 
 #### Defined in
 

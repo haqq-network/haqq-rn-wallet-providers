@@ -1,18 +1,21 @@
-[@haqq/rn-wallet-providers - v0.0.1](../README.md) / [Exports](../modules.md) / [providers](../modules/providers.md) / ProviderHotEvm
+[@haqq/rn-wallet-providers - v0.0.11](../README.md) / [Exports](../modules.md) / [providers](../modules/providers.md) / ProviderHotEvm
 
 # Class: ProviderHotEvm
 
 [providers](../modules/providers.md).ProviderHotEvm
 
+Base provider for other providers
+extends EventEmitter
+
 ## Hierarchy
 
-- `ProviderHotBase`
+- [`ProviderHotBase`](providers.ProviderHotBase.md)
 
   ↳ **`ProviderHotEvm`**
 
 ## Implements
 
-- `ProviderInterface`
+- [`ProviderInterface`](../interfaces/providers.ProviderInterface.md)
 
 ## Table of contents
 
@@ -75,29 +78,29 @@
 
 | Name | Type |
 | :------ | :------ |
-| `options` | [`ProviderHotBaseOptions`](../modules/providers.md#providerhotbaseoptions) & `ProviderBaseOptions` |
+| `options` | [`ProviderHotBaseOptions`](../modules/providers.md#providerhotbaseoptions) & [`ProviderBaseOptions`](../modules/providers.md#providerbaseoptions) |
 
 #### Inherited from
 
-ProviderHotBase.constructor
+[ProviderHotBase](providers.ProviderHotBase.md).[constructor](providers.ProviderHotBase.md#constructor)
 
 #### Defined in
 
-[src/providers/base-provider.ts:16](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L16)
+[src/providers/base-provider.ts:17](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L17)
 
 ## Properties
 
 ### \_options
 
-• `Protected` **\_options**: [`ProviderHotBaseOptions`](../modules/providers.md#providerhotbaseoptions) & `ProviderBaseOptions`
+• **\_options**: [`ProviderHotBaseOptions`](../modules/providers.md#providerhotbaseoptions) & [`ProviderBaseOptions`](../modules/providers.md#providerbaseoptions)
 
 #### Inherited from
 
-ProviderHotBase.\_options
+[ProviderHotBase](providers.ProviderHotBase.md).[_options](providers.ProviderHotBase.md#_options)
 
 #### Defined in
 
-[src/providers/base-provider.ts:14](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L14)
+[src/providers/base-provider.ts:15](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L15)
 
 ___
 
@@ -115,7 +118,7 @@ v13.4.0, v12.16.0
 
 #### Inherited from
 
-ProviderHotBase.captureRejectionSymbol
+[ProviderHotBase](providers.ProviderHotBase.md).[captureRejectionSymbol](providers.ProviderHotBase.md#capturerejectionsymbol)
 
 #### Defined in
 
@@ -137,7 +140,7 @@ v13.4.0, v12.16.0
 
 #### Inherited from
 
-ProviderHotBase.captureRejections
+[ProviderHotBase](providers.ProviderHotBase.md).[captureRejections](providers.ProviderHotBase.md#capturerejections)
 
 #### Defined in
 
@@ -191,7 +194,7 @@ v0.11.2
 
 #### Inherited from
 
-ProviderHotBase.defaultMaxListeners
+[ProviderHotBase](providers.ProviderHotBase.md).[defaultMaxListeners](providers.ProviderHotBase.md#defaultmaxlisteners)
 
 #### Defined in
 
@@ -214,7 +217,7 @@ v13.6.0, v12.17.0
 
 #### Inherited from
 
-ProviderHotBase.errorMonitor
+[ProviderHotBase](providers.ProviderHotBase.md).[errorMonitor](providers.ProviderHotBase.md#errormonitor)
 
 #### Defined in
 
@@ -246,11 +249,11 @@ node_modules/@types/node/events.d.ts:445
 
 #### Implementation of
 
-ProviderInterface.[captureRejectionSymbol]
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[[captureRejectionSymbol]](../interfaces/providers.ProviderInterface.md#[capturerejectionsymbol])
 
 #### Inherited from
 
-ProviderHotBase.[captureRejectionSymbol]
+[ProviderHotBase](providers.ProviderHotBase.md).[[captureRejectionSymbol]](providers.ProviderHotBase.md#[capturerejectionsymbol])
 
 #### Defined in
 
@@ -262,21 +265,23 @@ ___
 
 ▸ **abort**(): `void`
 
+Stop action
+
 #### Returns
 
 `void`
 
 #### Implementation of
 
-ProviderInterface.abort
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[abort](../interfaces/providers.ProviderInterface.md#abort)
 
 #### Inherited from
 
-ProviderHotBase.abort
+[ProviderHotBase](providers.ProviderHotBase.md).[abort](providers.ProviderHotBase.md#abort)
 
 #### Defined in
 
-[src/providers/base-provider.ts:59](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L59)
+[src/providers/base-provider.ts:60](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L60)
 
 ___
 
@@ -309,11 +314,11 @@ v0.1.26
 
 #### Implementation of
 
-ProviderInterface.addListener
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[addListener](../interfaces/providers.ProviderInterface.md#addlistener)
 
 #### Inherited from
 
-ProviderHotBase.addListener
+[ProviderHotBase](providers.ProviderHotBase.md).[addListener](providers.ProviderHotBase.md#addlistener)
 
 #### Defined in
 
@@ -339,11 +344,11 @@ ___
 
 #### Inherited from
 
-ProviderHotBase.catchError
+[ProviderHotBase](providers.ProviderHotBase.md).[catchError](providers.ProviderHotBase.md#catcherror)
 
 #### Defined in
 
-[src/providers/base-provider.ts:48](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L48)
+[src/providers/base-provider.ts:49](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L49)
 
 ___
 
@@ -351,21 +356,23 @@ ___
 
 ▸ **clean**(): `Promise`\<`void`\>
 
+Clean provider storage
+
 #### Returns
 
 `Promise`\<`void`\>
 
 #### Implementation of
 
-ProviderInterface.clean
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[clean](../interfaces/providers.ProviderInterface.md#clean)
 
 #### Inherited from
 
-ProviderHotBase.clean
+[ProviderHotBase](providers.ProviderHotBase.md).[clean](providers.ProviderHotBase.md#clean)
 
 #### Defined in
 
-[src/providers/hot/provider.ts:72](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/hot/provider.ts#L72)
+[src/providers/hot/provider.ts:74](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/hot/provider.ts#L74)
 
 ___
 
@@ -434,11 +441,11 @@ v0.1.26
 
 #### Implementation of
 
-ProviderInterface.emit
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[emit](../interfaces/providers.ProviderInterface.md#emit)
 
 #### Inherited from
 
-ProviderHotBase.emit
+[ProviderHotBase](providers.ProviderHotBase.md).[emit](providers.ProviderHotBase.md#emit)
 
 #### Defined in
 
@@ -477,11 +484,11 @@ v6.0.0
 
 #### Implementation of
 
-ProviderInterface.eventNames
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[eventNames](../interfaces/providers.ProviderInterface.md#eventnames)
 
 #### Inherited from
 
-ProviderHotBase.eventNames
+[ProviderHotBase](providers.ProviderHotBase.md).[eventNames](providers.ProviderHotBase.md#eventnames)
 
 #### Defined in
 
@@ -493,11 +500,13 @@ ___
 
 ▸ **getAccountInfo**(`_hdPath`): `Promise`\<\{ `address`: `string` = ''; `publicKey`: `string` = '' }\>
 
+Get public key and address for hd path
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_hdPath` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `_hdPath` | `string` | HD path |
 
 #### Returns
 
@@ -505,15 +514,15 @@ ___
 
 #### Implementation of
 
-ProviderInterface.getAccountInfo
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[getAccountInfo](../interfaces/providers.ProviderInterface.md#getaccountinfo)
 
 #### Inherited from
 
-ProviderHotBase.getAccountInfo
+[ProviderHotBase](providers.ProviderHotBase.md).[getAccountInfo](providers.ProviderHotBase.md#getaccountinfo)
 
 #### Defined in
 
-[src/providers/hot/provider.ts:88](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/hot/provider.ts#L88)
+[src/providers/hot/provider.ts:90](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/hot/provider.ts#L90)
 
 ___
 
@@ -527,15 +536,15 @@ ___
 
 #### Implementation of
 
-ProviderInterface.getIdentifier
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[getIdentifier](../interfaces/providers.ProviderInterface.md#getidentifier)
 
 #### Inherited from
 
-ProviderHotBase.getIdentifier
+[ProviderHotBase](providers.ProviderHotBase.md).[getIdentifier](providers.ProviderHotBase.md#getidentifier)
 
 #### Defined in
 
-[src/providers/hot/provider.ts:84](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/hot/provider.ts#L84)
+[src/providers/hot/provider.ts:86](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/hot/provider.ts#L86)
 
 ___
 
@@ -556,11 +565,11 @@ v1.0.0
 
 #### Implementation of
 
-ProviderInterface.getMaxListeners
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[getMaxListeners](../interfaces/providers.ProviderInterface.md#getmaxlisteners)
 
 #### Inherited from
 
-ProviderHotBase.getMaxListeners
+[ProviderHotBase](providers.ProviderHotBase.md).[getMaxListeners](providers.ProviderHotBase.md#getmaxlisteners)
 
 #### Defined in
 
@@ -584,15 +593,15 @@ ___
 
 #### Implementation of
 
-ProviderInterface.getPrivateKey
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[getPrivateKey](../interfaces/providers.ProviderInterface.md#getprivatekey)
 
 #### Inherited from
 
-ProviderHotBase.getPrivateKey
+[ProviderHotBase](providers.ProviderHotBase.md).[getPrivateKey](providers.ProviderHotBase.md#getprivatekey)
 
 #### Defined in
 
-[src/providers/base-provider.ts:44](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L44)
+[src/providers/base-provider.ts:45](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L45)
 
 ___
 
@@ -627,11 +636,11 @@ v3.2.0
 
 #### Implementation of
 
-ProviderInterface.listenerCount
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[listenerCount](../interfaces/providers.ProviderInterface.md#listenercount)
 
 #### Inherited from
 
-ProviderHotBase.listenerCount
+[ProviderHotBase](providers.ProviderHotBase.md).[listenerCount](providers.ProviderHotBase.md#listenercount)
 
 #### Defined in
 
@@ -675,11 +684,11 @@ v0.1.26
 
 #### Implementation of
 
-ProviderInterface.listeners
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[listeners](../interfaces/providers.ProviderInterface.md#listeners)
 
 #### Inherited from
 
-ProviderHotBase.listeners
+[ProviderHotBase](providers.ProviderHotBase.md).[listeners](providers.ProviderHotBase.md#listeners)
 
 #### Defined in
 
@@ -716,11 +725,11 @@ v10.0.0
 
 #### Implementation of
 
-ProviderInterface.off
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[off](../interfaces/providers.ProviderInterface.md#off)
 
 #### Inherited from
 
-ProviderHotBase.off
+[ProviderHotBase](providers.ProviderHotBase.md).[off](providers.ProviderHotBase.md#off)
 
 #### Defined in
 
@@ -782,11 +791,11 @@ v0.1.101
 
 #### Implementation of
 
-ProviderInterface.on
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[on](../interfaces/providers.ProviderInterface.md#on)
 
 #### Inherited from
 
-ProviderHotBase.on
+[ProviderHotBase](providers.ProviderHotBase.md).[on](providers.ProviderHotBase.md#on)
 
 #### Defined in
 
@@ -846,11 +855,11 @@ v0.3.0
 
 #### Implementation of
 
-ProviderInterface.once
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[once](../interfaces/providers.ProviderInterface.md#once)
 
 #### Inherited from
 
-ProviderHotBase.once
+[ProviderHotBase](providers.ProviderHotBase.md).[once](providers.ProviderHotBase.md#once)
 
 #### Defined in
 
@@ -898,11 +907,11 @@ v6.0.0
 
 #### Implementation of
 
-ProviderInterface.prependListener
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[prependListener](../interfaces/providers.ProviderInterface.md#prependlistener)
 
 #### Inherited from
 
-ProviderHotBase.prependListener
+[ProviderHotBase](providers.ProviderHotBase.md).[prependListener](providers.ProviderHotBase.md#prependlistener)
 
 #### Defined in
 
@@ -948,11 +957,11 @@ v6.0.0
 
 #### Implementation of
 
-ProviderInterface.prependOnceListener
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[prependOnceListener](../interfaces/providers.ProviderInterface.md#prependoncelistener)
 
 #### Inherited from
 
-ProviderHotBase.prependOnceListener
+[ProviderHotBase](providers.ProviderHotBase.md).[prependOnceListener](providers.ProviderHotBase.md#prependoncelistener)
 
 #### Defined in
 
@@ -1014,11 +1023,11 @@ v9.4.0
 
 #### Implementation of
 
-ProviderInterface.rawListeners
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[rawListeners](../interfaces/providers.ProviderInterface.md#rawlisteners)
 
 #### Inherited from
 
-ProviderHotBase.rawListeners
+[ProviderHotBase](providers.ProviderHotBase.md).[rawListeners](providers.ProviderHotBase.md#rawlisteners)
 
 #### Defined in
 
@@ -1054,11 +1063,11 @@ v0.1.26
 
 #### Implementation of
 
-ProviderInterface.removeAllListeners
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[removeAllListeners](../interfaces/providers.ProviderInterface.md#removealllisteners)
 
 #### Inherited from
 
-ProviderHotBase.removeAllListeners
+[ProviderHotBase](providers.ProviderHotBase.md).[removeAllListeners](providers.ProviderHotBase.md#removealllisteners)
 
 #### Defined in
 
@@ -1173,11 +1182,11 @@ v0.1.26
 
 #### Implementation of
 
-ProviderInterface.removeListener
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[removeListener](../interfaces/providers.ProviderInterface.md#removelistener)
 
 #### Inherited from
 
-ProviderHotBase.removeListener
+[ProviderHotBase](providers.ProviderHotBase.md).[removeListener](providers.ProviderHotBase.md#removelistener)
 
 #### Defined in
 
@@ -1212,11 +1221,11 @@ v0.3.5
 
 #### Implementation of
 
-ProviderInterface.setMaxListeners
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[setMaxListeners](../interfaces/providers.ProviderInterface.md#setmaxlisteners)
 
 #### Inherited from
 
-ProviderHotBase.setMaxListeners
+[ProviderHotBase](providers.ProviderHotBase.md).[setMaxListeners](providers.ProviderHotBase.md#setmaxlisteners)
 
 #### Defined in
 
@@ -1228,28 +1237,32 @@ ___
 
 ▸ **signPersonalMessage**(`hdPath`, `message`): `Promise`\<`string`\>
 
+Sign personal message
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `hdPath` | `string` |
-| `message` | `BytesLike` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `hdPath` | `string` | HD path for subscribe |
+| `message` | [`BytesLike`](../modules/providers.md#byteslike) | message |
 
 #### Returns
 
 `Promise`\<`string`\>
 
+signature of personal message
+
 #### Implementation of
 
-ProviderInterface.signPersonalMessage
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[signPersonalMessage](../interfaces/providers.ProviderInterface.md#signpersonalmessage)
 
 #### Overrides
 
-ProviderHotBase.signPersonalMessage
+[ProviderHotBase](providers.ProviderHotBase.md).[signPersonalMessage](providers.ProviderHotBase.md#signpersonalmessage)
 
 #### Defined in
 
-[src/providers/hot/evm-provider.ts:58](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/hot/evm-provider.ts#L58)
+[src/providers/hot/evm-provider.ts:60](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/hot/evm-provider.ts#L60)
 
 ___
 
@@ -1257,28 +1270,32 @@ ___
 
 ▸ **signTransaction**(`_hdPath`, `transaction`): `Promise`\<`string`\>
 
+Sign transaction
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_hdPath` | `string` |
-| `transaction` | `TransactionRequest` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `_hdPath` | `string` | HD path for subscribe |
+| `transaction` | [`TransactionRequest`](../modules/providers.md#transactionrequest) | transaction for sign |
 
 #### Returns
 
 `Promise`\<`string`\>
 
+signature of transaction
+
 #### Implementation of
 
-ProviderInterface.signTransaction
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[signTransaction](../interfaces/providers.ProviderInterface.md#signtransaction)
 
 #### Overrides
 
-ProviderHotBase.signTransaction
+[ProviderHotBase](providers.ProviderHotBase.md).[signTransaction](providers.ProviderHotBase.md#signtransaction)
 
 #### Defined in
 
-[src/providers/hot/evm-provider.ts:24](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/hot/evm-provider.ts#L24)
+[src/providers/hot/evm-provider.ts:26](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/hot/evm-provider.ts#L26)
 
 ___
 
@@ -1286,34 +1303,40 @@ ___
 
 ▸ **signTypedData**(`_hdPath`, `typedData`): `Promise`\<`string`\>
 
+Sign typed data
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_hdPath` | `string` |
-| `typedData` | `TypedData` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `_hdPath` | `string` | HD path for subscribe |
+| `typedData` | [`TypedData`](../modules/providers.md#typeddata) |  |
 
 #### Returns
 
 `Promise`\<`string`\>
 
+signature of typed data
+
 #### Implementation of
 
-ProviderInterface.signTypedData
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[signTypedData](../interfaces/providers.ProviderInterface.md#signtypeddata)
 
 #### Overrides
 
-ProviderHotBase.signTypedData
+[ProviderHotBase](providers.ProviderHotBase.md).[signTypedData](providers.ProviderHotBase.md#signtypeddata)
 
 #### Defined in
 
-[src/providers/hot/evm-provider.ts:95](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/hot/evm-provider.ts#L95)
+[src/providers/hot/evm-provider.ts:97](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/hot/evm-provider.ts#L97)
 
 ___
 
 ### updatePin
 
 ▸ **updatePin**(`pin`): `Promise`\<`void`\>
+
+Update pin for encrypted providers
 
 #### Parameters
 
@@ -1327,15 +1350,15 @@ ___
 
 #### Implementation of
 
-ProviderInterface.updatePin
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[updatePin](../interfaces/providers.ProviderInterface.md#updatepin)
 
 #### Inherited from
 
-ProviderHotBase.updatePin
+[ProviderHotBase](providers.ProviderHotBase.md).[updatePin](providers.ProviderHotBase.md#updatepin)
 
 #### Defined in
 
-[src/providers/hot/provider.ts:45](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/hot/provider.ts#L45)
+[src/providers/hot/provider.ts:47](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/hot/provider.ts#L47)
 
 ___
 
@@ -1392,7 +1415,7 @@ v20.5.0
 
 #### Inherited from
 
-ProviderHotBase.addAbortListener
+[ProviderHotBase](providers.ProviderHotBase.md).[addAbortListener](providers.ProviderHotBase.md#addabortlistener)
 
 #### Defined in
 
@@ -1446,7 +1469,7 @@ v15.2.0, v14.17.0
 
 #### Inherited from
 
-ProviderHotBase.getEventListeners
+[ProviderHotBase](providers.ProviderHotBase.md).[getEventListeners](providers.ProviderHotBase.md#geteventlisteners)
 
 #### Defined in
 
@@ -1500,7 +1523,7 @@ v19.9.0
 
 #### Inherited from
 
-ProviderHotBase.getMaxListeners
+[ProviderHotBase](providers.ProviderHotBase.md).[getMaxListeners](providers.ProviderHotBase.md#getmaxlisteners-1)
 
 #### Defined in
 
@@ -1510,7 +1533,7 @@ ___
 
 ### initialize
 
-▸ `Static` **initialize**(`privateKey`, `getPassword`, `options`): `Promise`\<`ProviderHotBase`\>
+▸ `Static` **initialize**(`privateKey`, `getPassword`, `options`): `Promise`\<[`ProviderHotBase`](providers.ProviderHotBase.md)\>
 
 #### Parameters
 
@@ -1518,19 +1541,19 @@ ___
 | :------ | :------ |
 | `privateKey` | `string` |
 | `getPassword` | () => `Promise`\<`string`\> |
-| `options` | `Omit`\<`ProviderBaseOptions`, ``"getPassword"``\> |
+| `options` | `Omit`\<[`ProviderBaseOptions`](../modules/providers.md#providerbaseoptions), ``"getPassword"``\> |
 
 #### Returns
 
-`Promise`\<`ProviderHotBase`\>
+`Promise`\<[`ProviderHotBase`](providers.ProviderHotBase.md)\>
 
 #### Inherited from
 
-ProviderHotBase.initialize
+[ProviderHotBase](providers.ProviderHotBase.md).[initialize](providers.ProviderHotBase.md#initialize)
 
 #### Defined in
 
-[src/providers/hot/provider.ts:15](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/hot/provider.ts#L15)
+[src/providers/hot/provider.ts:17](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/hot/provider.ts#L17)
 
 ___
 
@@ -1571,7 +1594,7 @@ Since v3.2.0 - Use `listenerCount` instead.
 
 #### Inherited from
 
-ProviderHotBase.listenerCount
+[ProviderHotBase](providers.ProviderHotBase.md).[listenerCount](providers.ProviderHotBase.md#listenercount-1)
 
 #### Defined in
 
@@ -1680,7 +1703,7 @@ v13.6.0, v12.16.0
 
 #### Inherited from
 
-ProviderHotBase.on
+[ProviderHotBase](providers.ProviderHotBase.md).[on](providers.ProviderHotBase.md#on-1)
 
 #### Defined in
 
@@ -1702,7 +1725,7 @@ node_modules/@types/node/events.d.ts:303
 
 #### Inherited from
 
-ProviderHotBase.on
+[ProviderHotBase](providers.ProviderHotBase.md).[on](providers.ProviderHotBase.md#on-1)
 
 #### Defined in
 
@@ -1809,7 +1832,7 @@ v11.13.0, v10.16.0
 
 #### Inherited from
 
-ProviderHotBase.once
+[ProviderHotBase](providers.ProviderHotBase.md).[once](providers.ProviderHotBase.md#once-1)
 
 #### Defined in
 
@@ -1831,7 +1854,7 @@ node_modules/@types/node/events.d.ts:217
 
 #### Inherited from
 
-ProviderHotBase.once
+[ProviderHotBase](providers.ProviderHotBase.md).[once](providers.ProviderHotBase.md#once-1)
 
 #### Defined in
 
@@ -1857,7 +1880,7 @@ setMaxListeners(5, target, emitter);
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `n?` | `number` | A non-negative number. The maximum number of listeners per `EventTarget` event. |
-| `...eventTargets` | (`EventEmitter`\<`DefaultEventMap`\> \| `EventTarget`)[] | - |
+| `...eventTargets` | (`EventEmitter`\<`DefaultEventMap`\> \| `EventTarget`)[] | Zero or more {EventTarget} or {EventEmitter} instances. If none are specified, `n` is set as the default max for all newly created {EventTarget} and {EventEmitter} objects. |
 
 #### Returns
 
@@ -1869,7 +1892,7 @@ v15.4.0
 
 #### Inherited from
 
-ProviderHotBase.setMaxListeners
+[ProviderHotBase](providers.ProviderHotBase.md).[setMaxListeners](providers.ProviderHotBase.md#setmaxlisteners-1)
 
 #### Defined in
 

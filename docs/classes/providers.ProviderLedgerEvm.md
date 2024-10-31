@@ -1,18 +1,21 @@
-[@haqq/rn-wallet-providers - v0.0.1](../README.md) / [Exports](../modules.md) / [providers](../modules/providers.md) / ProviderLedgerEvm
+[@haqq/rn-wallet-providers - v0.0.11](../README.md) / [Exports](../modules.md) / [providers](../modules/providers.md) / ProviderLedgerEvm
 
 # Class: ProviderLedgerEvm
 
 [providers](../modules/providers.md).ProviderLedgerEvm
 
+Base provider for other providers
+extends EventEmitter
+
 ## Hierarchy
 
-- `ProviderLedgerBase`
+- [`ProviderLedgerBase`](providers.ProviderLedgerBase.md)
 
   ↳ **`ProviderLedgerEvm`**
 
 ## Implements
 
-- `ProviderInterface`
+- [`ProviderInterface`](../interfaces/providers.ProviderInterface.md)
 
 ## Table of contents
 
@@ -77,29 +80,29 @@
 
 | Name | Type |
 | :------ | :------ |
-| `options` | [`ProviderLedgerBaseOptions`](../modules/providers.md#providerledgerbaseoptions) & `ProviderBaseOptions` |
+| `options` | [`ProviderLedgerBaseOptions`](../modules/providers.md#providerledgerbaseoptions) & [`ProviderBaseOptions`](../modules/providers.md#providerbaseoptions) |
 
 #### Inherited from
 
-ProviderLedgerBase.constructor
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[constructor](providers.ProviderLedgerBase.md#constructor)
 
 #### Defined in
 
-[src/providers/base-provider.ts:16](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L16)
+[src/providers/base-provider.ts:17](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L17)
 
 ## Properties
 
 ### \_options
 
-• `Protected` **\_options**: [`ProviderLedgerBaseOptions`](../modules/providers.md#providerledgerbaseoptions) & `ProviderBaseOptions`
+• **\_options**: [`ProviderLedgerBaseOptions`](../modules/providers.md#providerledgerbaseoptions) & [`ProviderBaseOptions`](../modules/providers.md#providerbaseoptions)
 
 #### Inherited from
 
-ProviderLedgerBase.\_options
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[_options](providers.ProviderLedgerBase.md#_options)
 
 #### Defined in
 
-[src/providers/base-provider.ts:14](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L14)
+[src/providers/base-provider.ts:15](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L15)
 
 ___
 
@@ -117,7 +120,7 @@ v13.4.0, v12.16.0
 
 #### Inherited from
 
-ProviderLedgerBase.captureRejectionSymbol
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[captureRejectionSymbol](providers.ProviderLedgerBase.md#capturerejectionsymbol)
 
 #### Defined in
 
@@ -139,7 +142,7 @@ v13.4.0, v12.16.0
 
 #### Inherited from
 
-ProviderLedgerBase.captureRejections
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[captureRejections](providers.ProviderLedgerBase.md#capturerejections)
 
 #### Defined in
 
@@ -193,7 +196,7 @@ v0.11.2
 
 #### Inherited from
 
-ProviderLedgerBase.defaultMaxListeners
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[defaultMaxListeners](providers.ProviderLedgerBase.md#defaultmaxlisteners)
 
 #### Defined in
 
@@ -216,7 +219,7 @@ v13.6.0, v12.17.0
 
 #### Inherited from
 
-ProviderLedgerBase.errorMonitor
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[errorMonitor](providers.ProviderLedgerBase.md#errormonitor)
 
 #### Defined in
 
@@ -248,11 +251,11 @@ node_modules/@types/node/events.d.ts:445
 
 #### Implementation of
 
-ProviderInterface.[captureRejectionSymbol]
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[[captureRejectionSymbol]](../interfaces/providers.ProviderInterface.md#[capturerejectionsymbol])
 
 #### Inherited from
 
-ProviderLedgerBase.[captureRejectionSymbol]
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[[captureRejectionSymbol]](providers.ProviderLedgerBase.md#[capturerejectionsymbol])
 
 #### Defined in
 
@@ -264,21 +267,23 @@ ___
 
 ▸ **abort**(): `Promise`\<`void`\>
 
+Stop action
+
 #### Returns
 
 `Promise`\<`void`\>
 
 #### Implementation of
 
-ProviderInterface.abort
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[abort](../interfaces/providers.ProviderInterface.md#abort)
 
 #### Inherited from
 
-ProviderLedgerBase.abort
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[abort](providers.ProviderLedgerBase.md#abort)
 
 #### Defined in
 
-[src/providers/ledger/provider.ts:64](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/provider.ts#L64)
+[src/providers/ledger/provider.ts:66](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/ledger/provider.ts#L66)
 
 ___
 
@@ -311,11 +316,11 @@ v0.1.26
 
 #### Implementation of
 
-ProviderInterface.addListener
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[addListener](../interfaces/providers.ProviderInterface.md#addlistener)
 
 #### Inherited from
 
-ProviderLedgerBase.addListener
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[addListener](providers.ProviderLedgerBase.md#addlistener)
 
 #### Defined in
 
@@ -340,11 +345,11 @@ ___
 
 #### Inherited from
 
-ProviderLedgerBase.catchError
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[catchError](providers.ProviderLedgerBase.md#catcherror)
 
 #### Defined in
 
-[src/providers/ledger/provider.ts:88](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/provider.ts#L88)
+[src/providers/ledger/provider.ts:90](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/ledger/provider.ts#L90)
 
 ___
 
@@ -352,21 +357,23 @@ ___
 
 ▸ **clean**(): `Promise`\<`void`\>
 
+Clean provider storage
+
 #### Returns
 
 `Promise`\<`void`\>
 
 #### Implementation of
 
-ProviderInterface.clean
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[clean](../interfaces/providers.ProviderInterface.md#clean)
 
 #### Inherited from
 
-ProviderLedgerBase.clean
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[clean](providers.ProviderLedgerBase.md#clean)
 
 #### Defined in
 
-[src/providers/base-provider.ts:63](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L63)
+[src/providers/base-provider.ts:64](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L64)
 
 ___
 
@@ -386,11 +393,11 @@ ___
 
 #### Overrides
 
-ProviderLedgerBase.confirmAddress
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[confirmAddress](providers.ProviderLedgerBase.md#confirmaddress)
 
 #### Defined in
 
-[src/providers/ledger/evm-provider.ts:19](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/evm-provider.ts#L19)
+[src/providers/ledger/evm-provider.ts:20](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/ledger/evm-provider.ts#L20)
 
 ___
 
@@ -459,11 +466,11 @@ v0.1.26
 
 #### Implementation of
 
-ProviderInterface.emit
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[emit](../interfaces/providers.ProviderInterface.md#emit)
 
 #### Inherited from
 
-ProviderLedgerBase.emit
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[emit](providers.ProviderLedgerBase.md#emit)
 
 #### Defined in
 
@@ -502,11 +509,11 @@ v6.0.0
 
 #### Implementation of
 
-ProviderInterface.eventNames
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[eventNames](../interfaces/providers.ProviderInterface.md#eventnames)
 
 #### Inherited from
 
-ProviderLedgerBase.eventNames
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[eventNames](providers.ProviderLedgerBase.md#eventnames)
 
 #### Defined in
 
@@ -518,12 +525,14 @@ ___
 
 ▸ **getAccountInfo**(`hdPath`, `showDisplay?`): `Promise`\<\{ `address`: `string` ; `publicKey`: `string`  }\>
 
+Get public key and address for hd path
+
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `hdPath` | `string` | `undefined` |
-| `showDisplay` | `boolean` | `false` |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `hdPath` | `string` | `undefined` | HD path |
+| `showDisplay` | `boolean` | `false` | - |
 
 #### Returns
 
@@ -531,15 +540,15 @@ ___
 
 #### Implementation of
 
-ProviderInterface.getAccountInfo
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[getAccountInfo](../interfaces/providers.ProviderInterface.md#getaccountinfo)
 
 #### Overrides
 
-ProviderLedgerBase.getAccountInfo
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[getAccountInfo](providers.ProviderLedgerBase.md#getaccountinfo)
 
 #### Defined in
 
-[src/providers/ledger/evm-provider.ts:23](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/evm-provider.ts#L23)
+[src/providers/ledger/evm-provider.ts:24](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/ledger/evm-provider.ts#L24)
 
 ___
 
@@ -553,15 +562,15 @@ ___
 
 #### Implementation of
 
-ProviderInterface.getIdentifier
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[getIdentifier](../interfaces/providers.ProviderInterface.md#getidentifier)
 
 #### Inherited from
 
-ProviderLedgerBase.getIdentifier
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[getIdentifier](providers.ProviderLedgerBase.md#getidentifier)
 
 #### Defined in
 
-[src/providers/ledger/provider.ts:12](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/provider.ts#L12)
+[src/providers/ledger/provider.ts:14](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/ledger/provider.ts#L14)
 
 ___
 
@@ -582,11 +591,11 @@ v1.0.0
 
 #### Implementation of
 
-ProviderInterface.getMaxListeners
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[getMaxListeners](../interfaces/providers.ProviderInterface.md#getmaxlisteners)
 
 #### Inherited from
 
-ProviderLedgerBase.getMaxListeners
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[getMaxListeners](providers.ProviderLedgerBase.md#getmaxlisteners)
 
 #### Defined in
 
@@ -610,15 +619,15 @@ ___
 
 #### Implementation of
 
-ProviderInterface.getPrivateKey
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[getPrivateKey](../interfaces/providers.ProviderInterface.md#getprivatekey)
 
 #### Inherited from
 
-ProviderLedgerBase.getPrivateKey
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[getPrivateKey](providers.ProviderLedgerBase.md#getprivatekey)
 
 #### Defined in
 
-[src/providers/base-provider.ts:44](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L44)
+[src/providers/base-provider.ts:45](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L45)
 
 ___
 
@@ -653,11 +662,11 @@ v3.2.0
 
 #### Implementation of
 
-ProviderInterface.listenerCount
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[listenerCount](../interfaces/providers.ProviderInterface.md#listenercount)
 
 #### Inherited from
 
-ProviderLedgerBase.listenerCount
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[listenerCount](providers.ProviderLedgerBase.md#listenercount)
 
 #### Defined in
 
@@ -701,11 +710,11 @@ v0.1.26
 
 #### Implementation of
 
-ProviderInterface.listeners
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[listeners](../interfaces/providers.ProviderInterface.md#listeners)
 
 #### Inherited from
 
-ProviderLedgerBase.listeners
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[listeners](providers.ProviderLedgerBase.md#listeners)
 
 #### Defined in
 
@@ -742,11 +751,11 @@ v10.0.0
 
 #### Implementation of
 
-ProviderInterface.off
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[off](../interfaces/providers.ProviderInterface.md#off)
 
 #### Inherited from
 
-ProviderLedgerBase.off
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[off](providers.ProviderLedgerBase.md#off)
 
 #### Defined in
 
@@ -808,11 +817,11 @@ v0.1.101
 
 #### Implementation of
 
-ProviderInterface.on
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[on](../interfaces/providers.ProviderInterface.md#on)
 
 #### Inherited from
 
-ProviderLedgerBase.on
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[on](providers.ProviderLedgerBase.md#on)
 
 #### Defined in
 
@@ -872,11 +881,11 @@ v0.3.0
 
 #### Implementation of
 
-ProviderInterface.once
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[once](../interfaces/providers.ProviderInterface.md#once)
 
 #### Inherited from
 
-ProviderLedgerBase.once
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[once](providers.ProviderLedgerBase.md#once)
 
 #### Defined in
 
@@ -924,11 +933,11 @@ v6.0.0
 
 #### Implementation of
 
-ProviderInterface.prependListener
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[prependListener](../interfaces/providers.ProviderInterface.md#prependlistener)
 
 #### Inherited from
 
-ProviderLedgerBase.prependListener
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[prependListener](providers.ProviderLedgerBase.md#prependlistener)
 
 #### Defined in
 
@@ -974,11 +983,11 @@ v6.0.0
 
 #### Implementation of
 
-ProviderInterface.prependOnceListener
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[prependOnceListener](../interfaces/providers.ProviderInterface.md#prependoncelistener)
 
 #### Inherited from
 
-ProviderLedgerBase.prependOnceListener
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[prependOnceListener](providers.ProviderLedgerBase.md#prependoncelistener)
 
 #### Defined in
 
@@ -1040,11 +1049,11 @@ v9.4.0
 
 #### Implementation of
 
-ProviderInterface.rawListeners
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[rawListeners](../interfaces/providers.ProviderInterface.md#rawlisteners)
 
 #### Inherited from
 
-ProviderLedgerBase.rawListeners
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[rawListeners](providers.ProviderLedgerBase.md#rawlisteners)
 
 #### Defined in
 
@@ -1080,11 +1089,11 @@ v0.1.26
 
 #### Implementation of
 
-ProviderInterface.removeAllListeners
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[removeAllListeners](../interfaces/providers.ProviderInterface.md#removealllisteners)
 
 #### Inherited from
 
-ProviderLedgerBase.removeAllListeners
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[removeAllListeners](providers.ProviderLedgerBase.md#removealllisteners)
 
 #### Defined in
 
@@ -1199,11 +1208,11 @@ v0.1.26
 
 #### Implementation of
 
-ProviderInterface.removeListener
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[removeListener](../interfaces/providers.ProviderInterface.md#removelistener)
 
 #### Inherited from
 
-ProviderLedgerBase.removeListener
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[removeListener](providers.ProviderLedgerBase.md#removelistener)
 
 #### Defined in
 
@@ -1238,11 +1247,11 @@ v0.3.5
 
 #### Implementation of
 
-ProviderInterface.setMaxListeners
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[setMaxListeners](../interfaces/providers.ProviderInterface.md#setmaxlisteners)
 
 #### Inherited from
 
-ProviderLedgerBase.setMaxListeners
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[setMaxListeners](providers.ProviderLedgerBase.md#setmaxlisteners)
 
 #### Defined in
 
@@ -1254,28 +1263,32 @@ ___
 
 ▸ **signPersonalMessage**(`hdPath`, `message`): `Promise`\<`string`\>
 
+Sign personal message
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `hdPath` | `string` |
-| `message` | `BytesLike` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `hdPath` | `string` | HD path for subscribe |
+| `message` | [`BytesLike`](../modules/providers.md#byteslike) | message |
 
 #### Returns
 
 `Promise`\<`string`\>
 
+signature of personal message
+
 #### Implementation of
 
-ProviderInterface.signPersonalMessage
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[signPersonalMessage](../interfaces/providers.ProviderInterface.md#signpersonalmessage)
 
 #### Overrides
 
-ProviderLedgerBase.signPersonalMessage
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[signPersonalMessage](providers.ProviderLedgerBase.md#signpersonalmessage)
 
 #### Defined in
 
-[src/providers/ledger/evm-provider.ts:112](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/evm-provider.ts#L112)
+[src/providers/ledger/evm-provider.ts:113](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/ledger/evm-provider.ts#L113)
 
 ___
 
@@ -1283,28 +1296,32 @@ ___
 
 ▸ **signTransaction**(`hdPath`, `transaction`): `Promise`\<`string`\>
 
+Sign transaction
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `hdPath` | `string` |
-| `transaction` | `TransactionRequest` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `hdPath` | `string` | HD path for subscribe |
+| `transaction` | `TransactionRequest` | transaction for sign |
 
 #### Returns
 
 `Promise`\<`string`\>
 
+signature of transaction
+
 #### Implementation of
 
-ProviderInterface.signTransaction
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[signTransaction](../interfaces/providers.ProviderInterface.md#signtransaction)
 
 #### Overrides
 
-ProviderLedgerBase.signTransaction
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[signTransaction](providers.ProviderLedgerBase.md#signtransaction)
 
 #### Defined in
 
-[src/providers/ledger/evm-provider.ts:59](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/evm-provider.ts#L59)
+[src/providers/ledger/evm-provider.ts:60](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/ledger/evm-provider.ts#L60)
 
 ___
 
@@ -1312,28 +1329,32 @@ ___
 
 ▸ **signTypedData**(`hdPath`, `typedData`): `Promise`\<`string`\>
 
+Sign typed data
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `hdPath` | `string` |
-| `typedData` | `TypedData` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `hdPath` | `string` | HD path for subscribe |
+| `typedData` | [`TypedData`](../modules/providers.md#typeddata) |  |
 
 #### Returns
 
 `Promise`\<`string`\>
 
+signature of typed data
+
 #### Implementation of
 
-ProviderInterface.signTypedData
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[signTypedData](../interfaces/providers.ProviderInterface.md#signtypeddata)
 
 #### Overrides
 
-ProviderLedgerBase.signTypedData
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[signTypedData](providers.ProviderLedgerBase.md#signtypeddata)
 
 #### Defined in
 
-[src/providers/ledger/evm-provider.ts:157](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/evm-provider.ts#L157)
+[src/providers/ledger/evm-provider.ts:158](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/ledger/evm-provider.ts#L158)
 
 ___
 
@@ -1347,17 +1368,19 @@ ___
 
 #### Inherited from
 
-ProviderLedgerBase.suggestApp
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[suggestApp](providers.ProviderLedgerBase.md#suggestapp)
 
 #### Defined in
 
-[src/providers/ledger/provider.ts:33](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/provider.ts#L33)
+[src/providers/ledger/provider.ts:35](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/ledger/provider.ts#L35)
 
 ___
 
 ### updatePin
 
 ▸ **updatePin**(`_pin`): `Promise`\<`void`\>
+
+Update pin for encrypted providers
 
 #### Parameters
 
@@ -1371,15 +1394,15 @@ ___
 
 #### Implementation of
 
-ProviderInterface.updatePin
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[updatePin](../interfaces/providers.ProviderInterface.md#updatepin)
 
 #### Inherited from
 
-ProviderLedgerBase.updatePin
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[updatePin](providers.ProviderLedgerBase.md#updatepin)
 
 #### Defined in
 
-[src/providers/base-provider.ts:67](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L67)
+[src/providers/base-provider.ts:68](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L68)
 
 ___
 
@@ -1411,11 +1434,11 @@ ___
 
 #### Inherited from
 
-ProviderLedgerBase.withDevice
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[withDevice](providers.ProviderLedgerBase.md#withdevice)
 
 #### Defined in
 
-[src/providers/ledger/provider.ts:16](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/ledger/provider.ts#L16)
+[src/providers/ledger/provider.ts:18](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/ledger/provider.ts#L18)
 
 ___
 
@@ -1472,7 +1495,7 @@ v20.5.0
 
 #### Inherited from
 
-ProviderLedgerBase.addAbortListener
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[addAbortListener](providers.ProviderLedgerBase.md#addabortlistener)
 
 #### Defined in
 
@@ -1526,7 +1549,7 @@ v15.2.0, v14.17.0
 
 #### Inherited from
 
-ProviderLedgerBase.getEventListeners
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[getEventListeners](providers.ProviderLedgerBase.md#geteventlisteners)
 
 #### Defined in
 
@@ -1580,7 +1603,7 @@ v19.9.0
 
 #### Inherited from
 
-ProviderLedgerBase.getMaxListeners
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[getMaxListeners](providers.ProviderLedgerBase.md#getmaxlisteners-1)
 
 #### Defined in
 
@@ -1625,7 +1648,7 @@ Since v3.2.0 - Use `listenerCount` instead.
 
 #### Inherited from
 
-ProviderLedgerBase.listenerCount
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[listenerCount](providers.ProviderLedgerBase.md#listenercount-1)
 
 #### Defined in
 
@@ -1734,7 +1757,7 @@ v13.6.0, v12.16.0
 
 #### Inherited from
 
-ProviderLedgerBase.on
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[on](providers.ProviderLedgerBase.md#on-1)
 
 #### Defined in
 
@@ -1756,7 +1779,7 @@ node_modules/@types/node/events.d.ts:303
 
 #### Inherited from
 
-ProviderLedgerBase.on
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[on](providers.ProviderLedgerBase.md#on-1)
 
 #### Defined in
 
@@ -1863,7 +1886,7 @@ v11.13.0, v10.16.0
 
 #### Inherited from
 
-ProviderLedgerBase.once
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[once](providers.ProviderLedgerBase.md#once-1)
 
 #### Defined in
 
@@ -1885,7 +1908,7 @@ node_modules/@types/node/events.d.ts:217
 
 #### Inherited from
 
-ProviderLedgerBase.once
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[once](providers.ProviderLedgerBase.md#once-1)
 
 #### Defined in
 
@@ -1911,7 +1934,7 @@ setMaxListeners(5, target, emitter);
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `n?` | `number` | A non-negative number. The maximum number of listeners per `EventTarget` event. |
-| `...eventTargets` | (`EventEmitter`\<`DefaultEventMap`\> \| `EventTarget`)[] | - |
+| `...eventTargets` | (`EventEmitter`\<`DefaultEventMap`\> \| `EventTarget`)[] | Zero or more {EventTarget} or {EventEmitter} instances. If none are specified, `n` is set as the default max for all newly created {EventTarget} and {EventEmitter} objects. |
 
 #### Returns
 
@@ -1923,7 +1946,7 @@ v15.4.0
 
 #### Inherited from
 
-ProviderLedgerBase.setMaxListeners
+[ProviderLedgerBase](providers.ProviderLedgerBase.md).[setMaxListeners](providers.ProviderLedgerBase.md#setmaxlisteners-1)
 
 #### Defined in
 

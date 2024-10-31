@@ -1,4 +1,4 @@
-[@haqq/rn-wallet-providers - v0.0.1](../README.md) / [Exports](../modules.md) / [constants](../modules/constants.md) / BluetoothState
+[@haqq/rn-wallet-providers - v0.0.11](../README.md) / [Exports](../modules.md) / [constants](../modules/constants.md) / BluetoothState
 
 # Enumeration: BluetoothState
 
@@ -25,7 +25,7 @@ Bluetooth is currently powered off.
 
 #### Defined in
 
-[src/constants.ts:68](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L68)
+[src/constants.ts:68](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/constants.ts#L68)
 
 ___
 
@@ -37,7 +37,7 @@ Bluetooth is currently powered on and available to use.
 
 #### Defined in
 
-[src/constants.ts:72](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L72)
+[src/constants.ts:72](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/constants.ts#L72)
 
 ___
 
@@ -49,7 +49,7 @@ The connection with the system service was momentarily lost; an update is immine
 
 #### Defined in
 
-[src/constants.ts:56](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L56)
+[src/constants.ts:56](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/constants.ts#L56)
 
 ___
 
@@ -61,7 +61,7 @@ The app is not authorized to use Bluetooth low energy.
 
 #### Defined in
 
-[src/constants.ts:64](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L64)
+[src/constants.ts:64](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/constants.ts#L64)
 
 ___
 
@@ -73,7 +73,7 @@ The current state of the manager is unknown; an update is imminent.
 
 #### Defined in
 
-[src/constants.ts:52](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L52)
+[src/constants.ts:52](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/constants.ts#L52)
 
 ___
 
@@ -85,4 +85,4 @@ The platform does not support Bluetooth low energy.
 
 #### Defined in
 
-[src/constants.ts:60](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L60)
+[src/constants.ts:60](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/constants.ts#L60)

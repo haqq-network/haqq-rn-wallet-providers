@@ -1,110 +1,110 @@
-[@haqq/rn-wallet-providers - v0.0.1](../README.md) / [Exports](../modules.md) / [providers](../modules/providers.md) / Provider
+[@haqq/rn-wallet-providers - v0.0.11](../README.md) / [Exports](../modules.md) / [providers](../modules/providers.md) / ProviderLedgerBase
 
-# Class: Provider\<T\>
+# Class: ProviderLedgerBase
 
-[providers](../modules/providers.md).Provider
+[providers](../modules/providers.md).ProviderLedgerBase
 
-## Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | extends `object` |
+Base provider for other providers
+extends EventEmitter
 
 ## Hierarchy
 
-- `EventEmitter`
+- [`ProviderBase`](providers.ProviderBase.md)\<[`ProviderLedgerBaseOptions`](../modules/providers.md#providerledgerbaseoptions)\>
 
-  ↳ **`Provider`**
+  ↳ **`ProviderLedgerBase`**
+
+  ↳↳ [`ProviderLedgerEvm`](providers.ProviderLedgerEvm.md)
 
 ## Implements
 
-- `ProviderInterface`
+- [`ProviderInterface`](../interfaces/providers.ProviderInterface.md)
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](providers.Provider.md#constructor)
+- [constructor](providers.ProviderLedgerBase.md#constructor)
 
 ### Properties
 
-- [\_options](providers.Provider.md#_options)
-- [captureRejectionSymbol](providers.Provider.md#capturerejectionsymbol)
-- [captureRejections](providers.Provider.md#capturerejections)
-- [defaultMaxListeners](providers.Provider.md#defaultmaxlisteners)
-- [errorMonitor](providers.Provider.md#errormonitor)
+- [\_options](providers.ProviderLedgerBase.md#_options)
+- [captureRejectionSymbol](providers.ProviderLedgerBase.md#capturerejectionsymbol)
+- [captureRejections](providers.ProviderLedgerBase.md#capturerejections)
+- [defaultMaxListeners](providers.ProviderLedgerBase.md#defaultmaxlisteners)
+- [errorMonitor](providers.ProviderLedgerBase.md#errormonitor)
 
 ### Methods
 
-- [[captureRejectionSymbol]](providers.Provider.md#[capturerejectionsymbol])
-- [abort](providers.Provider.md#abort)
-- [addListener](providers.Provider.md#addlistener)
-- [catchError](providers.Provider.md#catcherror)
-- [clean](providers.Provider.md#clean)
-- [emit](providers.Provider.md#emit)
-- [eventNames](providers.Provider.md#eventnames)
-- [getAccountInfo](providers.Provider.md#getaccountinfo)
-- [getIdentifier](providers.Provider.md#getidentifier)
-- [getMaxListeners](providers.Provider.md#getmaxlisteners)
-- [getPrivateKey](providers.Provider.md#getprivatekey)
-- [listenerCount](providers.Provider.md#listenercount)
-- [listeners](providers.Provider.md#listeners)
-- [off](providers.Provider.md#off)
-- [on](providers.Provider.md#on)
-- [once](providers.Provider.md#once)
-- [prependListener](providers.Provider.md#prependlistener)
-- [prependOnceListener](providers.Provider.md#prependoncelistener)
-- [rawListeners](providers.Provider.md#rawlisteners)
-- [removeAllListeners](providers.Provider.md#removealllisteners)
-- [removeListener](providers.Provider.md#removelistener)
-- [setMaxListeners](providers.Provider.md#setmaxlisteners)
-- [signPersonalMessage](providers.Provider.md#signpersonalmessage)
-- [signTransaction](providers.Provider.md#signtransaction)
-- [signTypedData](providers.Provider.md#signtypeddata)
-- [updatePin](providers.Provider.md#updatepin)
-- [addAbortListener](providers.Provider.md#addabortlistener)
-- [getEventListeners](providers.Provider.md#geteventlisteners)
-- [getMaxListeners](providers.Provider.md#getmaxlisteners-1)
-- [listenerCount](providers.Provider.md#listenercount-1)
-- [on](providers.Provider.md#on-1)
-- [once](providers.Provider.md#once-1)
-- [setMaxListeners](providers.Provider.md#setmaxlisteners-1)
+- [[captureRejectionSymbol]](providers.ProviderLedgerBase.md#[capturerejectionsymbol])
+- [abort](providers.ProviderLedgerBase.md#abort)
+- [addListener](providers.ProviderLedgerBase.md#addlistener)
+- [catchError](providers.ProviderLedgerBase.md#catcherror)
+- [clean](providers.ProviderLedgerBase.md#clean)
+- [confirmAddress](providers.ProviderLedgerBase.md#confirmaddress)
+- [emit](providers.ProviderLedgerBase.md#emit)
+- [eventNames](providers.ProviderLedgerBase.md#eventnames)
+- [getAccountInfo](providers.ProviderLedgerBase.md#getaccountinfo)
+- [getIdentifier](providers.ProviderLedgerBase.md#getidentifier)
+- [getMaxListeners](providers.ProviderLedgerBase.md#getmaxlisteners)
+- [getPrivateKey](providers.ProviderLedgerBase.md#getprivatekey)
+- [listenerCount](providers.ProviderLedgerBase.md#listenercount)
+- [listeners](providers.ProviderLedgerBase.md#listeners)
+- [off](providers.ProviderLedgerBase.md#off)
+- [on](providers.ProviderLedgerBase.md#on)
+- [once](providers.ProviderLedgerBase.md#once)
+- [prependListener](providers.ProviderLedgerBase.md#prependlistener)
+- [prependOnceListener](providers.ProviderLedgerBase.md#prependoncelistener)
+- [rawListeners](providers.ProviderLedgerBase.md#rawlisteners)
+- [removeAllListeners](providers.ProviderLedgerBase.md#removealllisteners)
+- [removeListener](providers.ProviderLedgerBase.md#removelistener)
+- [setMaxListeners](providers.ProviderLedgerBase.md#setmaxlisteners)
+- [signPersonalMessage](providers.ProviderLedgerBase.md#signpersonalmessage)
+- [signTransaction](providers.ProviderLedgerBase.md#signtransaction)
+- [signTypedData](providers.ProviderLedgerBase.md#signtypeddata)
+- [suggestApp](providers.ProviderLedgerBase.md#suggestapp)
+- [updatePin](providers.ProviderLedgerBase.md#updatepin)
+- [withDevice](providers.ProviderLedgerBase.md#withdevice)
+- [addAbortListener](providers.ProviderLedgerBase.md#addabortlistener)
+- [getEventListeners](providers.ProviderLedgerBase.md#geteventlisteners)
+- [getMaxListeners](providers.ProviderLedgerBase.md#getmaxlisteners-1)
+- [listenerCount](providers.ProviderLedgerBase.md#listenercount-1)
+- [on](providers.ProviderLedgerBase.md#on-1)
+- [once](providers.ProviderLedgerBase.md#once-1)
+- [setMaxListeners](providers.ProviderLedgerBase.md#setmaxlisteners-1)
 
 ## Constructors
 
 ### constructor
 
-• **new Provider**\<`T`\>(`options`)
-
-#### Type parameters
-
-| Name | Type |
-| :------ | :------ |
-| `T` | extends `object` |
+• **new ProviderLedgerBase**(`options`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `options` | `T` & `ProviderBaseOptions` |
+| `options` | [`ProviderLedgerBaseOptions`](../modules/providers.md#providerledgerbaseoptions) & [`ProviderBaseOptions`](../modules/providers.md#providerbaseoptions) |
 
-#### Overrides
+#### Inherited from
 
-EventEmitter.constructor
+[ProviderBase](providers.ProviderBase.md).[constructor](providers.ProviderBase.md#constructor)
 
 #### Defined in
 
-[src/providers/base-provider.ts:16](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L16)
+[src/providers/base-provider.ts:17](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L17)
 
 ## Properties
 
 ### \_options
 
-• `Protected` **\_options**: `T` & `ProviderBaseOptions`
+• **\_options**: [`ProviderLedgerBaseOptions`](../modules/providers.md#providerledgerbaseoptions) & [`ProviderBaseOptions`](../modules/providers.md#providerbaseoptions)
+
+#### Inherited from
+
+[ProviderBase](providers.ProviderBase.md).[_options](providers.ProviderBase.md#_options)
 
 #### Defined in
 
-[src/providers/base-provider.ts:14](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L14)
+[src/providers/base-provider.ts:15](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L15)
 
 ___
 
@@ -122,7 +122,7 @@ v13.4.0, v12.16.0
 
 #### Inherited from
 
-EventEmitter.captureRejectionSymbol
+[ProviderBase](providers.ProviderBase.md).[captureRejectionSymbol](providers.ProviderBase.md#capturerejectionsymbol)
 
 #### Defined in
 
@@ -144,7 +144,7 @@ v13.4.0, v12.16.0
 
 #### Inherited from
 
-EventEmitter.captureRejections
+[ProviderBase](providers.ProviderBase.md).[captureRejections](providers.ProviderBase.md#capturerejections)
 
 #### Defined in
 
@@ -198,7 +198,7 @@ v0.11.2
 
 #### Inherited from
 
-EventEmitter.defaultMaxListeners
+[ProviderBase](providers.ProviderBase.md).[defaultMaxListeners](providers.ProviderBase.md#defaultmaxlisteners)
 
 #### Defined in
 
@@ -221,7 +221,7 @@ v13.6.0, v12.17.0
 
 #### Inherited from
 
-EventEmitter.errorMonitor
+[ProviderBase](providers.ProviderBase.md).[errorMonitor](providers.ProviderBase.md#errormonitor)
 
 #### Defined in
 
@@ -253,11 +253,11 @@ node_modules/@types/node/events.d.ts:445
 
 #### Implementation of
 
-ProviderInterface.[captureRejectionSymbol]
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[[captureRejectionSymbol]](../interfaces/providers.ProviderInterface.md#[capturerejectionsymbol])
 
 #### Inherited from
 
-EventEmitter.[captureRejectionSymbol]
+[ProviderBase](providers.ProviderBase.md).[[captureRejectionSymbol]](providers.ProviderBase.md#[capturerejectionsymbol])
 
 #### Defined in
 
@@ -267,25 +267,31 @@ ___
 
 ### abort
 
-▸ **abort**(): `void`
+▸ **abort**(): `Promise`\<`void`\>
+
+Stop action
 
 #### Returns
 
-`void`
+`Promise`\<`void`\>
 
 #### Implementation of
 
-ProviderInterface.abort
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[abort](../interfaces/providers.ProviderInterface.md#abort)
+
+#### Overrides
+
+[ProviderBase](providers.ProviderBase.md).[abort](providers.ProviderBase.md#abort)
 
 #### Defined in
 
-[src/providers/base-provider.ts:59](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L59)
+[src/providers/ledger/provider.ts:66](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/ledger/provider.ts#L66)
 
 ___
 
 ### addListener
 
-▸ **addListener**\<`K`\>(`eventName`, `listener`): [`Provider`](providers.Provider.md)\<`T`\>
+▸ **addListener**\<`K`\>(`eventName`, `listener`): [`ProviderLedgerBase`](providers.ProviderLedgerBase.md)
 
 Alias for `emitter.on(eventName, listener)`.
 
@@ -304,7 +310,7 @@ Alias for `emitter.on(eventName, listener)`.
 
 #### Returns
 
-[`Provider`](providers.Provider.md)\<`T`\>
+[`ProviderLedgerBase`](providers.ProviderLedgerBase.md)
 
 **`Since`**
 
@@ -312,11 +318,11 @@ v0.1.26
 
 #### Implementation of
 
-ProviderInterface.addListener
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[addListener](../interfaces/providers.ProviderInterface.md#addlistener)
 
 #### Inherited from
 
-EventEmitter.addListener
+[ProviderBase](providers.ProviderBase.md).[addListener](providers.ProviderBase.md#addlistener)
 
 #### Defined in
 
@@ -326,23 +332,26 @@ ___
 
 ### catchError
 
-▸ **catchError**(`e`, `source`, `handled?`): `void`
+▸ **catchError**(`e`, `source`): `void`
 
 #### Parameters
 
-| Name | Type | Default value |
-| :------ | :------ | :------ |
-| `e` | `Error` | `undefined` |
-| `source` | `string` | `undefined` |
-| `handled` | `boolean` | `false` |
+| Name | Type |
+| :------ | :------ |
+| `e` | `Error` |
+| `source` | `string` |
 
 #### Returns
 
 `void`
 
+#### Overrides
+
+[ProviderBase](providers.ProviderBase.md).[catchError](providers.ProviderBase.md#catcherror)
+
 #### Defined in
 
-[src/providers/base-provider.ts:48](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L48)
+[src/providers/ledger/provider.ts:90](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/ledger/provider.ts#L90)
 
 ___
 
@@ -350,17 +359,43 @@ ___
 
 ▸ **clean**(): `Promise`\<`void`\>
 
+Clean provider storage
+
 #### Returns
 
 `Promise`\<`void`\>
 
 #### Implementation of
 
-ProviderInterface.clean
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[clean](../interfaces/providers.ProviderInterface.md#clean)
+
+#### Inherited from
+
+[ProviderBase](providers.ProviderBase.md).[clean](providers.ProviderBase.md#clean)
 
 #### Defined in
 
-[src/providers/base-provider.ts:63](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L63)
+[src/providers/base-provider.ts:64](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L64)
+
+___
+
+### confirmAddress
+
+▸ `Abstract` **confirmAddress**(`hdPath`): `Promise`\<`string`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `hdPath` | `string` |
+
+#### Returns
+
+`Promise`\<`string`\>
+
+#### Defined in
+
+[src/providers/ledger/provider.ts:33](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/ledger/provider.ts#L33)
 
 ___
 
@@ -429,11 +464,11 @@ v0.1.26
 
 #### Implementation of
 
-ProviderInterface.emit
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[emit](../interfaces/providers.ProviderInterface.md#emit)
 
 #### Inherited from
 
-EventEmitter.emit
+[ProviderBase](providers.ProviderBase.md).[emit](providers.ProviderBase.md#emit)
 
 #### Defined in
 
@@ -472,11 +507,11 @@ v6.0.0
 
 #### Implementation of
 
-ProviderInterface.eventNames
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[eventNames](../interfaces/providers.ProviderInterface.md#eventnames)
 
 #### Inherited from
 
-EventEmitter.eventNames
+[ProviderBase](providers.ProviderBase.md).[eventNames](providers.ProviderBase.md#eventnames)
 
 #### Defined in
 
@@ -488,11 +523,13 @@ ___
 
 ▸ **getAccountInfo**(`_hdPath`): `Promise`\<\{ `address`: `string` = ''; `publicKey`: `string` = '' }\>
 
+Get public key and address for hd path
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_hdPath` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `_hdPath` | `string` | HD path |
 
 #### Returns
 
@@ -500,11 +537,15 @@ ___
 
 #### Implementation of
 
-ProviderInterface.getAccountInfo
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[getAccountInfo](../interfaces/providers.ProviderInterface.md#getaccountinfo)
+
+#### Inherited from
+
+[ProviderBase](providers.ProviderBase.md).[getAccountInfo](providers.ProviderBase.md#getaccountinfo)
 
 #### Defined in
 
-[src/providers/base-provider.ts:40](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L40)
+[src/providers/base-provider.ts:41](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L41)
 
 ___
 
@@ -518,11 +559,15 @@ ___
 
 #### Implementation of
 
-ProviderInterface.getIdentifier
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[getIdentifier](../interfaces/providers.ProviderInterface.md#getidentifier)
+
+#### Overrides
+
+[ProviderBase](providers.ProviderBase.md).[getIdentifier](providers.ProviderBase.md#getidentifier)
 
 #### Defined in
 
-[src/providers/base-provider.ts:36](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L36)
+[src/providers/ledger/provider.ts:14](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/ledger/provider.ts#L14)
 
 ___
 
@@ -531,7 +576,7 @@ ___
 ▸ **getMaxListeners**(): `number`
 
 Returns the current max listener value for the `EventEmitter` which is either
-set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](providers.Provider.md#defaultmaxlisteners).
+set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](providers.ProviderLedgerBase.md#defaultmaxlisteners).
 
 #### Returns
 
@@ -543,11 +588,11 @@ v1.0.0
 
 #### Implementation of
 
-ProviderInterface.getMaxListeners
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[getMaxListeners](../interfaces/providers.ProviderInterface.md#getmaxlisteners)
 
 #### Inherited from
 
-EventEmitter.getMaxListeners
+[ProviderBase](providers.ProviderBase.md).[getMaxListeners](providers.ProviderBase.md#getmaxlisteners)
 
 #### Defined in
 
@@ -571,11 +616,15 @@ ___
 
 #### Implementation of
 
-ProviderInterface.getPrivateKey
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[getPrivateKey](../interfaces/providers.ProviderInterface.md#getprivatekey)
+
+#### Inherited from
+
+[ProviderBase](providers.ProviderBase.md).[getPrivateKey](providers.ProviderBase.md#getprivatekey)
 
 #### Defined in
 
-[src/providers/base-provider.ts:44](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L44)
+[src/providers/base-provider.ts:45](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L45)
 
 ___
 
@@ -610,11 +659,11 @@ v3.2.0
 
 #### Implementation of
 
-ProviderInterface.listenerCount
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[listenerCount](../interfaces/providers.ProviderInterface.md#listenercount)
 
 #### Inherited from
 
-EventEmitter.listenerCount
+[ProviderBase](providers.ProviderBase.md).[listenerCount](providers.ProviderBase.md#listenercount)
 
 #### Defined in
 
@@ -658,11 +707,11 @@ v0.1.26
 
 #### Implementation of
 
-ProviderInterface.listeners
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[listeners](../interfaces/providers.ProviderInterface.md#listeners)
 
 #### Inherited from
 
-EventEmitter.listeners
+[ProviderBase](providers.ProviderBase.md).[listeners](providers.ProviderBase.md#listeners)
 
 #### Defined in
 
@@ -672,7 +721,7 @@ ___
 
 ### off
 
-▸ **off**\<`K`\>(`eventName`, `listener`): [`Provider`](providers.Provider.md)\<`T`\>
+▸ **off**\<`K`\>(`eventName`, `listener`): [`ProviderLedgerBase`](providers.ProviderLedgerBase.md)
 
 Alias for `emitter.removeListener()`.
 
@@ -691,7 +740,7 @@ Alias for `emitter.removeListener()`.
 
 #### Returns
 
-[`Provider`](providers.Provider.md)\<`T`\>
+[`ProviderLedgerBase`](providers.ProviderLedgerBase.md)
 
 **`Since`**
 
@@ -699,11 +748,11 @@ v10.0.0
 
 #### Implementation of
 
-ProviderInterface.off
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[off](../interfaces/providers.ProviderInterface.md#off)
 
 #### Inherited from
 
-EventEmitter.off
+[ProviderBase](providers.ProviderBase.md).[off](providers.ProviderBase.md#off)
 
 #### Defined in
 
@@ -713,7 +762,7 @@ ___
 
 ### on
 
-▸ **on**\<`K`\>(`eventName`, `listener`): [`Provider`](providers.Provider.md)\<`T`\>
+▸ **on**\<`K`\>(`eventName`, `listener`): [`ProviderLedgerBase`](providers.ProviderLedgerBase.md)
 
 Adds the `listener` function to the end of the listeners array for the event
 named `eventName`. No checks are made to see if the `listener` has already
@@ -757,7 +806,7 @@ myEE.emit('foo');
 
 #### Returns
 
-[`Provider`](providers.Provider.md)\<`T`\>
+[`ProviderLedgerBase`](providers.ProviderLedgerBase.md)
 
 **`Since`**
 
@@ -765,11 +814,11 @@ v0.1.101
 
 #### Implementation of
 
-ProviderInterface.on
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[on](../interfaces/providers.ProviderInterface.md#on)
 
 #### Inherited from
 
-EventEmitter.on
+[ProviderBase](providers.ProviderBase.md).[on](providers.ProviderBase.md#on)
 
 #### Defined in
 
@@ -779,7 +828,7 @@ ___
 
 ### once
 
-▸ **once**\<`K`\>(`eventName`, `listener`): [`Provider`](providers.Provider.md)\<`T`\>
+▸ **once**\<`K`\>(`eventName`, `listener`): [`ProviderLedgerBase`](providers.ProviderLedgerBase.md)
 
 Adds a **one-time** `listener` function for the event named `eventName`. The
 next time `eventName` is triggered, this listener is removed and then invoked.
@@ -821,7 +870,7 @@ myEE.emit('foo');
 
 #### Returns
 
-[`Provider`](providers.Provider.md)\<`T`\>
+[`ProviderLedgerBase`](providers.ProviderLedgerBase.md)
 
 **`Since`**
 
@@ -829,11 +878,11 @@ v0.3.0
 
 #### Implementation of
 
-ProviderInterface.once
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[once](../interfaces/providers.ProviderInterface.md#once)
 
 #### Inherited from
 
-EventEmitter.once
+[ProviderBase](providers.ProviderBase.md).[once](providers.ProviderBase.md#once)
 
 #### Defined in
 
@@ -843,7 +892,7 @@ ___
 
 ### prependListener
 
-▸ **prependListener**\<`K`\>(`eventName`, `listener`): [`Provider`](providers.Provider.md)\<`T`\>
+▸ **prependListener**\<`K`\>(`eventName`, `listener`): [`ProviderLedgerBase`](providers.ProviderLedgerBase.md)
 
 Adds the `listener` function to the _beginning_ of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
@@ -873,7 +922,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`Provider`](providers.Provider.md)\<`T`\>
+[`ProviderLedgerBase`](providers.ProviderLedgerBase.md)
 
 **`Since`**
 
@@ -881,11 +930,11 @@ v6.0.0
 
 #### Implementation of
 
-ProviderInterface.prependListener
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[prependListener](../interfaces/providers.ProviderInterface.md#prependlistener)
 
 #### Inherited from
 
-EventEmitter.prependListener
+[ProviderBase](providers.ProviderBase.md).[prependListener](providers.ProviderBase.md#prependlistener)
 
 #### Defined in
 
@@ -895,7 +944,7 @@ ___
 
 ### prependOnceListener
 
-▸ **prependOnceListener**\<`K`\>(`eventName`, `listener`): [`Provider`](providers.Provider.md)\<`T`\>
+▸ **prependOnceListener**\<`K`\>(`eventName`, `listener`): [`ProviderLedgerBase`](providers.ProviderLedgerBase.md)
 
 Adds a **one-time**`listener` function for the event named `eventName` to the _beginning_ of the listeners array. The next time `eventName` is triggered, this
 listener is removed, and then invoked.
@@ -923,7 +972,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`Provider`](providers.Provider.md)\<`T`\>
+[`ProviderLedgerBase`](providers.ProviderLedgerBase.md)
 
 **`Since`**
 
@@ -931,11 +980,11 @@ v6.0.0
 
 #### Implementation of
 
-ProviderInterface.prependOnceListener
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[prependOnceListener](../interfaces/providers.ProviderInterface.md#prependoncelistener)
 
 #### Inherited from
 
-EventEmitter.prependOnceListener
+[ProviderBase](providers.ProviderBase.md).[prependOnceListener](providers.ProviderBase.md#prependoncelistener)
 
 #### Defined in
 
@@ -997,11 +1046,11 @@ v9.4.0
 
 #### Implementation of
 
-ProviderInterface.rawListeners
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[rawListeners](../interfaces/providers.ProviderInterface.md#rawlisteners)
 
 #### Inherited from
 
-EventEmitter.rawListeners
+[ProviderBase](providers.ProviderBase.md).[rawListeners](providers.ProviderBase.md#rawlisteners)
 
 #### Defined in
 
@@ -1011,7 +1060,7 @@ ___
 
 ### removeAllListeners
 
-▸ **removeAllListeners**(`eventName?`): [`Provider`](providers.Provider.md)\<`T`\>
+▸ **removeAllListeners**(`eventName?`): [`ProviderLedgerBase`](providers.ProviderLedgerBase.md)
 
 Removes all listeners, or those of the specified `eventName`.
 
@@ -1029,7 +1078,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`Provider`](providers.Provider.md)\<`T`\>
+[`ProviderLedgerBase`](providers.ProviderLedgerBase.md)
 
 **`Since`**
 
@@ -1037,11 +1086,11 @@ v0.1.26
 
 #### Implementation of
 
-ProviderInterface.removeAllListeners
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[removeAllListeners](../interfaces/providers.ProviderInterface.md#removealllisteners)
 
 #### Inherited from
 
-EventEmitter.removeAllListeners
+[ProviderBase](providers.ProviderBase.md).[removeAllListeners](providers.ProviderBase.md#removealllisteners)
 
 #### Defined in
 
@@ -1051,7 +1100,7 @@ ___
 
 ### removeListener
 
-▸ **removeListener**\<`K`\>(`eventName`, `listener`): [`Provider`](providers.Provider.md)\<`T`\>
+▸ **removeListener**\<`K`\>(`eventName`, `listener`): [`ProviderLedgerBase`](providers.ProviderLedgerBase.md)
 
 Removes the specified `listener` from the listener array for the event named `eventName`.
 
@@ -1148,7 +1197,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`Provider`](providers.Provider.md)\<`T`\>
+[`ProviderLedgerBase`](providers.ProviderLedgerBase.md)
 
 **`Since`**
 
@@ -1156,11 +1205,11 @@ v0.1.26
 
 #### Implementation of
 
-ProviderInterface.removeListener
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[removeListener](../interfaces/providers.ProviderInterface.md#removelistener)
 
 #### Inherited from
 
-EventEmitter.removeListener
+[ProviderBase](providers.ProviderBase.md).[removeListener](providers.ProviderBase.md#removelistener)
 
 #### Defined in
 
@@ -1170,7 +1219,7 @@ ___
 
 ### setMaxListeners
 
-▸ **setMaxListeners**(`n`): [`Provider`](providers.Provider.md)\<`T`\>
+▸ **setMaxListeners**(`n`): [`ProviderLedgerBase`](providers.ProviderLedgerBase.md)
 
 By default `EventEmitter`s will print a warning if more than `10` listeners are
 added for a particular event. This is a useful default that helps finding
@@ -1187,7 +1236,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`Provider`](providers.Provider.md)\<`T`\>
+[`ProviderLedgerBase`](providers.ProviderLedgerBase.md)
 
 **`Since`**
 
@@ -1195,11 +1244,11 @@ v0.3.5
 
 #### Implementation of
 
-ProviderInterface.setMaxListeners
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[setMaxListeners](../interfaces/providers.ProviderInterface.md#setmaxlisteners)
 
 #### Inherited from
 
-EventEmitter.setMaxListeners
+[ProviderBase](providers.ProviderBase.md).[setMaxListeners](providers.ProviderBase.md#setmaxlisteners)
 
 #### Defined in
 
@@ -1211,24 +1260,32 @@ ___
 
 ▸ **signPersonalMessage**(`_hdPath`, `_message`): `Promise`\<`string`\>
 
+Sign personal message
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_hdPath` | `string` |
-| `_message` | `BytesLike` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `_hdPath` | `string` | HD path for subscribe |
+| `_message` | [`BytesLike`](../modules/providers.md#byteslike) | message |
 
 #### Returns
 
 `Promise`\<`string`\>
 
+signature of personal message
+
 #### Implementation of
 
-ProviderInterface.signPersonalMessage
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[signPersonalMessage](../interfaces/providers.ProviderInterface.md#signpersonalmessage)
+
+#### Inherited from
+
+[ProviderBase](providers.ProviderBase.md).[signPersonalMessage](providers.ProviderBase.md#signpersonalmessage)
 
 #### Defined in
 
-[src/providers/base-provider.ts:28](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L28)
+[src/providers/base-provider.ts:29](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L29)
 
 ___
 
@@ -1236,55 +1293,87 @@ ___
 
 ▸ **signTransaction**(`_hdPath`, `_transaction`): `Promise`\<`string`\>
 
+Sign transaction
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_hdPath` | `string` |
-| `_transaction` | `TransactionRequest` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `_hdPath` | `string` | HD path for subscribe |
+| `_transaction` | [`TransactionRequest`](../modules/providers.md#transactionrequest) | transaction for sign |
 
 #### Returns
 
 `Promise`\<`string`\>
 
+signature of transaction
+
 #### Implementation of
 
-ProviderInterface.signTransaction
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[signTransaction](../interfaces/providers.ProviderInterface.md#signtransaction)
+
+#### Inherited from
+
+[ProviderBase](providers.ProviderBase.md).[signTransaction](providers.ProviderBase.md#signtransaction)
 
 #### Defined in
 
-[src/providers/base-provider.ts:21](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L21)
+[src/providers/base-provider.ts:22](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L22)
 
 ___
 
 ### signTypedData
 
-▸ **signTypedData**(`_hdPath`, `typedData`): `Promise`\<`string`\>
+▸ **signTypedData**(`_hdPath`, `_typedData`): `Promise`\<`string`\>
+
+Sign typed data
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `_hdPath` | `string` |
-| `typedData` | `TypedData` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `_hdPath` | `string` | HD path for subscribe |
+| `_typedData` | [`TypedData`](../modules/providers.md#typeddata) |  |
 
 #### Returns
 
 `Promise`\<`string`\>
 
+signature of typed data
+
 #### Implementation of
 
-ProviderInterface.signTypedData
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[signTypedData](../interfaces/providers.ProviderInterface.md#signtypeddata)
+
+#### Inherited from
+
+[ProviderBase](providers.ProviderBase.md).[signTypedData](providers.ProviderBase.md#signtypeddata)
 
 #### Defined in
 
-[src/providers/base-provider.ts:32](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L32)
+[src/providers/base-provider.ts:33](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L33)
+
+___
+
+### suggestApp
+
+▸ **suggestApp**(): `Promise`\<`boolean`\>
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+#### Defined in
+
+[src/providers/ledger/provider.ts:35](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/ledger/provider.ts#L35)
 
 ___
 
 ### updatePin
 
 ▸ **updatePin**(`_pin`): `Promise`\<`void`\>
+
+Update pin for encrypted providers
 
 #### Parameters
 
@@ -1298,11 +1387,47 @@ ___
 
 #### Implementation of
 
-ProviderInterface.updatePin
+[ProviderInterface](../interfaces/providers.ProviderInterface.md).[updatePin](../interfaces/providers.ProviderInterface.md#updatepin)
+
+#### Inherited from
+
+[ProviderBase](providers.ProviderBase.md).[updatePin](providers.ProviderBase.md#updatepin)
 
 #### Defined in
 
-[src/providers/base-provider.ts:67](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/providers/base-provider.ts#L67)
+[src/providers/base-provider.ts:68](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L68)
+
+___
+
+### withDevice
+
+▸ **withDevice**(): \<T\>(`job`: (`arg0`: `default`) => `Observable`\<`T`\>) => `Observable`\<`T`\>
+
+#### Returns
+
+`fn`
+
+▸ \<`T`\>(`job`): `Observable`\<`T`\>
+
+##### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `job` | (`arg0`: `default`) => `Observable`\<`T`\> |
+
+##### Returns
+
+`Observable`\<`T`\>
+
+#### Defined in
+
+[src/providers/ledger/provider.ts:18](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/ledger/provider.ts#L18)
 
 ___
 
@@ -1359,7 +1484,7 @@ v20.5.0
 
 #### Inherited from
 
-EventEmitter.addAbortListener
+[ProviderBase](providers.ProviderBase.md).[addAbortListener](providers.ProviderBase.md#addabortlistener)
 
 #### Defined in
 
@@ -1413,7 +1538,7 @@ v15.2.0, v14.17.0
 
 #### Inherited from
 
-EventEmitter.getEventListeners
+[ProviderBase](providers.ProviderBase.md).[getEventListeners](providers.ProviderBase.md#geteventlisteners)
 
 #### Defined in
 
@@ -1467,7 +1592,7 @@ v19.9.0
 
 #### Inherited from
 
-EventEmitter.getMaxListeners
+[ProviderBase](providers.ProviderBase.md).[getMaxListeners](providers.ProviderBase.md#getmaxlisteners-1)
 
 #### Defined in
 
@@ -1512,7 +1637,7 @@ Since v3.2.0 - Use `listenerCount` instead.
 
 #### Inherited from
 
-EventEmitter.listenerCount
+[ProviderBase](providers.ProviderBase.md).[listenerCount](providers.ProviderBase.md#listenercount-1)
 
 #### Defined in
 
@@ -1621,7 +1746,7 @@ v13.6.0, v12.16.0
 
 #### Inherited from
 
-EventEmitter.on
+[ProviderBase](providers.ProviderBase.md).[on](providers.ProviderBase.md#on-1)
 
 #### Defined in
 
@@ -1643,7 +1768,7 @@ node_modules/@types/node/events.d.ts:303
 
 #### Inherited from
 
-EventEmitter.on
+[ProviderBase](providers.ProviderBase.md).[on](providers.ProviderBase.md#on-1)
 
 #### Defined in
 
@@ -1750,7 +1875,7 @@ v11.13.0, v10.16.0
 
 #### Inherited from
 
-EventEmitter.once
+[ProviderBase](providers.ProviderBase.md).[once](providers.ProviderBase.md#once-1)
 
 #### Defined in
 
@@ -1772,7 +1897,7 @@ node_modules/@types/node/events.d.ts:217
 
 #### Inherited from
 
-EventEmitter.once
+[ProviderBase](providers.ProviderBase.md).[once](providers.ProviderBase.md#once-1)
 
 #### Defined in
 
@@ -1798,7 +1923,7 @@ setMaxListeners(5, target, emitter);
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `n?` | `number` | A non-negative number. The maximum number of listeners per `EventTarget` event. |
-| `...eventTargets` | (`EventEmitter`\<`DefaultEventMap`\> \| `EventTarget`)[] | - |
+| `...eventTargets` | (`EventEmitter`\<`DefaultEventMap`\> \| `EventTarget`)[] | Zero or more {EventTarget} or {EventEmitter} instances. If none are specified, `n` is set as the default max for all newly created {EventTarget} and {EventEmitter} objects. |
 
 #### Returns
 
@@ -1810,7 +1935,7 @@ v15.4.0
 
 #### Inherited from
 
-EventEmitter.setMaxListeners
+[ProviderBase](providers.ProviderBase.md).[setMaxListeners](providers.ProviderBase.md#setmaxlisteners-1)
 
 #### Defined in
 

@@ -1,17 +1,21 @@
-[@haqq/rn-wallet-providers - v0.0.11](../README.md) / [Exports](../modules.md) / [providers](../modules/providers.md) / ProviderSSSEvm
+[@haqq/rn-wallet-providers - v0.0.11](../README.md) / [Exports](../modules.md) / [providers](../modules/providers.md) / ProviderSSSBase
 
-# Class: ProviderSSSEvm
+# Class: ProviderSSSBase
 
-[providers](../modules/providers.md).ProviderSSSEvm
+[providers](../modules/providers.md).ProviderSSSBase
 
 Base provider for other providers
 extends EventEmitter
 
 ## Hierarchy
 
-- [`ProviderSSSBase`](providers.ProviderSSSBase.md)
+- [`ProviderBase`](providers.ProviderBase.md)\<[`ProviderSSSBaseOptions`](../modules/providers.md#providersssbaseoptions)\>
 
-  ↳ **`ProviderSSSEvm`**
+  ↳ **`ProviderSSSBase`**
+
+  ↳↳ [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+
+  ↳↳ [`ProviderSSSTron`](providers.ProviderSSSTron.md)
 
 ## Implements
 
@@ -21,64 +25,64 @@ extends EventEmitter
 
 ### Constructors
 
-- [constructor](providers.ProviderSSSEvm.md#constructor)
+- [constructor](providers.ProviderSSSBase.md#constructor)
 
 ### Properties
 
-- [\_options](providers.ProviderSSSEvm.md#_options)
-- [captureRejectionSymbol](providers.ProviderSSSEvm.md#capturerejectionsymbol)
-- [captureRejections](providers.ProviderSSSEvm.md#capturerejections)
-- [defaultMaxListeners](providers.ProviderSSSEvm.md#defaultmaxlisteners)
-- [errorMonitor](providers.ProviderSSSEvm.md#errormonitor)
+- [\_options](providers.ProviderSSSBase.md#_options)
+- [captureRejectionSymbol](providers.ProviderSSSBase.md#capturerejectionsymbol)
+- [captureRejections](providers.ProviderSSSBase.md#capturerejections)
+- [defaultMaxListeners](providers.ProviderSSSBase.md#defaultmaxlisteners)
+- [errorMonitor](providers.ProviderSSSBase.md#errormonitor)
 
 ### Methods
 
-- [[captureRejectionSymbol]](providers.ProviderSSSEvm.md#[capturerejectionsymbol])
-- [abort](providers.ProviderSSSEvm.md#abort)
-- [addListener](providers.ProviderSSSEvm.md#addlistener)
-- [catchError](providers.ProviderSSSEvm.md#catcherror)
-- [clean](providers.ProviderSSSEvm.md#clean)
-- [emit](providers.ProviderSSSEvm.md#emit)
-- [eventNames](providers.ProviderSSSEvm.md#eventnames)
-- [getAccountInfo](providers.ProviderSSSEvm.md#getaccountinfo)
-- [getIdentifier](providers.ProviderSSSEvm.md#getidentifier)
-- [getMaxListeners](providers.ProviderSSSEvm.md#getmaxlisteners)
-- [getMnemonicPhrase](providers.ProviderSSSEvm.md#getmnemonicphrase)
-- [getPrivateKey](providers.ProviderSSSEvm.md#getprivatekey)
-- [isShareSaved](providers.ProviderSSSEvm.md#issharesaved)
-- [listenerCount](providers.ProviderSSSEvm.md#listenercount)
-- [listeners](providers.ProviderSSSEvm.md#listeners)
-- [off](providers.ProviderSSSEvm.md#off)
-- [on](providers.ProviderSSSEvm.md#on)
-- [once](providers.ProviderSSSEvm.md#once)
-- [prependListener](providers.ProviderSSSEvm.md#prependlistener)
-- [prependOnceListener](providers.ProviderSSSEvm.md#prependoncelistener)
-- [rawListeners](providers.ProviderSSSEvm.md#rawlisteners)
-- [removeAllListeners](providers.ProviderSSSEvm.md#removealllisteners)
-- [removeListener](providers.ProviderSSSEvm.md#removelistener)
-- [setMaxListeners](providers.ProviderSSSEvm.md#setmaxlisteners)
-- [signPersonalMessage](providers.ProviderSSSEvm.md#signpersonalmessage)
-- [signTransaction](providers.ProviderSSSEvm.md#signtransaction)
-- [signTypedData](providers.ProviderSSSEvm.md#signtypeddata)
-- [tryToSaveShareToStore](providers.ProviderSSSEvm.md#trytosavesharetostore)
-- [updatePin](providers.ProviderSSSEvm.md#updatepin)
-- [addAbortListener](providers.ProviderSSSEvm.md#addabortlistener)
-- [getAccounts](providers.ProviderSSSEvm.md#getaccounts)
-- [getEventListeners](providers.ProviderSSSEvm.md#geteventlisteners)
-- [getMaxListeners](providers.ProviderSSSEvm.md#getmaxlisteners-1)
-- [getStoragesForAccount](providers.ProviderSSSEvm.md#getstoragesforaccount)
-- [initialize](providers.ProviderSSSEvm.md#initialize)
-- [listenerCount](providers.ProviderSSSEvm.md#listenercount-1)
-- [on](providers.ProviderSSSEvm.md#on-1)
-- [once](providers.ProviderSSSEvm.md#once-1)
-- [setMaxListeners](providers.ProviderSSSEvm.md#setmaxlisteners-1)
-- [setStorageForAccount](providers.ProviderSSSEvm.md#setstorageforaccount)
+- [[captureRejectionSymbol]](providers.ProviderSSSBase.md#[capturerejectionsymbol])
+- [abort](providers.ProviderSSSBase.md#abort)
+- [addListener](providers.ProviderSSSBase.md#addlistener)
+- [catchError](providers.ProviderSSSBase.md#catcherror)
+- [clean](providers.ProviderSSSBase.md#clean)
+- [emit](providers.ProviderSSSBase.md#emit)
+- [eventNames](providers.ProviderSSSBase.md#eventnames)
+- [getAccountInfo](providers.ProviderSSSBase.md#getaccountinfo)
+- [getIdentifier](providers.ProviderSSSBase.md#getidentifier)
+- [getMaxListeners](providers.ProviderSSSBase.md#getmaxlisteners)
+- [getMnemonicPhrase](providers.ProviderSSSBase.md#getmnemonicphrase)
+- [getPrivateKey](providers.ProviderSSSBase.md#getprivatekey)
+- [isShareSaved](providers.ProviderSSSBase.md#issharesaved)
+- [listenerCount](providers.ProviderSSSBase.md#listenercount)
+- [listeners](providers.ProviderSSSBase.md#listeners)
+- [off](providers.ProviderSSSBase.md#off)
+- [on](providers.ProviderSSSBase.md#on)
+- [once](providers.ProviderSSSBase.md#once)
+- [prependListener](providers.ProviderSSSBase.md#prependlistener)
+- [prependOnceListener](providers.ProviderSSSBase.md#prependoncelistener)
+- [rawListeners](providers.ProviderSSSBase.md#rawlisteners)
+- [removeAllListeners](providers.ProviderSSSBase.md#removealllisteners)
+- [removeListener](providers.ProviderSSSBase.md#removelistener)
+- [setMaxListeners](providers.ProviderSSSBase.md#setmaxlisteners)
+- [signPersonalMessage](providers.ProviderSSSBase.md#signpersonalmessage)
+- [signTransaction](providers.ProviderSSSBase.md#signtransaction)
+- [signTypedData](providers.ProviderSSSBase.md#signtypeddata)
+- [tryToSaveShareToStore](providers.ProviderSSSBase.md#trytosavesharetostore)
+- [updatePin](providers.ProviderSSSBase.md#updatepin)
+- [addAbortListener](providers.ProviderSSSBase.md#addabortlistener)
+- [getAccounts](providers.ProviderSSSBase.md#getaccounts)
+- [getEventListeners](providers.ProviderSSSBase.md#geteventlisteners)
+- [getMaxListeners](providers.ProviderSSSBase.md#getmaxlisteners-1)
+- [getStoragesForAccount](providers.ProviderSSSBase.md#getstoragesforaccount)
+- [initialize](providers.ProviderSSSBase.md#initialize)
+- [listenerCount](providers.ProviderSSSBase.md#listenercount-1)
+- [on](providers.ProviderSSSBase.md#on-1)
+- [once](providers.ProviderSSSBase.md#once-1)
+- [setMaxListeners](providers.ProviderSSSBase.md#setmaxlisteners-1)
+- [setStorageForAccount](providers.ProviderSSSBase.md#setstorageforaccount)
 
 ## Constructors
 
 ### constructor
 
-• **new ProviderSSSEvm**(`options`)
+• **new ProviderSSSBase**(`options`)
 
 #### Parameters
 
@@ -88,7 +92,7 @@ extends EventEmitter
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[constructor](providers.ProviderSSSBase.md#constructor)
+[ProviderBase](providers.ProviderBase.md).[constructor](providers.ProviderBase.md#constructor)
 
 #### Defined in
 
@@ -102,7 +106,7 @@ extends EventEmitter
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[_options](providers.ProviderSSSBase.md#_options)
+[ProviderBase](providers.ProviderBase.md).[_options](providers.ProviderBase.md#_options)
 
 #### Defined in
 
@@ -124,7 +128,7 @@ v13.4.0, v12.16.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[captureRejectionSymbol](providers.ProviderSSSBase.md#capturerejectionsymbol)
+[ProviderBase](providers.ProviderBase.md).[captureRejectionSymbol](providers.ProviderBase.md#capturerejectionsymbol)
 
 #### Defined in
 
@@ -146,7 +150,7 @@ v13.4.0, v12.16.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[captureRejections](providers.ProviderSSSBase.md#capturerejections)
+[ProviderBase](providers.ProviderBase.md).[captureRejections](providers.ProviderBase.md#capturerejections)
 
 #### Defined in
 
@@ -200,7 +204,7 @@ v0.11.2
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[defaultMaxListeners](providers.ProviderSSSBase.md#defaultmaxlisteners)
+[ProviderBase](providers.ProviderBase.md).[defaultMaxListeners](providers.ProviderBase.md#defaultmaxlisteners)
 
 #### Defined in
 
@@ -223,7 +227,7 @@ v13.6.0, v12.17.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[errorMonitor](providers.ProviderSSSBase.md#errormonitor)
+[ProviderBase](providers.ProviderBase.md).[errorMonitor](providers.ProviderBase.md#errormonitor)
 
 #### Defined in
 
@@ -259,7 +263,7 @@ node_modules/@types/node/events.d.ts:445
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[[captureRejectionSymbol]](providers.ProviderSSSBase.md#[capturerejectionsymbol])
+[ProviderBase](providers.ProviderBase.md).[[captureRejectionSymbol]](providers.ProviderBase.md#[capturerejectionsymbol])
 
 #### Defined in
 
@@ -283,7 +287,7 @@ Stop action
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[abort](providers.ProviderSSSBase.md#abort)
+[ProviderBase](providers.ProviderBase.md).[abort](providers.ProviderBase.md#abort)
 
 #### Defined in
 
@@ -293,7 +297,7 @@ ___
 
 ### addListener
 
-▸ **addListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **addListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSBase`](providers.ProviderSSSBase.md)
 
 Alias for `emitter.on(eventName, listener)`.
 
@@ -312,7 +316,7 @@ Alias for `emitter.on(eventName, listener)`.
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderSSSBase`](providers.ProviderSSSBase.md)
 
 **`Since`**
 
@@ -324,7 +328,7 @@ v0.1.26
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[addListener](providers.ProviderSSSBase.md#addlistener)
+[ProviderBase](providers.ProviderBase.md).[addListener](providers.ProviderBase.md#addlistener)
 
 #### Defined in
 
@@ -350,7 +354,7 @@ ___
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[catchError](providers.ProviderSSSBase.md#catcherror)
+[ProviderBase](providers.ProviderBase.md).[catchError](providers.ProviderBase.md#catcherror)
 
 #### Defined in
 
@@ -374,7 +378,7 @@ Clean provider storage
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[clean](providers.ProviderSSSBase.md#clean)
+[ProviderBase](providers.ProviderBase.md).[clean](providers.ProviderBase.md#clean)
 
 #### Defined in
 
@@ -451,7 +455,7 @@ v0.1.26
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[emit](providers.ProviderSSSBase.md#emit)
+[ProviderBase](providers.ProviderBase.md).[emit](providers.ProviderBase.md#emit)
 
 #### Defined in
 
@@ -494,7 +498,7 @@ v6.0.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[eventNames](providers.ProviderSSSBase.md#eventnames)
+[ProviderBase](providers.ProviderBase.md).[eventNames](providers.ProviderBase.md#eventnames)
 
 #### Defined in
 
@@ -522,9 +526,9 @@ Get public key and address for hd path
 
 [ProviderInterface](../interfaces/providers.ProviderInterface.md).[getAccountInfo](../interfaces/providers.ProviderInterface.md#getaccountinfo)
 
-#### Inherited from
+#### Overrides
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[getAccountInfo](providers.ProviderSSSBase.md#getaccountinfo)
+[ProviderBase](providers.ProviderBase.md).[getAccountInfo](providers.ProviderBase.md#getaccountinfo)
 
 #### Defined in
 
@@ -544,9 +548,9 @@ ___
 
 [ProviderInterface](../interfaces/providers.ProviderInterface.md).[getIdentifier](../interfaces/providers.ProviderInterface.md#getidentifier)
 
-#### Inherited from
+#### Overrides
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[getIdentifier](providers.ProviderSSSBase.md#getidentifier)
+[ProviderBase](providers.ProviderBase.md).[getIdentifier](providers.ProviderBase.md#getidentifier)
 
 #### Defined in
 
@@ -559,7 +563,7 @@ ___
 ▸ **getMaxListeners**(): `number`
 
 Returns the current max listener value for the `EventEmitter` which is either
-set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](providers.ProviderSSSEvm.md#defaultmaxlisteners).
+set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](providers.ProviderSSSBase.md#defaultmaxlisteners).
 
 #### Returns
 
@@ -575,7 +579,7 @@ v1.0.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[getMaxListeners](providers.ProviderSSSBase.md#getmaxlisteners)
+[ProviderBase](providers.ProviderBase.md).[getMaxListeners](providers.ProviderBase.md#getmaxlisteners)
 
 #### Defined in
 
@@ -594,10 +598,6 @@ Get mnemonic phrase
 `Promise`\<`string`\>
 
 mnemonic
-
-#### Inherited from
-
-[ProviderSSSBase](providers.ProviderSSSBase.md).[getMnemonicPhrase](providers.ProviderSSSBase.md#getmnemonicphrase)
 
 #### Defined in
 
@@ -625,7 +625,7 @@ ___
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[getPrivateKey](providers.ProviderSSSBase.md#getprivatekey)
+[ProviderBase](providers.ProviderBase.md).[getPrivateKey](providers.ProviderBase.md#getprivatekey)
 
 #### Defined in
 
@@ -646,10 +646,6 @@ ___
 #### Returns
 
 `Promise`\<`boolean`\>
-
-#### Inherited from
-
-[ProviderSSSBase](providers.ProviderSSSBase.md).[isShareSaved](providers.ProviderSSSBase.md#issharesaved)
 
 #### Defined in
 
@@ -692,7 +688,7 @@ v3.2.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[listenerCount](providers.ProviderSSSBase.md#listenercount)
+[ProviderBase](providers.ProviderBase.md).[listenerCount](providers.ProviderBase.md#listenercount)
 
 #### Defined in
 
@@ -740,7 +736,7 @@ v0.1.26
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[listeners](providers.ProviderSSSBase.md#listeners)
+[ProviderBase](providers.ProviderBase.md).[listeners](providers.ProviderBase.md#listeners)
 
 #### Defined in
 
@@ -750,7 +746,7 @@ ___
 
 ### off
 
-▸ **off**\<`K`\>(`eventName`, `listener`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **off**\<`K`\>(`eventName`, `listener`): [`ProviderSSSBase`](providers.ProviderSSSBase.md)
 
 Alias for `emitter.removeListener()`.
 
@@ -769,7 +765,7 @@ Alias for `emitter.removeListener()`.
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderSSSBase`](providers.ProviderSSSBase.md)
 
 **`Since`**
 
@@ -781,7 +777,7 @@ v10.0.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[off](providers.ProviderSSSBase.md#off)
+[ProviderBase](providers.ProviderBase.md).[off](providers.ProviderBase.md#off)
 
 #### Defined in
 
@@ -791,7 +787,7 @@ ___
 
 ### on
 
-▸ **on**\<`K`\>(`eventName`, `listener`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **on**\<`K`\>(`eventName`, `listener`): [`ProviderSSSBase`](providers.ProviderSSSBase.md)
 
 Adds the `listener` function to the end of the listeners array for the event
 named `eventName`. No checks are made to see if the `listener` has already
@@ -835,7 +831,7 @@ myEE.emit('foo');
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderSSSBase`](providers.ProviderSSSBase.md)
 
 **`Since`**
 
@@ -847,7 +843,7 @@ v0.1.101
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[on](providers.ProviderSSSBase.md#on)
+[ProviderBase](providers.ProviderBase.md).[on](providers.ProviderBase.md#on)
 
 #### Defined in
 
@@ -857,7 +853,7 @@ ___
 
 ### once
 
-▸ **once**\<`K`\>(`eventName`, `listener`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **once**\<`K`\>(`eventName`, `listener`): [`ProviderSSSBase`](providers.ProviderSSSBase.md)
 
 Adds a **one-time** `listener` function for the event named `eventName`. The
 next time `eventName` is triggered, this listener is removed and then invoked.
@@ -899,7 +895,7 @@ myEE.emit('foo');
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderSSSBase`](providers.ProviderSSSBase.md)
 
 **`Since`**
 
@@ -911,7 +907,7 @@ v0.3.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[once](providers.ProviderSSSBase.md#once)
+[ProviderBase](providers.ProviderBase.md).[once](providers.ProviderBase.md#once)
 
 #### Defined in
 
@@ -921,7 +917,7 @@ ___
 
 ### prependListener
 
-▸ **prependListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **prependListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSBase`](providers.ProviderSSSBase.md)
 
 Adds the `listener` function to the _beginning_ of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
@@ -951,7 +947,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderSSSBase`](providers.ProviderSSSBase.md)
 
 **`Since`**
 
@@ -963,7 +959,7 @@ v6.0.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[prependListener](providers.ProviderSSSBase.md#prependlistener)
+[ProviderBase](providers.ProviderBase.md).[prependListener](providers.ProviderBase.md#prependlistener)
 
 #### Defined in
 
@@ -973,7 +969,7 @@ ___
 
 ### prependOnceListener
 
-▸ **prependOnceListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **prependOnceListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSBase`](providers.ProviderSSSBase.md)
 
 Adds a **one-time**`listener` function for the event named `eventName` to the _beginning_ of the listeners array. The next time `eventName` is triggered, this
 listener is removed, and then invoked.
@@ -1001,7 +997,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderSSSBase`](providers.ProviderSSSBase.md)
 
 **`Since`**
 
@@ -1013,7 +1009,7 @@ v6.0.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[prependOnceListener](providers.ProviderSSSBase.md#prependoncelistener)
+[ProviderBase](providers.ProviderBase.md).[prependOnceListener](providers.ProviderBase.md#prependoncelistener)
 
 #### Defined in
 
@@ -1079,7 +1075,7 @@ v9.4.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[rawListeners](providers.ProviderSSSBase.md#rawlisteners)
+[ProviderBase](providers.ProviderBase.md).[rawListeners](providers.ProviderBase.md#rawlisteners)
 
 #### Defined in
 
@@ -1089,7 +1085,7 @@ ___
 
 ### removeAllListeners
 
-▸ **removeAllListeners**(`eventName?`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **removeAllListeners**(`eventName?`): [`ProviderSSSBase`](providers.ProviderSSSBase.md)
 
 Removes all listeners, or those of the specified `eventName`.
 
@@ -1107,7 +1103,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderSSSBase`](providers.ProviderSSSBase.md)
 
 **`Since`**
 
@@ -1119,7 +1115,7 @@ v0.1.26
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[removeAllListeners](providers.ProviderSSSBase.md#removealllisteners)
+[ProviderBase](providers.ProviderBase.md).[removeAllListeners](providers.ProviderBase.md#removealllisteners)
 
 #### Defined in
 
@@ -1129,7 +1125,7 @@ ___
 
 ### removeListener
 
-▸ **removeListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **removeListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSBase`](providers.ProviderSSSBase.md)
 
 Removes the specified `listener` from the listener array for the event named `eventName`.
 
@@ -1226,7 +1222,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderSSSBase`](providers.ProviderSSSBase.md)
 
 **`Since`**
 
@@ -1238,7 +1234,7 @@ v0.1.26
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[removeListener](providers.ProviderSSSBase.md#removelistener)
+[ProviderBase](providers.ProviderBase.md).[removeListener](providers.ProviderBase.md#removelistener)
 
 #### Defined in
 
@@ -1248,7 +1244,7 @@ ___
 
 ### setMaxListeners
 
-▸ **setMaxListeners**(`n`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **setMaxListeners**(`n`): [`ProviderSSSBase`](providers.ProviderSSSBase.md)
 
 By default `EventEmitter`s will print a warning if more than `10` listeners are
 added for a particular event. This is a useful default that helps finding
@@ -1265,7 +1261,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderSSSBase`](providers.ProviderSSSBase.md)
 
 **`Since`**
 
@@ -1277,7 +1273,7 @@ v0.3.5
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[setMaxListeners](providers.ProviderSSSBase.md#setmaxlisteners)
+[ProviderBase](providers.ProviderBase.md).[setMaxListeners](providers.ProviderBase.md#setmaxlisteners)
 
 #### Defined in
 
@@ -1287,7 +1283,7 @@ ___
 
 ### signPersonalMessage
 
-▸ **signPersonalMessage**(`hdPath`, `message`): `Promise`\<`string`\>
+▸ **signPersonalMessage**(`_hdPath`, `_message`): `Promise`\<`string`\>
 
 Sign personal message
 
@@ -1295,8 +1291,8 @@ Sign personal message
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `hdPath` | `string` | HD path for subscribe |
-| `message` | [`BytesLike`](../modules/providers.md#byteslike) | message |
+| `_hdPath` | `string` | HD path for subscribe |
+| `_message` | [`BytesLike`](../modules/providers.md#byteslike) | message |
 
 #### Returns
 
@@ -1308,19 +1304,19 @@ signature of personal message
 
 [ProviderInterface](../interfaces/providers.ProviderInterface.md).[signPersonalMessage](../interfaces/providers.ProviderInterface.md#signpersonalmessage)
 
-#### Overrides
+#### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[signPersonalMessage](providers.ProviderSSSBase.md#signpersonalmessage)
+[ProviderBase](providers.ProviderBase.md).[signPersonalMessage](providers.ProviderBase.md#signpersonalmessage)
 
 #### Defined in
 
-[src/providers/sss/evm-provider.ts:67](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/evm-provider.ts#L67)
+[src/providers/base-provider.ts:29](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L29)
 
 ___
 
 ### signTransaction
 
-▸ **signTransaction**(`hdPath`, `transaction`): `Promise`\<`string`\>
+▸ **signTransaction**(`_hdPath`, `_transaction`): `Promise`\<`string`\>
 
 Sign transaction
 
@@ -1328,8 +1324,8 @@ Sign transaction
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `hdPath` | `string` | HD path for subscribe |
-| `transaction` | [`TransactionRequest`](../modules/providers.md#transactionrequest) | transaction for sign |
+| `_hdPath` | `string` | HD path for subscribe |
+| `_transaction` | [`TransactionRequest`](../modules/providers.md#transactionrequest) | transaction for sign |
 
 #### Returns
 
@@ -1341,19 +1337,19 @@ signature of transaction
 
 [ProviderInterface](../interfaces/providers.ProviderInterface.md).[signTransaction](../interfaces/providers.ProviderInterface.md#signtransaction)
 
-#### Overrides
+#### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[signTransaction](providers.ProviderSSSBase.md#signtransaction)
+[ProviderBase](providers.ProviderBase.md).[signTransaction](providers.ProviderBase.md#signtransaction)
 
 #### Defined in
 
-[src/providers/sss/evm-provider.ts:26](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/evm-provider.ts#L26)
+[src/providers/base-provider.ts:22](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L22)
 
 ___
 
 ### signTypedData
 
-▸ **signTypedData**(`hdPath`, `typedData`): `Promise`\<`string`\>
+▸ **signTypedData**(`_hdPath`, `_typedData`): `Promise`\<`string`\>
 
 Sign typed data
 
@@ -1361,8 +1357,8 @@ Sign typed data
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `hdPath` | `string` | HD path for subscribe |
-| `typedData` | [`TypedData`](../modules/providers.md#typeddata) |  |
+| `_hdPath` | `string` | HD path for subscribe |
+| `_typedData` | [`TypedData`](../modules/providers.md#typeddata) |  |
 
 #### Returns
 
@@ -1374,13 +1370,13 @@ signature of typed data
 
 [ProviderInterface](../interfaces/providers.ProviderInterface.md).[signTypedData](../interfaces/providers.ProviderInterface.md#signtypeddata)
 
-#### Overrides
+#### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[signTypedData](providers.ProviderSSSBase.md#signtypeddata)
+[ProviderBase](providers.ProviderBase.md).[signTypedData](providers.ProviderBase.md#signtypeddata)
 
 #### Defined in
 
-[src/providers/sss/evm-provider.ts:110](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/evm-provider.ts#L110)
+[src/providers/base-provider.ts:33](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L33)
 
 ___
 
@@ -1397,10 +1393,6 @@ ___
 #### Returns
 
 `Promise`\<`void`\>
-
-#### Inherited from
-
-[ProviderSSSBase](providers.ProviderSSSBase.md).[tryToSaveShareToStore](providers.ProviderSSSBase.md#trytosavesharetostore)
 
 #### Defined in
 
@@ -1428,9 +1420,9 @@ Update pin for encrypted providers
 
 [ProviderInterface](../interfaces/providers.ProviderInterface.md).[updatePin](../interfaces/providers.ProviderInterface.md#updatepin)
 
-#### Inherited from
+#### Overrides
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[updatePin](providers.ProviderSSSBase.md#updatepin)
+[ProviderBase](providers.ProviderBase.md).[updatePin](providers.ProviderBase.md#updatepin)
 
 #### Defined in
 
@@ -1491,7 +1483,7 @@ v20.5.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[addAbortListener](providers.ProviderSSSBase.md#addabortlistener)
+[ProviderBase](providers.ProviderBase.md).[addAbortListener](providers.ProviderBase.md#addabortlistener)
 
 #### Defined in
 
@@ -1506,10 +1498,6 @@ ___
 #### Returns
 
 `Promise`\<`string`[]\>
-
-#### Inherited from
-
-[ProviderSSSBase](providers.ProviderSSSBase.md).[getAccounts](providers.ProviderSSSBase.md#getaccounts)
 
 #### Defined in
 
@@ -1563,7 +1551,7 @@ v15.2.0, v14.17.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[getEventListeners](providers.ProviderSSSBase.md#geteventlisteners)
+[ProviderBase](providers.ProviderBase.md).[getEventListeners](providers.ProviderBase.md#geteventlisteners)
 
 #### Defined in
 
@@ -1617,7 +1605,7 @@ v19.9.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[getMaxListeners](providers.ProviderSSSBase.md#getmaxlisteners-1)
+[ProviderBase](providers.ProviderBase.md).[getMaxListeners](providers.ProviderBase.md#getmaxlisteners-1)
 
 #### Defined in
 
@@ -1638,10 +1626,6 @@ ___
 #### Returns
 
 `Promise`\<`string`[]\>
-
-#### Inherited from
-
-[ProviderSSSBase](providers.ProviderSSSBase.md).[getStoragesForAccount](providers.ProviderSSSBase.md#getstoragesforaccount)
 
 #### Defined in
 
@@ -1672,10 +1656,6 @@ Initialize SSS provider
 #### Returns
 
 `Promise`\<[`ProviderSSSBase`](providers.ProviderSSSBase.md)\>
-
-#### Inherited from
-
-[ProviderSSSBase](providers.ProviderSSSBase.md).[initialize](providers.ProviderSSSBase.md#initialize)
 
 #### Defined in
 
@@ -1720,7 +1700,7 @@ Since v3.2.0 - Use `listenerCount` instead.
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[listenerCount](providers.ProviderSSSBase.md#listenercount-1)
+[ProviderBase](providers.ProviderBase.md).[listenerCount](providers.ProviderBase.md#listenercount-1)
 
 #### Defined in
 
@@ -1829,7 +1809,7 @@ v13.6.0, v12.16.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[on](providers.ProviderSSSBase.md#on-1)
+[ProviderBase](providers.ProviderBase.md).[on](providers.ProviderBase.md#on-1)
 
 #### Defined in
 
@@ -1851,7 +1831,7 @@ node_modules/@types/node/events.d.ts:303
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[on](providers.ProviderSSSBase.md#on-1)
+[ProviderBase](providers.ProviderBase.md).[on](providers.ProviderBase.md#on-1)
 
 #### Defined in
 
@@ -1958,7 +1938,7 @@ v11.13.0, v10.16.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[once](providers.ProviderSSSBase.md#once-1)
+[ProviderBase](providers.ProviderBase.md).[once](providers.ProviderBase.md#once-1)
 
 #### Defined in
 
@@ -1980,7 +1960,7 @@ node_modules/@types/node/events.d.ts:217
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[once](providers.ProviderSSSBase.md#once-1)
+[ProviderBase](providers.ProviderBase.md).[once](providers.ProviderBase.md#once-1)
 
 #### Defined in
 
@@ -2018,7 +1998,7 @@ v15.4.0
 
 #### Inherited from
 
-[ProviderSSSBase](providers.ProviderSSSBase.md).[setMaxListeners](providers.ProviderSSSBase.md#setmaxlisteners-1)
+[ProviderBase](providers.ProviderBase.md).[setMaxListeners](providers.ProviderBase.md#setmaxlisteners-1)
 
 #### Defined in
 
@@ -2040,10 +2020,6 @@ ___
 #### Returns
 
 `Promise`\<`string`[]\>
-
-#### Inherited from
-
-[ProviderSSSBase](providers.ProviderSSSBase.md).[setStorageForAccount](providers.ProviderSSSBase.md#setstorageforaccount)
 
 #### Defined in
 
