@@ -1,4 +1,4 @@
-[@haqq/rn-wallet-providers - v0.0.1](../README.md) / [Exports](../modules.md) / [constants](../modules/constants.md) / SupportedRegistryTypeEnum
+[@haqq/rn-wallet-providers - v0.0.11](../README.md) / [Exports](../modules.md) / [constants](../modules/constants.md) / SupportedRegistryTypeEnum
 
 # Enumeration: SupportedRegistryTypeEnum
 
@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[src/constants.ts:24](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L24)
+[src/constants.ts:24](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/constants.ts#L24)
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-[src/constants.ts:23](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L23)
+[src/constants.ts:23](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/constants.ts#L23)

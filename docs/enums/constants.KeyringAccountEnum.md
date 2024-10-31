@@ -1,4 +1,4 @@
-[@haqq/rn-wallet-providers - v0.0.1](../README.md) / [Exports](../modules.md) / [constants](../modules/constants.md) / KeyringAccountEnum
+[@haqq/rn-wallet-providers - v0.0.11](../README.md) / [Exports](../modules.md) / [constants](../modules/constants.md) / KeyringAccountEnum
 
 # Enumeration: KeyringAccountEnum
 
@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[src/constants.ts:37](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L37)
+[src/constants.ts:37](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/constants.ts#L37)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[src/constants.ts:36](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L36)
+[src/constants.ts:36](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/constants.ts#L36)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[src/constants.ts:35](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L35)
+[src/constants.ts:35](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/constants.ts#L35)

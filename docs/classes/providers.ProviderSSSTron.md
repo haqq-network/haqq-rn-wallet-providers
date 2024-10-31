@@ -1,8 +1,8 @@
-[@haqq/rn-wallet-providers - v0.0.11](../README.md) / [Exports](../modules.md) / [providers](../modules/providers.md) / ProviderSSSEvm
+[@haqq/rn-wallet-providers - v0.0.11](../README.md) / [Exports](../modules.md) / [providers](../modules/providers.md) / ProviderSSSTron
 
-# Class: ProviderSSSEvm
+# Class: ProviderSSSTron
 
-[providers](../modules/providers.md).ProviderSSSEvm
+[providers](../modules/providers.md).ProviderSSSTron
 
 Base provider for other providers
 extends EventEmitter
@@ -11,7 +11,7 @@ extends EventEmitter
 
 - [`ProviderSSSBase`](providers.ProviderSSSBase.md)
 
-  ↳ **`ProviderSSSEvm`**
+  ↳ **`ProviderSSSTron`**
 
 ## Implements
 
@@ -21,78 +21,79 @@ extends EventEmitter
 
 ### Constructors
 
-- [constructor](providers.ProviderSSSEvm.md#constructor)
+- [constructor](providers.ProviderSSSTron.md#constructor)
 
 ### Properties
 
-- [\_options](providers.ProviderSSSEvm.md#_options)
-- [captureRejectionSymbol](providers.ProviderSSSEvm.md#capturerejectionsymbol)
-- [captureRejections](providers.ProviderSSSEvm.md#capturerejections)
-- [defaultMaxListeners](providers.ProviderSSSEvm.md#defaultmaxlisteners)
-- [errorMonitor](providers.ProviderSSSEvm.md#errormonitor)
+- [\_options](providers.ProviderSSSTron.md#_options)
+- [\_tronWebHostUrl](providers.ProviderSSSTron.md#_tronwebhosturl)
+- [captureRejectionSymbol](providers.ProviderSSSTron.md#capturerejectionsymbol)
+- [captureRejections](providers.ProviderSSSTron.md#capturerejections)
+- [defaultMaxListeners](providers.ProviderSSSTron.md#defaultmaxlisteners)
+- [errorMonitor](providers.ProviderSSSTron.md#errormonitor)
 
 ### Methods
 
-- [[captureRejectionSymbol]](providers.ProviderSSSEvm.md#[capturerejectionsymbol])
-- [abort](providers.ProviderSSSEvm.md#abort)
-- [addListener](providers.ProviderSSSEvm.md#addlistener)
-- [catchError](providers.ProviderSSSEvm.md#catcherror)
-- [clean](providers.ProviderSSSEvm.md#clean)
-- [emit](providers.ProviderSSSEvm.md#emit)
-- [eventNames](providers.ProviderSSSEvm.md#eventnames)
-- [getAccountInfo](providers.ProviderSSSEvm.md#getaccountinfo)
-- [getIdentifier](providers.ProviderSSSEvm.md#getidentifier)
-- [getMaxListeners](providers.ProviderSSSEvm.md#getmaxlisteners)
-- [getMnemonicPhrase](providers.ProviderSSSEvm.md#getmnemonicphrase)
-- [getPrivateKey](providers.ProviderSSSEvm.md#getprivatekey)
-- [isShareSaved](providers.ProviderSSSEvm.md#issharesaved)
-- [listenerCount](providers.ProviderSSSEvm.md#listenercount)
-- [listeners](providers.ProviderSSSEvm.md#listeners)
-- [off](providers.ProviderSSSEvm.md#off)
-- [on](providers.ProviderSSSEvm.md#on)
-- [once](providers.ProviderSSSEvm.md#once)
-- [prependListener](providers.ProviderSSSEvm.md#prependlistener)
-- [prependOnceListener](providers.ProviderSSSEvm.md#prependoncelistener)
-- [rawListeners](providers.ProviderSSSEvm.md#rawlisteners)
-- [removeAllListeners](providers.ProviderSSSEvm.md#removealllisteners)
-- [removeListener](providers.ProviderSSSEvm.md#removelistener)
-- [setMaxListeners](providers.ProviderSSSEvm.md#setmaxlisteners)
-- [signPersonalMessage](providers.ProviderSSSEvm.md#signpersonalmessage)
-- [signTransaction](providers.ProviderSSSEvm.md#signtransaction)
-- [signTypedData](providers.ProviderSSSEvm.md#signtypeddata)
-- [tryToSaveShareToStore](providers.ProviderSSSEvm.md#trytosavesharetostore)
-- [updatePin](providers.ProviderSSSEvm.md#updatepin)
-- [addAbortListener](providers.ProviderSSSEvm.md#addabortlistener)
-- [getAccounts](providers.ProviderSSSEvm.md#getaccounts)
-- [getEventListeners](providers.ProviderSSSEvm.md#geteventlisteners)
-- [getMaxListeners](providers.ProviderSSSEvm.md#getmaxlisteners-1)
-- [getStoragesForAccount](providers.ProviderSSSEvm.md#getstoragesforaccount)
-- [initialize](providers.ProviderSSSEvm.md#initialize)
-- [listenerCount](providers.ProviderSSSEvm.md#listenercount-1)
-- [on](providers.ProviderSSSEvm.md#on-1)
-- [once](providers.ProviderSSSEvm.md#once-1)
-- [setMaxListeners](providers.ProviderSSSEvm.md#setmaxlisteners-1)
-- [setStorageForAccount](providers.ProviderSSSEvm.md#setstorageforaccount)
+- [[captureRejectionSymbol]](providers.ProviderSSSTron.md#[capturerejectionsymbol])
+- [abort](providers.ProviderSSSTron.md#abort)
+- [addListener](providers.ProviderSSSTron.md#addlistener)
+- [catchError](providers.ProviderSSSTron.md#catcherror)
+- [clean](providers.ProviderSSSTron.md#clean)
+- [emit](providers.ProviderSSSTron.md#emit)
+- [eventNames](providers.ProviderSSSTron.md#eventnames)
+- [getAccountInfo](providers.ProviderSSSTron.md#getaccountinfo)
+- [getIdentifier](providers.ProviderSSSTron.md#getidentifier)
+- [getMaxListeners](providers.ProviderSSSTron.md#getmaxlisteners)
+- [getMnemonicPhrase](providers.ProviderSSSTron.md#getmnemonicphrase)
+- [getPrivateKey](providers.ProviderSSSTron.md#getprivatekey)
+- [isShareSaved](providers.ProviderSSSTron.md#issharesaved)
+- [listenerCount](providers.ProviderSSSTron.md#listenercount)
+- [listeners](providers.ProviderSSSTron.md#listeners)
+- [off](providers.ProviderSSSTron.md#off)
+- [on](providers.ProviderSSSTron.md#on)
+- [once](providers.ProviderSSSTron.md#once)
+- [prependListener](providers.ProviderSSSTron.md#prependlistener)
+- [prependOnceListener](providers.ProviderSSSTron.md#prependoncelistener)
+- [rawListeners](providers.ProviderSSSTron.md#rawlisteners)
+- [removeAllListeners](providers.ProviderSSSTron.md#removealllisteners)
+- [removeListener](providers.ProviderSSSTron.md#removelistener)
+- [setMaxListeners](providers.ProviderSSSTron.md#setmaxlisteners)
+- [signPersonalMessage](providers.ProviderSSSTron.md#signpersonalmessage)
+- [signTransaction](providers.ProviderSSSTron.md#signtransaction)
+- [signTypedData](providers.ProviderSSSTron.md#signtypeddata)
+- [tryToSaveShareToStore](providers.ProviderSSSTron.md#trytosavesharetostore)
+- [updatePin](providers.ProviderSSSTron.md#updatepin)
+- [addAbortListener](providers.ProviderSSSTron.md#addabortlistener)
+- [getAccounts](providers.ProviderSSSTron.md#getaccounts)
+- [getEventListeners](providers.ProviderSSSTron.md#geteventlisteners)
+- [getMaxListeners](providers.ProviderSSSTron.md#getmaxlisteners-1)
+- [getStoragesForAccount](providers.ProviderSSSTron.md#getstoragesforaccount)
+- [initialize](providers.ProviderSSSTron.md#initialize)
+- [listenerCount](providers.ProviderSSSTron.md#listenercount-1)
+- [on](providers.ProviderSSSTron.md#on-1)
+- [once](providers.ProviderSSSTron.md#once-1)
+- [setMaxListeners](providers.ProviderSSSTron.md#setmaxlisteners-1)
+- [setStorageForAccount](providers.ProviderSSSTron.md#setstorageforaccount)
 
 ## Constructors
 
 ### constructor
 
-• **new ProviderSSSEvm**(`options`)
+• **new ProviderSSSTron**(`options`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `options` | [`ProviderSSSBaseOptions`](../modules/providers.md#providersssbaseoptions) & [`ProviderBaseOptions`](../modules/providers.md#providerbaseoptions) |
+| `options` | [`ProviderSSSTronOptions`](../modules/providers.md#providerssstronoptions) |
 
-#### Inherited from
+#### Overrides
 
 [ProviderSSSBase](providers.ProviderSSSBase.md).[constructor](providers.ProviderSSSBase.md#constructor)
 
 #### Defined in
 
-[src/providers/base-provider.ts:17](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L17)
+[src/providers/sss/tron-provider.ts:21](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/tron-provider.ts#L21)
 
 ## Properties
 
@@ -107,6 +108,16 @@ extends EventEmitter
 #### Defined in
 
 [src/providers/base-provider.ts:15](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/base-provider.ts#L15)
+
+___
+
+### \_tronWebHostUrl
+
+• `Private` **\_tronWebHostUrl**: `string`
+
+#### Defined in
+
+[src/providers/sss/tron-provider.ts:20](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/tron-provider.ts#L20)
 
 ___
 
@@ -293,7 +304,7 @@ ___
 
 ### addListener
 
-▸ **addListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **addListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSTron`](providers.ProviderSSSTron.md)
 
 Alias for `emitter.on(eventName, listener)`.
 
@@ -312,7 +323,7 @@ Alias for `emitter.on(eventName, listener)`.
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderSSSTron`](providers.ProviderSSSTron.md)
 
 **`Since`**
 
@@ -522,13 +533,13 @@ Get public key and address for hd path
 
 [ProviderInterface](../interfaces/providers.ProviderInterface.md).[getAccountInfo](../interfaces/providers.ProviderInterface.md#getaccountinfo)
 
-#### Inherited from
+#### Overrides
 
 [ProviderSSSBase](providers.ProviderSSSBase.md).[getAccountInfo](providers.ProviderSSSBase.md#getaccountinfo)
 
 #### Defined in
 
-[src/providers/sss/provider.ts:246](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/provider.ts#L246)
+[src/providers/sss/tron-provider.ts:26](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/tron-provider.ts#L26)
 
 ___
 
@@ -559,7 +570,7 @@ ___
 ▸ **getMaxListeners**(): `number`
 
 Returns the current max listener value for the `EventEmitter` which is either
-set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](providers.ProviderSSSEvm.md#defaultmaxlisteners).
+set by `emitter.setMaxListeners(n)` or defaults to [defaultMaxListeners](providers.ProviderSSSTron.md#defaultmaxlisteners).
 
 #### Returns
 
@@ -750,7 +761,7 @@ ___
 
 ### off
 
-▸ **off**\<`K`\>(`eventName`, `listener`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **off**\<`K`\>(`eventName`, `listener`): [`ProviderSSSTron`](providers.ProviderSSSTron.md)
 
 Alias for `emitter.removeListener()`.
 
@@ -769,7 +780,7 @@ Alias for `emitter.removeListener()`.
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderSSSTron`](providers.ProviderSSSTron.md)
 
 **`Since`**
 
@@ -791,7 +802,7 @@ ___
 
 ### on
 
-▸ **on**\<`K`\>(`eventName`, `listener`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **on**\<`K`\>(`eventName`, `listener`): [`ProviderSSSTron`](providers.ProviderSSSTron.md)
 
 Adds the `listener` function to the end of the listeners array for the event
 named `eventName`. No checks are made to see if the `listener` has already
@@ -835,7 +846,7 @@ myEE.emit('foo');
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderSSSTron`](providers.ProviderSSSTron.md)
 
 **`Since`**
 
@@ -857,7 +868,7 @@ ___
 
 ### once
 
-▸ **once**\<`K`\>(`eventName`, `listener`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **once**\<`K`\>(`eventName`, `listener`): [`ProviderSSSTron`](providers.ProviderSSSTron.md)
 
 Adds a **one-time** `listener` function for the event named `eventName`. The
 next time `eventName` is triggered, this listener is removed and then invoked.
@@ -899,7 +910,7 @@ myEE.emit('foo');
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderSSSTron`](providers.ProviderSSSTron.md)
 
 **`Since`**
 
@@ -921,7 +932,7 @@ ___
 
 ### prependListener
 
-▸ **prependListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **prependListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSTron`](providers.ProviderSSSTron.md)
 
 Adds the `listener` function to the _beginning_ of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
@@ -951,7 +962,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderSSSTron`](providers.ProviderSSSTron.md)
 
 **`Since`**
 
@@ -973,7 +984,7 @@ ___
 
 ### prependOnceListener
 
-▸ **prependOnceListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **prependOnceListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSTron`](providers.ProviderSSSTron.md)
 
 Adds a **one-time**`listener` function for the event named `eventName` to the _beginning_ of the listeners array. The next time `eventName` is triggered, this
 listener is removed, and then invoked.
@@ -1001,7 +1012,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderSSSTron`](providers.ProviderSSSTron.md)
 
 **`Since`**
 
@@ -1089,7 +1100,7 @@ ___
 
 ### removeAllListeners
 
-▸ **removeAllListeners**(`eventName?`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **removeAllListeners**(`eventName?`): [`ProviderSSSTron`](providers.ProviderSSSTron.md)
 
 Removes all listeners, or those of the specified `eventName`.
 
@@ -1107,7 +1118,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderSSSTron`](providers.ProviderSSSTron.md)
 
 **`Since`**
 
@@ -1129,7 +1140,7 @@ ___
 
 ### removeListener
 
-▸ **removeListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **removeListener**\<`K`\>(`eventName`, `listener`): [`ProviderSSSTron`](providers.ProviderSSSTron.md)
 
 Removes the specified `listener` from the listener array for the event named `eventName`.
 
@@ -1226,7 +1237,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderSSSTron`](providers.ProviderSSSTron.md)
 
 **`Since`**
 
@@ -1248,7 +1259,7 @@ ___
 
 ### setMaxListeners
 
-▸ **setMaxListeners**(`n`): [`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+▸ **setMaxListeners**(`n`): [`ProviderSSSTron`](providers.ProviderSSSTron.md)
 
 By default `EventEmitter`s will print a warning if more than `10` listeners are
 added for a particular event. This is a useful default that helps finding
@@ -1265,7 +1276,7 @@ Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 #### Returns
 
-[`ProviderSSSEvm`](providers.ProviderSSSEvm.md)
+[`ProviderSSSTron`](providers.ProviderSSSTron.md)
 
 **`Since`**
 
@@ -1287,7 +1298,7 @@ ___
 
 ### signPersonalMessage
 
-▸ **signPersonalMessage**(`hdPath`, `message`): `Promise`\<`string`\>
+▸ **signPersonalMessage**(`_hdPath`, `_message`): `Promise`\<`string`\>
 
 Sign personal message
 
@@ -1295,8 +1306,8 @@ Sign personal message
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `hdPath` | `string` | HD path for subscribe |
-| `message` | [`BytesLike`](../modules/providers.md#byteslike) | message |
+| `_hdPath` | `string` | HD path for subscribe |
+| `_message` | [`BytesLike`](../modules/providers.md#byteslike) | message |
 
 #### Returns
 
@@ -1314,7 +1325,7 @@ signature of personal message
 
 #### Defined in
 
-[src/providers/sss/evm-provider.ts:67](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/evm-provider.ts#L67)
+[src/providers/sss/tron-provider.ts:126](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/tron-provider.ts#L126)
 
 ___
 
@@ -1347,13 +1358,13 @@ signature of transaction
 
 #### Defined in
 
-[src/providers/sss/evm-provider.ts:26](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/evm-provider.ts#L26)
+[src/providers/sss/tron-provider.ts:60](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/tron-provider.ts#L60)
 
 ___
 
 ### signTypedData
 
-▸ **signTypedData**(`hdPath`, `typedData`): `Promise`\<`string`\>
+▸ **signTypedData**(`_hdPath`, `_typedData`): `Promise`\<`string`\>
 
 Sign typed data
 
@@ -1361,8 +1372,8 @@ Sign typed data
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `hdPath` | `string` | HD path for subscribe |
-| `typedData` | [`TypedData`](../modules/providers.md#typeddata) |  |
+| `_hdPath` | `string` | HD path for subscribe |
+| `_typedData` | [`TypedData`](../modules/providers.md#typeddata) |  |
 
 #### Returns
 
@@ -1380,7 +1391,7 @@ signature of typed data
 
 #### Defined in
 
-[src/providers/sss/evm-provider.ts:110](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/evm-provider.ts#L110)
+[src/providers/sss/tron-provider.ts:133](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/providers/sss/tron-provider.ts#L133)
 
 ___
 

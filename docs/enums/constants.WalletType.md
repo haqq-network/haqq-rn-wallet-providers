@@ -1,4 +1,4 @@
-[@haqq/rn-wallet-providers - v0.0.1](../README.md) / [Exports](../modules.md) / [constants](../modules/constants.md) / WalletType
+[@haqq/rn-wallet-providers - v0.0.11](../README.md) / [Exports](../modules.md) / [constants](../modules/constants.md) / WalletType
 
 # Enumeration: WalletType
 
@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[src/constants.ts:2](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L2)
+[src/constants.ts:2](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/constants.ts#L2)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[src/constants.ts:6](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L6)
+[src/constants.ts:6](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/constants.ts#L6)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[src/constants.ts:5](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L5)
+[src/constants.ts:5](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/constants.ts#L5)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[src/constants.ts:3](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L3)
+[src/constants.ts:3](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/constants.ts#L3)
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-[src/constants.ts:4](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/constants.ts#L4)
+[src/constants.ts:4](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/constants.ts#L4)

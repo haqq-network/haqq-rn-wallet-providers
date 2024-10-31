@@ -73,15 +73,32 @@ export class ProviderHotTron
         ) as unknown as number,
       };
 
-      // Get the signature
-      const tx = await tronWeb.transactionBuilder.sendTrx(
-        tronTransaction.to_address,
-        tronTransaction.amount,
-        tronTransaction.owner_address,
-      );
+      // transaction.data is TRX token address for transfer
+      if (transaction.data && tron.utils.address.isAddress(transaction.data)) {
+        const functionSelector = 'transfer(address,uint256)';
+        const contractAddress = transaction.data as string;
+        const parameter = [
+          {type: 'address', value: tronTransaction.to_address},
+          {type: 'uint256', value: tronTransaction.amount},
+        ];
 
-      const signedTx = await tronWeb.trx.signTransaction(tx);
-      resp = JSON.stringify(signedTx);
+        const tx = await tronWeb.transactionBuilder.triggerSmartContract(
+          contractAddress,
+          functionSelector,
+          {},
+          parameter,
+        );
+        const signedTx = await tronWeb.trx.sign(tx.transaction);
+        resp = JSON.stringify(signedTx);
+      } else {
+        const tx = await tronWeb.transactionBuilder.sendTrx(
+          tronTransaction.to_address,
+          tronTransaction.amount,
+          tronTransaction.owner_address,
+        );
+        const signedTx = await tronWeb.trx.signTransaction(tx);
+        resp = JSON.stringify(signedTx);
+      }
 
       this.emit('signTransaction', true);
     } catch (e) {

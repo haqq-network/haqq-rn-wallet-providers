@@ -1,4 +1,4 @@
-[@haqq/rn-wallet-providers - v0.0.1](../README.md) / [Exports](../modules.md) / [utils](../modules/utils.md) / Polynomial
+[@haqq/rn-wallet-providers - v0.0.11](../README.md) / [Exports](../modules.md) / [utils](../modules/utils.md) / Polynomial
 
 # Class: Polynomial
 
@@ -37,7 +37,7 @@
 
 #### Defined in
 
-[src/utils/sss/polynomial.ts:61](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/sss/polynomial.ts#L61)
+[src/utils/sss/polynomial.ts:62](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/utils/sss/polynomial.ts#L62)
 
 ## Properties
 
@@ -47,7 +47,7 @@
 
 #### Defined in
 
-[src/utils/sss/polynomial.ts:16](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/sss/polynomial.ts#L16)
+[src/utils/sss/polynomial.ts:17](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/utils/sss/polynomial.ts#L17)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[src/utils/sss/polynomial.ts:15](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/sss/polynomial.ts#L15)
+[src/utils/sss/polynomial.ts:16](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/utils/sss/polynomial.ts#L16)
 
 ## Methods
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[src/utils/sss/polynomial.ts:66](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/sss/polynomial.ts#L66)
+[src/utils/sss/polynomial.ts:67](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/utils/sss/polynomial.ts#L67)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[src/utils/sss/polynomial.ts:70](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/sss/polynomial.ts#L70)
+[src/utils/sss/polynomial.ts:71](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/utils/sss/polynomial.ts#L71)
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[src/utils/sss/polynomial.ts:38](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/sss/polynomial.ts#L38)
+[src/utils/sss/polynomial.ts:39](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/utils/sss/polynomial.ts#L39)
 
 ___
 
@@ -132,4 +132,4 @@ ___
 
 #### Defined in
 
-[src/utils/sss/polynomial.ts:18](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/7850de5/src/utils/sss/polynomial.ts#L18)
+[src/utils/sss/polynomial.ts:19](https://github.com/haqq-network/haqq-rn-wallet-providers/blob/69c5710/src/utils/sss/polynomial.ts#L19)
