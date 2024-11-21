@@ -686,30 +686,30 @@
     "@ethersproject/properties" "^5.7.0"
     "@ethersproject/strings" "^5.7.0"
 
-"@haqq/encryption-react-native@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@haqq/encryption-react-native/-/encryption-react-native-0.0.3.tgz#5883d243aedf726f6b3ccb24faa74c9d0a30969c"
-  integrity sha512-o+8vxZ2W+yALGlkdNdhWbhjcZUFeikJfE9BR4XnXjVh3MNWgca6hfgHLy1Zwe09y4ma0vkB2vd3Y7bqpmRMuAA==
+"@haqq/encryption-react-native@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@haqq/encryption-react-native/-/encryption-react-native-0.0.4.tgz#aa2dd6280a2b031a47dffcee76b02363053ebec0"
+  integrity sha512-o8LMLb4zI+YSokXXKlJ1bbbJIyOYhe0/2cZCPxNYg9VNsAuejwpfb2+bggsILSnthM+beRfK3IIU1Ei1dE4XtQ==
   dependencies:
     base-64 "^1.0.0"
     polyfill-crypto.getrandomvalues "^1.0.0"
-    react-native-aes-crypto "2.1.0"
+    react-native-aes-crypto "3.0.1"
 
-"@haqq/provider-web3-utils@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@haqq/provider-web3-utils/-/provider-web3-utils-0.0.13.tgz#afcf75bce060e0bd9ef07d59b612fdd5941976ef"
-  integrity sha512-hRRyvQ16n/FE0WlXOxtUA5EkQ4q2YZWfCEf4ld5Av7r0ilOzI4qluQ0IoOenlFXlHVjktLRkiEXnYWg/xXzUbA==
+"@haqq/provider-web3-utils@0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@haqq/provider-web3-utils/-/provider-web3-utils-0.0.14.tgz#174a4717fb31199079af44356788416075824a6e"
+  integrity sha512-NpZOhz7sJf6bily+2So6/kXa7Ta6nHMtuCGdCQWgxrDZMz7Vrp/+8uF8M3GjNvqtH8/zv8CH+0v6Qx6ILTt51A==
 
-"@haqq/shared-react-native@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@haqq/shared-react-native/-/shared-react-native-0.0.8.tgz#8d5d16af6ad9b4915b21ec39e08740e669ba7912"
-  integrity sha512-7wObzdxEiV9c//F88wLK02pdgYsEGc2BhGVhofUIVTWVPP07SW+A7gmHYfqag6skbR1WpEvBxx+Yb/rUjk9zKg==
+"@haqq/shared-react-native@0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@haqq/shared-react-native/-/shared-react-native-0.0.12.tgz#14d8e0a001471f2b864e49e10c3a0cca6be444cf"
+  integrity sha512-vUp7WrfprZ7gj276eEerSG/I5q0YUAxECTwna1KTPZ3YsVjK5JDSFx3kTAktSaCpSw6Q+a6xCMKQllKK3b8XXw==
   dependencies:
     base-64 "^1.0.0"
     bn.js "5.2.1"
     json-stable-stringify "1.0.2"
     polyfill-crypto.getrandomvalues "^1.0.0"
-    react-native-aes-crypto "2.1.0"
+    react-native-aes-crypto "3.0.1"
 
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.14"
@@ -4772,10 +4772,10 @@ react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.3.1.tgz#e83557dc12eae63a99e003a46388b1dcbb44db7e"
   integrity sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==
 
-react-native-aes-crypto@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/react-native-aes-crypto/-/react-native-aes-crypto-2.1.0.tgz#9482fe914cae411f10ec43a53b2439a41b78cbbd"
-  integrity sha512-2zvvQXMW2Qeg9B/VDetoB2w/cyVncPuEsoW1iUhZP12jAx+zbxsdf+A7inSf2XKMcRURfpsfUshQTb2beYUVhA==
+react-native-aes-crypto@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-aes-crypto/-/react-native-aes-crypto-3.0.1.tgz#f9941b9397f62c4603eec8b5f07ca38d075661a2"
+  integrity sha512-51L++eKz13cPeIqg/9Slp1aWIsYOiHzK1jJ9AjcmmtDi3jqtRqdh0y2yJqDI31iBgkQVMz3FjN9zfQ1alj7QBQ==
 
 react-native-ble-plx@2.0.3, react-native-ble-plx@^2.0.3:
   version "2.0.3"
